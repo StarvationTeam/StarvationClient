@@ -2072,6 +2072,21 @@
 	<recipe name="flagstoneWedgeTipStairs" count="1">
 		<ingredient name="cobblestones" count="4" />
 	</recipe>
+	<recipe name="scrapRubber" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
+	<recipe name="scrapSteel" count="1" tooltip="ttScrapMetalSteel">
+		<wildcard_forge_category />
+	</recipe>
+	<!-- 		<recipe name="scrapSteel" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0"> - used if steel can be smelted in your mod
+				<ingredient name="unit_steel" count="1" />
+			</recipe>	-->
+	<recipe name="mechanicalParts" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
+	<!--		<recipe name="scrapPlastics" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0"> - used if plastic can be smelted in your mod
+				<ingredient name="unit_plastic" count="1" />
+			</recipe>	-->
 	<!-- FISHING -->
 	<recipe name="hook" count="1">
 		<ingredient name="scrapLead" count="4" />

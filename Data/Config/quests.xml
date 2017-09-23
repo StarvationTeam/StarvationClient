@@ -204,6 +204,21 @@
 	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
 		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
 	</quest>
+	<quest id="challenge_junkhunt1" group_name_key="Junkhunt" name_key="Scavenging for orphans" subtitle_key="Scavenging for orphans" offer_key="A little orphan girl showed up at the tradingpost and won't stop crying about her lost dolly.  Find her a doll and you will be rewarded!" description_key="Find a doll and you will be rewarded!!" icon="ui_game_symbol_rubberDoll" category_key="challenge">
+		<objective type="FetchKeep" id="rubberDoll" value="1" />
+		<reward type="Exp" value="400" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Quest" id="challenge_junkhunt2" />
+	</quest>
+	<quest id="challenge_junkhunt2" group_name_key="Junkhunt" name_key="Scavenging for orphans again" subtitle_key="Scavenging for orphans again" offer_key="That girl's brother just showed up.  All he talks about is becoming a zombie killing soldier and is missing his toy soldier collection.  Collect some toy soldiers and you will be rewarded!  Are you up for this one too?" description_key="Collect some toy soldiers and you will be rewarded!" icon="ui_game_symbol_plasticSoldier" category_key="challenge">
+		<objective type="FetchKeep" id="plasticSoldier" value="1" />
+		<objective type="FetchKeep" id="woodSoldier" value="1" />
+		<objective type="FetchKeep" id="ironSoldier" value="1" />
+		<objective type="FetchKeep" id="leadSoldier" value="1" />
+		<reward type="Item" id="gunHuntingRifle" value="450" />
+		<reward type="Exp" value="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
 	<quest id="quest_nuclearPlant1" group_name="Nuclear Plant" name="Nuclear Plant" subtitle="Nuclear Plant" description="Well....\n\nYou seem to be a resourceful fella.\nI've heard that there's a active nuclear plant somewhere.\n\nHere, take this modified geiger counter, it might help you.\nI adjusted it to look for nuclear plant radiation signature.\n\nI advise you to approach with care.\n\nIf you find it, I want you to power it up and make me some plutonium...\nDon't ask me how... Just do it, and I'll make it worthwhile" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="Item" id="findPlant" />
 		<reward type="Quest" id="quest_nuclearPlant2" />

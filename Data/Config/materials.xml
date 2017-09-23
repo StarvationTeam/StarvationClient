@@ -496,7 +496,7 @@
 	<material id="Msteel">
 		<property name="damage_category" value="metal" />
 		<property name="surface_category" value="metal" />
-		<property name="forge_category" value="iron" />
+		<property name="forge_category" value="steel" />
 		<property name="Hardness" type="float" value="1" />
 		<property name="stepsound" value="metal" />
 		<property name="stability_glue" value="320" />
@@ -960,6 +960,29 @@
 		<property name="Mass" type="int" value="5" />
 		<property name="MaxDamage" value="100" />
 		<property name="Experience" value="3.0" />
+	</material>
+	<material id="Mrubber">
+		<property name="damage_category" value="wood" />
+		<property name="surface_category" value="earth" />
+		<property name="forge_category" value="rubber" />
+		<property name="Hardness" type="float" value="1" />
+		<property name="explosionresistance" value="0" />
+		<property name="stepsound" value="organic" />
+		<property name="lightopacity" value="4" />
+		<property name="stability_glue" value="16" />
+		<property name="Mass" type="int" value="4" />
+		<property name="MaxDamage" value="150" />
+	</material>
+	<material id="MmechanicalParts">
+		<property name="damage_category" value="metal" />
+		<property name="surface_category" value="metal" />
+		<property name="forge_category" value="mechanical" />
+		<property name="Hardness" type="float" value="1" />
+		<property name="stepsound" value="metal" />
+		<property name="lightopacity" value="4" />
+		<property name="stability_glue" value="16" />
+		<property name="Mass" type="int" value="4" />
+		<property name="MaxDamage" value="150" />
 	</material>
 	<material id="MbambooRaft">
 		<property name="damage_category" value="wood" />
