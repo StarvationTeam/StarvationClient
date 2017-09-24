@@ -2169,7 +2169,7 @@
 		<ingredient name="nail" count="10" />
 		<ingredient name="wood" count="20" />
 	</recipe>
-	<!-- <recipe name="ChickenCoop" count="1" scrapable="False">
+	<recipe name="ChickenCoop" count="1" scrapable="False">
 		<ingredient name="trough" count="2" />
 		<ingredient name="nail" count="20" />
 		<ingredient name="wood" count="50" />
@@ -2196,7 +2196,7 @@
 	<recipe name="ChickenFeed" count="5" scrapable="False">
 		<ingredient name="corn" count="1" />
 		<ingredient name="sunflowerOil" count="1" />
-	</recipe> -->
+	</recipe>
 	<!-- ANIMAL COOPS -->
 	<recipe name="assaultRifleStock" count="1" craft_area="smith">
 		<ingredient name="spring" count="3" />
