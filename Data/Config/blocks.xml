@@ -16462,6 +16462,7 @@
 		<property name="Model" value="#garlic?smallGarlic" />
 		<property name="PlantGrowing.Next" value="garlicPlant" />
 		<property name="PlantGrowing.GrowthRate" value="95" />
+		<property name="ModelOffset" value="0,-0.04,0" />
 	</block>
 	<block id="452" name="plantedSugarcane">
 		<property name="Extends" value="plantedPaprika" />
@@ -16505,11 +16506,9 @@
 	<block id="457" name="plantedSunflower">
 		<property name="Extends" value="plantedPaprika" />
 		<property name="Model" value="#sunflower?sunflower" />
-		<property name="MeshScale" value="0.5,0.5" />
+		<property name="MeshScale" value="0.3,0.3" />
+		<property name="ModelOffset" value="0,-0.1,0" />
 		<property name="CreativeMode" value="Dev" />
-		<property name="Shape" value="BillboardPlant" />
-		<property name="Mesh" value="grass" />
-		<property name="Texture" value="293" />
 		<property name="PlantGrowing.Next" value="sunflower" />
 		<property name="PlantGrowing.GrowthRate" value="75" />
 	</block>
@@ -17258,7 +17257,8 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#alchemistic?AlchemisticWorkbenchPrefab" />
-		<property name="Class" value="Campfire" />
+		<property name="Class" value="CampfireM, Mods" />
+		<property name="ModelOffset" value="0,-0.04,0" />
 		<property name="ParticleName" value="campfire" />
 		<property name="ParticleOffset" value="1,0,1" />
 		<property name="HeatMapStrength" value="2" />
@@ -17853,7 +17853,7 @@
 	</block>
 	<block id="1091" name="cntStorageFarm">
 		<property name="DescriptionKey" value="cntStorageFarmDesc" />
-		<property name="Class" value="SecureLoot" />
+		<property name="Class" value="SecureLootMorte, Mods" />
 		<property name="LootList" value="10" />
 		<property name="Material" value="wood+wood" />
 		<property name="Shape" value="ModelEntity" />
@@ -17875,7 +17875,7 @@
 	<block id="1147" name="cntStorageFarmInsecure">
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="cntStorageFarm" />
-		<property name="Class" value="Loot" />
+		<property name="Class" value="LootMorte, Mods" />
 		<property name="LootList" value="10" />
 		<property name="Material" value="wood+wood" />
 		<property name="Shape" value="ModelEntity" />
@@ -17893,11 +17893,12 @@
 	</block>
 	<block id="1148" name="cntStorageFarmIcy">
 		<property name="CustomIcon" value="cntStorageFarm" />
-		<property name="Class" value="SecureLoot" />
+		<property name="Class" value="SecureLootMorte, Mods" />
 		<property name="LootList" value="10" />
 		<property name="Material" value="wood+wood" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#icecontainer?farmContainerIce" />
+		<property name="ModelOffset" value="0,-0.04,0" />
 		<property name="FuelValue" value="160" />
 		<property class="RepairItems">
 			<property name="wood" value="20" />
