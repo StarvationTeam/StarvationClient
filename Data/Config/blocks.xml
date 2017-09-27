@@ -16867,6 +16867,7 @@
 		<property name="Model" value="#garlic?Garlic" />
 		<drop event="Harvest" name="garlic" count="1" />
 		<property name="CropsGrown.BonusHarvestDivisor" value="16" />
+		<property name="ModelOffset" value="0,-0.005,0" />
 	</block>
 	<block id="959" name="sugarcanePlant">
 		<property name="Extends" value="plantMaster" />
@@ -17506,7 +17507,9 @@
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Stacknumber" value="1" />
-		<property name="Model" value="#workbenches1?ElectronicWorkbench" />
+		<property name="Model" value="#ElectronicBench?ElectronicBenchPrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_electronicBench" />
+		<property name="MultiBlockDim" value="2,2,1" />
 		<property name="Class" value="Machine, Mods" />
 		<property name="powerType" value="failurerelay" />
 		<property name="TickRate" value="1000" />
@@ -17608,6 +17611,7 @@
 			<property name="electricParts" value="4" />
 			<property name="electronicParts" value="1" />
 		</property>
+		<property name="TakeDelay" value="10" />
 		<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="0,1" tool_category="Disassemble" />
 		<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
@@ -17625,6 +17629,7 @@
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#fridgeB?FridgeOld" />
+		<property name="TakeDelay" value="10" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="4" />
 			<property name="shortMetalPipe" value="2" />
@@ -18256,7 +18261,7 @@
 		<property class="Workstation">
 			<property name="CraftingAreaRecipes" value="forge1" />
 			<property name="Modules" value="output,fuel,material_input" />
-			<property name="InputMaterials" value="iron,clay,zinc,copper" />
+			<property name="InputMaterials" value="steel,iron,clay,zinc,copper" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
