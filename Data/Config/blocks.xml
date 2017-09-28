@@ -16320,7 +16320,8 @@
 	<block id="127" name="plantedAppleTree">
 		<property name="Model" value="Entities/Trees/Prefabs/MountainPine1mPrefab" />
 		<property name="CreativeMode" value="Dev" />
-		<property name="AllowSize" value="4,4,4" />
+		<property name="AllowSize" value="2,2,2" />
+		<property name="ModelOffset" value="0,0,0" />
 		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="116" />
@@ -18113,8 +18114,8 @@
 		<property name="Model" value="#drygrill?DryGrillPrefabFruits1" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="MaxDamage" value="3" />
+		<drop event="Harvest" name="DryFruits" count="2" tool_category="Gardener" />
 		<drop event="Destroy" name="DryGrillItem1" count="1" prob="1" />
-		<drop event="Fall" name="DryFruits" count="2" prob="1" stick_chance="1" />
 	</block>
 	<block id="1170" name="DryGrill">
 		<property name="Material" value="metal" />
@@ -18137,8 +18138,8 @@
 		<property name="Model" value="#drygrill?DryGrillPrefab1" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="MaxDamage" value="3" />
+		<drop event="Harvest" name="DryMeat" count="5" tool_category="Gardener" />
 		<drop event="Destroy" name="DryGrillItem1" count="1" prob="1" />
-		<drop event="Fall" name="DryMeat" count="5" prob="1" stick_chance="1" />
 	</block>
 	<block id="1371" name="Tanks">
 		<property name="Material" value="metal" />
@@ -18261,7 +18262,8 @@
 		<property class="Workstation">
 			<property name="CraftingAreaRecipes" value="forge1" />
 			<property name="Modules" value="output,fuel,material_input" />
-			<property name="InputMaterials" value="steel,iron,clay,zinc,copper" />
+			<property name="InputMaterials" value="steel,coal,iron,clay,zinc,copper" />
+			<!-- BigForge Conversion Block edit -->
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
@@ -18601,6 +18603,19 @@
 		<property name="Model" value="Entities/Trees/Prefabs/Stump" />
 		<property name="group" value="SurvivorsTower" />
 		<property name="NumberToSpawn" value="1" />
+	</block>
+	<block id="1494" name="starvationPoster">
+		<property name="CustomIcon" value="ui_game_symbol_starvationPoster" />
+		<property name="Material" value="paper" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#StarvationPoster?StarvationPosterPrefab" />
+		<property name="CanPickup" value="true" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="DescriptionKey" value="starvationPoster" />
+		<drop count="0" event="Destroy" />
+		<drop name="paper" count="1" event="Destroy" prob="1" />
+		<drop name="paper" count="0" event="Fall" prob="1" stick_chance="1" />
+		<drop name="paper" count="1" event="Fall" prob=".75" stick_chance="1" />
 	</block>
 	<!-- toys -->
 	<block id="1486" name="kennyBlock">

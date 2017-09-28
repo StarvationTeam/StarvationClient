@@ -1275,6 +1275,7 @@
 		<item name="aatItem" count="1" prob="0.05" />
 		<item name="chessItem" count="1" prob="0.05" />
 		<item name="wolverineItem" count="1" prob="0.05" />
+		<item name="starvationPoster" count="1" prob="0.02" />
 	</lootgroup>
 	<lootgroup name="rareAutomotive">
 		<item name="smallEngine" />

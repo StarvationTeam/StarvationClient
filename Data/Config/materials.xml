@@ -332,16 +332,6 @@
 		<property name="MaxDamage" value="50000" />
 		<property name="Experience" value="3.0" />
 	</material>
-	<material id="coal">
-		<property name="damage_category" value="stone" />
-		<property name="surface_category" value="stone" />
-		<property name="Hardness" type="float" value="1" />
-		<property name="stepsound" value="stone" />
-		<property name="stability_glue" value="20" />
-		<property name="Mass" type="int" value="10" />
-		<property name="MaxDamage" value="400" />
-		<property name="Experience" value="6" />
-	</material>
 	<material id="Mbrick">
 		<property name="damage_category" value="stone" />
 		<property name="surface_category" value="stone" />
@@ -503,18 +493,6 @@
 		<property name="Mass" type="int" value="20" />
 		<property name="explosionresistance" value="1.5" />
 		<property name="MaxDamage" value="8000" />
-		<property name="Experience" value="7" />
-	</material>
-	<material id="MstainlessSteel">
-		<property name="damage_category" value="metal" />
-		<property name="surface_category" value="metal" />
-		<property name="forge_category" value="iron" />
-		<property name="Hardness" type="float" value="1" />
-		<property name="stepsound" value="metal" />
-		<property name="stability_glue" value="320" />
-		<property name="Mass" type="int" value="20" />
-		<property name="explosionresistance" value="1.75" />
-		<property name="MaxDamage" value="12000" />
 		<property name="Experience" value="7" />
 	</material>
 	<material id="MDynamite">
@@ -1053,5 +1031,28 @@
 		<property name="Mass" type="int" value="1" />
 		<property name="StabilitySupport" value="false" />
 		<property name="MaxDamage" value="5" />
+	</material>
+	<material id="coal">
+		<property name="damage_category" value="stone" />
+		<property name="surface_category" value="stone" />
+		<property name="Hardness" type="float" value="1" />
+		<property name="forge_category" value="coal" />
+		<property name="stepsound" value="stone" />
+		<property name="stability_glue" value="20" />
+		<property name="Mass" type="int" value="10" />
+		<property name="MaxDamage" value="400" />
+		<property name="Experience" value="6" />
+	</material>
+	<material id="MstainlessSteel">
+		<property name="damage_category" value="metal" />
+		<property name="surface_category" value="metal" />
+		<property name="forge_category" value="steel" />
+		<property name="Hardness" type="float" value="1" />
+		<property name="stepsound" value="metal" />
+		<property name="stability_glue" value="320" />
+		<property name="Mass" type="int" value="20" />
+		<property name="explosionresistance" value="1.75" />
+		<property name="MaxDamage" value="12000" />
+		<property name="Experience" value="7" />
 	</material>
 </materials>
