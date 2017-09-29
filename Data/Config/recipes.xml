@@ -699,10 +699,6 @@
 		<ingredient name="egg" count="1" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="emptyJar" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="10" />
-		<ingredient name="unit_clay" count="1" />
-	</recipe>
 	<recipe name="endTable" count="1">
 		<ingredient name="wood" count="5" />
 	</recipe>
@@ -770,91 +766,6 @@
 		<ingredient name="scrapIron" count="240" />
 		<ingredient name="spring" count="6" />
 		<ingredient name="mechanicalParts" count="12" />
-	</recipe>
-	<recipe name="glassCTRSheet" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="10" />
-		<ingredient name="unit_lead" count="3" />
-		<ingredient name="unit_clay" count="1" />
-	</recipe>
-	<recipe name="glassShowerBlock" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="14" />
-		<ingredient name="unit_lead" count="4" />
-		<ingredient name="unit_clay" count="1" />
-	</recipe>
-	<recipe name="glassShowerRamp" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="14" />
-		<ingredient name="unit_lead" count="4" />
-		<ingredient name="unit_clay" count="1" />
-	</recipe>
-	<recipe name="glassIndustrialCTRPlate" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="10" />
-		<ingredient name="unit_lead" count="3" />
-		<ingredient name="unit_clay" count="1" />
-	</recipe>
-	<recipe name="glassIndustrial02CTRPlate" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="10" />
-		<ingredient name="unit_lead" count="3" />
-		<ingredient name="unit_clay" count="1" />
-	</recipe>
-	<recipe name="glassBusinessSheet" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="14" />
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="2" />
-	</recipe>
-	<recipe name="glassBusinessCTRSheet" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="14" />
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="2" />
-	</recipe>
-	<recipe name="glassBusinessBlock" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="14" />
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="2" />
-	</recipe>
-	<recipe name="glassBusinessPlate" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="14" />
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="2" />
-	</recipe>
-	<recipe name="glassBusinessPlateCurved" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="14" />
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="2" />
-	</recipe>
-	<recipe name="glassBulletproofBlock" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
-		<ingredient name="unit_glass" count="110" />
-		<ingredient name="unit_stone" count="10" />
-		<ingredient name="unit_lead" count="40" />
-		<ingredient name="unit_iron" count="20" />
-		<ingredient name="unit_clay" count="20" />
-	</recipe>
-	<recipe name="glassBulletproofPlate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
-		<ingredient name="unit_glass" count="110" />
-		<ingredient name="unit_stone" count="10" />
-		<ingredient name="unit_lead" count="40" />
-		<ingredient name="unit_iron" count="20" />
-		<ingredient name="unit_clay" count="20" />
-	</recipe>
-	<recipe name="glassBulletproofCTRPlate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
-		<ingredient name="unit_glass" count="110" />
-		<ingredient name="unit_stone" count="10" />
-		<ingredient name="unit_lead" count="40" />
-		<ingredient name="unit_iron" count="20" />
-		<ingredient name="unit_clay" count="20" />
-	</recipe>
-	<recipe name="glassBulletproofPlateCurved" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
-		<ingredient name="unit_glass" count="110" />
-		<ingredient name="unit_stone" count="10" />
-		<ingredient name="unit_lead" count="40" />
-		<ingredient name="unit_iron" count="20" />
-		<ingredient name="unit_clay" count="20" />
-	</recipe>
-	<recipe name="glassBulletproofRamp" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
-		<ingredient name="unit_glass" count="110" />
-		<ingredient name="unit_stone" count="10" />
-		<ingredient name="unit_lead" count="40" />
-		<ingredient name="unit_iron" count="20" />
-		<ingredient name="unit_clay" count="20" />
 	</recipe>
 	<recipe name="glue" count="1" craft_area="chemistryStation">
 		<ingredient name="femur" count="1" />
@@ -1760,18 +1671,6 @@
 		<ingredient name="nail" count="5" />
 		<ingredient name="wood" count="20" />
 	</recipe>
-	<recipe name="trapGlassBusinessSheet1x1" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="20" />
-		<ingredient name="unit_stone" count="5" />
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="3" />
-	</recipe>
-	<recipe name="trapGlassBusinessCTRSheet1x1" count="1" craft_area="forge" material_based="true">
-		<ingredient name="unit_glass" count="20" />
-		<ingredient name="unit_stone" count="5" />
-		<ingredient name="unit_lead" count="5" />
-		<ingredient name="unit_clay" count="3" />
-	</recipe>
 	<recipe name="woodFrameHalf" count="1">
 		<ingredient name="wood" count="2" />
 	</recipe>
@@ -2071,6 +1970,144 @@
 	</recipe>
 	<recipe name="flagstoneWedgeTipStairs" count="1">
 		<ingredient name="cobblestones" count="4" />
+	</recipe>
+	<recipe name="glassandCeramicsStation" count="1" craft_area="workbench" material_based="true">
+		<ingredient name="rockSmall" count="50" />
+		<ingredient name="clayLump" count="30" />
+		<ingredient name="cement" count="10" />
+		<ingredient name="bucketWater" count="1" />
+		<ingredient name="mechanicalParts" count="2" />
+	</recipe>
+	<recipe name="emptyJar" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="10" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+	<recipe name="insulator" count="1" craft_area="glassandCeramicsStation" craft_tool="mold" material_based="true">
+		<ingredient name="unit_iron" count="2" />
+		<ingredient name="unit_glass" count="10" />
+		<ingredient name="unit_clay" count="20" />
+	</recipe>
+	<recipe name="beaker" count="1" craft_area="glassandCeramicsStation" craft_tool="mold" material_based="true">
+		<ingredient name="unit_glass" count="10" />
+		<ingredient name="unit_clay" count="2" />
+	</recipe>
+	<recipe name="mold" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
+		<ingredient name="unit_iron" count="10" />
+		<ingredient name="unit_clay" count="10" />
+	</recipe>
+	<recipe name="scrapPlastics" count="1" craft_area="glassandCeramicsStation" material_based="true" craft_time="1" craft_exp_gain="0">
+		<ingredient name="unit_plastic" count="1" />
+	</recipe>
+	<recipe name="clayLump" count="1" craft_area="glassandCeramicsStation" material_based="true" craft_time="1" craft_exp_gain="0">
+		<ingredient name="unit_clay" count="5" />
+	</recipe>
+	<recipe name="brokenGlass" count="1" craft_area="glassandCeramicsStation" material_based="true" craft_time="1" craft_exp_gain="0">
+		<ingredient name="unit_glass" count="5" />
+	</recipe>
+	<recipe name="rockSmall" count="1" craft_area="glassandCeramicsStation" material_based="true" craft_time="1" craft_exp_gain="0">
+		<ingredient name="unit_stone" count="5" />
+	</recipe>
+	<recipe name="scrapLead" count="1" craft_area="glassandCeramicsStation" material_based="true" craft_time="1" craft_exp_gain="0">
+		<ingredient name="unit_lead" count="1" />
+	</recipe>
+	<recipe name="glassCTRSheet" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="10" />
+		<ingredient name="unit_lead" count="3" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+	<recipe name="glassShowerBlock" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="14" />
+		<ingredient name="unit_lead" count="4" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+	<recipe name="glassShowerRamp" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="14" />
+		<ingredient name="unit_lead" count="4" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+	<recipe name="glassIndustrialCTRPlate" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="10" />
+		<ingredient name="unit_lead" count="3" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+	<recipe name="glassIndustrial02CTRPlate" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="10" />
+		<ingredient name="unit_lead" count="3" />
+		<ingredient name="unit_clay" count="1" />
+	</recipe>
+	<recipe name="glassBusinessSheet" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="14" />
+		<ingredient name="unit_lead" count="5" />
+		<ingredient name="unit_clay" count="2" />
+	</recipe>
+	<recipe name="glassBusinessCTRSheet" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="14" />
+		<ingredient name="unit_lead" count="5" />
+		<ingredient name="unit_clay" count="2" />
+	</recipe>
+	<recipe name="glassBusinessBlock" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="14" />
+		<ingredient name="unit_lead" count="5" />
+		<ingredient name="unit_clay" count="2" />
+	</recipe>
+	<recipe name="glassBusinessPlate" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="14" />
+		<ingredient name="unit_lead" count="5" />
+		<ingredient name="unit_clay" count="2" />
+	</recipe>
+	<recipe name="glassBusinessPlateCurved" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<ingredient name="unit_glass" count="14" />
+		<ingredient name="unit_lead" count="5" />
+		<ingredient name="unit_clay" count="2" />
+	</recipe>
+	<recipe name="glassBulletproofBlock" count="1" craft_area="glassandCeramicsStation" craft_tool="forgeCrucible" material_based="true">
+		<ingredient name="unit_glass" count="110" />
+		<ingredient name="unit_stone" count="10" />
+		<ingredient name="unit_lead" count="40" />
+		<ingredient name="unit_plastic" count="20" />
+		<ingredient name="unit_clay" count="20" />
+	</recipe>
+	<recipe name="glassBulletproofPlate" count="1" craft_area="glassandCeramicsStation" craft_tool="forgeCrucible" material_based="true">
+		<ingredient name="unit_glass" count="110" />
+		<ingredient name="unit_stone" count="10" />
+		<ingredient name="unit_lead" count="40" />
+		<ingredient name="unit_plastic" count="20" />
+		<ingredient name="unit_clay" count="20" />
+	</recipe>
+	<recipe name="glassBulletproofCTRPlate" count="1" craft_area="glassandCeramicsStation" craft_tool="forgeCrucible" material_based="true">
+		<ingredient name="unit_glass" count="110" />
+		<ingredient name="unit_stone" count="10" />
+		<ingredient name="unit_lead" count="40" />
+		<ingredient name="unit_plastic" count="20" />
+		<ingredient name="unit_clay" count="20" />
+	</recipe>
+	<recipe name="glassBulletproofPlateCurved" count="1" craft_area="glassandCeramicsStation" craft_tool="forgeCrucible" material_based="true">
+		<ingredient name="unit_glass" count="110" />
+		<ingredient name="unit_stone" count="10" />
+		<ingredient name="unit_lead" count="40" />
+		<ingredient name="unit_plastic" count="20" />
+		<ingredient name="unit_clay" count="20" />
+	</recipe>
+	<recipe name="glassBulletproofRamp" count="1" craft_area="glassandCeramicsStation" craft_tool="forgeCrucible" material_based="true">
+		<ingredient name="unit_glass" count="110" />
+		<ingredient name="unit_stone" count="10" />
+		<ingredient name="unit_lead" count="40" />
+		<ingredient name="unit_plastic" count="20" />
+		<ingredient name="unit_clay" count="20" />
+	</recipe>
+	<recipe name="trapGlassBusinessSheet1x1" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<!-- trap -->
+		<ingredient name="unit_glass" count="20" />
+		<ingredient name="unit_stone" count="5" />
+		<ingredient name="unit_lead" count="5" />
+		<ingredient name="unit_clay" count="3" />
+	</recipe>
+	<recipe name="trapGlassBusinessCTRSheet1x1" count="1" craft_area="glassandCeramicsStation" material_based="true">
+		<!-- trap -->
+		<ingredient name="unit_glass" count="20" />
+		<ingredient name="unit_stone" count="5" />
+		<ingredient name="unit_lead" count="5" />
+		<ingredient name="unit_clay" count="3" />
 	</recipe>
 	<recipe name="scrapRubber" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />

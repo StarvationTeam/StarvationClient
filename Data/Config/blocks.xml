@@ -5087,7 +5087,7 @@
 		<property class="Workstation">
 			<property name="CraftingAreaRecipes" value="forge" />
 			<property name="Modules" value="tools,output,fuel,material_input" />
-			<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay" />
+			<property name="InputMaterials" value="iron,brass,lead,stone,clay" />
 		</property>
 		<property class="RepairItems">
 			<property name="rockSmall" value="50" />
@@ -5133,7 +5133,7 @@
 		<property name="ImposterExclude" value="true" />
 		<property name="UseGlobalUV" value="Local" />
 		<property name="Place" value="TowardsPlacer" />
-		<property name="Collide" value="movement,melee,rocket" />
+		<property name="Collide" value="movement,melee" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="10" />
 		</property>
@@ -15355,6 +15355,44 @@
 		<property name="DescriptionKey" value="glassGroupDesc" />
 		<drop event="Destroy" name="brokenGlass" count="1,4" />
 	</block>
+	<block id="1495" name="glassandCeramicsStation">
+		<property name="Class" value="Forge" />
+		<property name="Material" value="Mstone_scrap" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#GlassandCeramicsStation?GlassandCeramicsStationPrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_glassandCeramicsStation" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="OnlySimpleRotations" value="true" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="ParticleName" value="campfire" />
+		<property name="ParticleOffset" value=".5,.55,.5" />
+		<property name="Stacknumber" value="1" />
+		<property name="HeatMapStrength" value="1.5" />
+		<property name="HeatMapTime" value="1200" />
+		<property name="HeatMapFrequency" value="25" />
+		<property name="ActiveRadiusEffects" value="+heatSource(3)" />
+		<property class="Workstation">
+			<property name="CraftingAreaRecipes" value="glassandCeramicsStation" />
+			<property name="Modules" value="tools,output,fuel,material_input" />
+			<property name="InputMaterials" value="lead,glass,clay,stone,plastic" />
+		</property>
+		<property class="RepairItems">
+			<property name="rockSmall" value="50" />
+			<property name="clayLump" value="50" />
+			<property name="animalHide" value="12" />
+		</property>
+		<drop event="Destroy" name="rockSmall" count="5,10" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="rockSmall" count="5,10" prob=".5" stick_chance="1" />
+		<property name="Group" value="Basics,Building" />
+		<property name="DescriptionKey" value="glassandCeramicsStationDesc" />
+		<property name="EconomicValue" value="5" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+	</block>
 	<block id="1442" name="MotorbikeDown">
 		<!-- All 3 motorcycles are free Unity store assets, by Artistic Mechanics -->
 		<property name="Extends" value="cntCar03SedanDamage2" />
@@ -16236,7 +16274,7 @@
 		<property name="Class" value="ElectricDevice, Mods" />
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#rattrap?repellentPrefab" />
+		<property name="Model" value="#Ultrasonic?UltraSonicPrefab" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="isPowered" value="true" />
 		<property name="CanPickup" value="true" />
@@ -16246,7 +16284,7 @@
 		</property>
 		<property name="RequiredPower" value="2" />
 		<property name="ImposterDontBlock" value="true" />
-		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
+		<property name="WireOffset" value="0,-0.15,0" />
 		<drop event="Destroy" name="cloth" count="5" />
 	</block>
 	<block id="110" name="InsectLamp">
@@ -17715,7 +17753,7 @@
 		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,vegetableStew,meatStew" />
 		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
-		<property name="FoodContainer" value="cntFridgeSecure" />
+		<property name="FoodContainer" value="cntFridgeTopE" />
 		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
 		<!-- Food check area in blocks -->
@@ -17763,9 +17801,9 @@
 		<property name="HighTierDF" value="1" />
 		<property name="ExpertTierDF" value="1" />
 		<!-- Raw Materials Container - NEEDS to be secureLoot -->
-		<property name="MatContainer" value="cntFridgeSecure" />
+		<property name="MatContainer" value="cntFridgeTopE" />
 		<!-- Final product Container - NEEDS to be secureLoot -->
-		<property name="ItemContainer" value="cntFridgeSecure" />
+		<property name="ItemContainer" value="cntFridgeTopE" />
 		<!-- Containers check area in blocks - default configuration require a very close container -->
 		<property name="CraftCheckArea" value="2" />
 		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
@@ -17776,7 +17814,7 @@
 		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
 		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
-		<property name="FoodContainer" value="cntFridgeSecure" />
+		<property name="FoodContainer" value="cntFridgeTopE" />
 		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
 		<!-- Food check area in blocks -->
@@ -17956,7 +17994,7 @@
 		<!-- Duration of the food for sleep prevention, in seconds -->
 		<property name="AwakeTime" value="300" />
 		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
-		<property name="FoodContainer" value="cntFridgeSecure" />
+		<property name="FoodContainer" value="cntFridgeTopE" />
 		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
 		<!-- Food check area in blocks -->
@@ -18016,7 +18054,7 @@
 		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,vegetableStew,meatStew" />
 		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
-		<property name="FoodContainer" value="cntFridgeSecure" />
+		<property name="FoodContainer" value="cntFridgeTopE" />
 		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
 		<!-- Food check area in blocks -->

@@ -903,18 +903,6 @@
 		<property name="MaxDamage" value="500" />
 		<property name="Experience" value="3.0" />
 	</material>
-	<material id="Mplastics">
-		<property name="damage_category" value="wood" />
-		<property name="surface_category" value="wood" />
-		<property name="forge_category" value="scrapPlastics" />
-		<property name="Hardness" type="float" value="1" />
-		<property name="stepsound" value="wood" />
-		<property name="lightopacity" value="4" />
-		<property name="stability_glue" value="20" />
-		<property name="Mass" type="int" value="5" />
-		<property name="MaxDamage" value="50" />
-		<property name="Experience" value="3.0" />
-	</material>
 	<material id="MelectricParts">
 		<property name="damage_category" value="metal" />
 		<property name="surface_category" value="metal" />
@@ -937,6 +925,18 @@
 		<property name="stability_glue" value="20" />
 		<property name="Mass" type="int" value="5" />
 		<property name="MaxDamage" value="100" />
+		<property name="Experience" value="3.0" />
+	</material>
+	<material id="Mplastics">
+		<property name="damage_category" value="wood" />
+		<property name="surface_category" value="wood" />
+		<property name="forge_category" value="plastic" />
+		<property name="Hardness" type="float" value="1" />
+		<property name="stepsound" value="wood" />
+		<property name="lightopacity" value="4" />
+		<property name="stability_glue" value="20" />
+		<property name="Mass" type="int" value="5" />
+		<property name="MaxDamage" value="50" />
 		<property name="Experience" value="3.0" />
 	</material>
 	<material id="Mrubber">

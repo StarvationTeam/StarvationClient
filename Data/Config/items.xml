@@ -7938,6 +7938,24 @@
 	<item id="4095" name="placeHolder">
 		<property name="Extends" value="clubMaster" />
 	</item>
+	<item id="958" name="mold">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="HoldType" value="45" />
+		<property name="Stacknumber" value="50" />
+		<property name="Weight" value="5" />
+		<property name="Group" value="Resources" />
+		<property name="SellableToTrader" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_mold" />
+		<property name="Material" value="Miron" />
+		<property name="CreativeMode" value="Dev" />
+	</item>
+	<item id="959" name="unit_plastic">
+		<property name="Extends" value="unit_iron" />
+		<property name="CustomIcon" value="scrapPlastics" />
+		<property name="Material" value="Mplastics" />
+		<property name="CreativeMode" value="None" />
+	</item>
 	<!-- items needed to scrap Xyth junk into -->
 	<item id="268" name="itemMaster">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />

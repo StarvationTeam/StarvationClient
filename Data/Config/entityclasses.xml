@@ -3325,7 +3325,7 @@
 		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
 		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
-		<property name="FoodContainer" value="cntFridgeSecure" />
+		<property name="FoodContainer" value="cntFridgeTopE" />
 		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="200" />
 		<!-- Food check area in blocks -->
@@ -3650,7 +3650,7 @@
 		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,apple" />
 		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
-		<property name="FoodContainer" value="cntFridgeSecure" />
+		<property name="FoodContainer" value="cntFridgeTopE" />
 		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
 		<!-- Food check area in blocks -->

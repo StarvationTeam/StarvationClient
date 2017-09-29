@@ -200,6 +200,16 @@
 		<window_group name="prefabList">
 			<window name="prefabList" />
 		</window_group>
+		<window_group name="workstation_glassandCeramicsStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsGlass" />
+			<window name="windowFuel" />
+			<window name="windowForgeInput" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
 		<!-- PowerSources START -->
 		<window_group name="workstation_heatGenerator" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
@@ -318,8 +328,9 @@
 		</window_group>
 		<window_group name="workstation_forge1" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
-			<window name="craftingInfoPanel" />
-			<window name="windowCraftingQueue" />
+			<window name="craftingInfoPanelForge1" />
+			<window name="windowCraftingQueueForge1" />
+			<window name="windowToolsForge1" />
 			<window name="windowFuel" />
 			<window name="windowForge1Input" />
 			<window name="windowOutput" />
