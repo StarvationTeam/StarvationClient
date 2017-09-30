@@ -5090,7 +5090,7 @@
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="player_bandage" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+			<property name="Debuff" value="bleeding,arrowCriticalBleedout,bite" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -5100,7 +5100,7 @@
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Sound_start" value="player_bandage" />
-			<property name="Debuff" value="bleeding,arrowCriticalBleedout" />
+			<property name="Debuff" value="bleeding,arrowCriticalBleedout,bite" />
 		</property>
 		<property name="Group" value="Science,Basics" />
 		<property name="DescriptionKey" value="bandageDesc" />
@@ -5263,7 +5263,7 @@
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2" />
+			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2,infectedBite" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -5274,7 +5274,7 @@
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
-			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2" />
+			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2,infectedBite" />
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -5297,7 +5297,7 @@
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
 			<property name="Buff" value="cured" />
-			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2" />
+			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2,infectedBite" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -5309,7 +5309,7 @@
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="player_painkillers" />
 			<property name="Buff" value="cured" />
-			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2" />
+			<property name="Debuff" value="infection,infection1,infection2,infection3,dysentery,dysentery2,flu,flu2,infectedBite" />
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="craftSkillScience" />
@@ -11941,6 +11941,18 @@
 		<property name="Extends" value="metalFrame" />
 		<property name="EconomicValue" value="200" />
 	</item>
+	<item id="960" name="smallDeposit">
+		<property name="Extends" value="metalFrame" />
+	</item>
+	<item id="961" name="genCasing">
+		<property name="Extends" value="metalFrame" />
+	</item>
+	<item id="962" name="fuelDeposit">
+		<property name="Extends" value="metalFrame" />
+	</item>
+	<item id="963" name="smallConsole">
+		<property name="Extends" value="metalFrame" />
+	</item>
 	<!-- POWER WORKSTATIONS -->
 	<!-- CUSTOM ELECTRIC DEVICES START -->
 	<!-- CUSTOM ELECTRIC DEVICES END -->
@@ -11970,7 +11982,7 @@
 			<property name="Sphere" value="0.4" />
 			<property name="DamageEntity" value="3" />
 			<property name="DamageBlock" value="2" />
-			<property name="Buff" value="infection" />
+			<property name="Buff" value="bite" />
 			<property name="Buff_chance" value="0.3" />
 		</property>
 	</item>
@@ -12000,8 +12012,8 @@
 			<property name="Sphere" value="0.4" />
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="25" />
-			<property name="Buff" value="bleeding,stunned" />
-			<property name="Buff_chance" value="0.3,0.1" />
+			<property name="Buff" value="bleeding,stunned,bite" />
+			<property name="Buff_chance" value="0.3,0.1,0.1" />
 		</property>
 	</item>
 	<item id="302" name="handSpider">
@@ -13086,8 +13098,8 @@
 			<property name="Block_range" value="2.5" />
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="18" />
-			<property name="Buff" value="critMyDog,stunned" />
-			<property name="Buff_chance" value=".2,.6" />
+			<property name="Buff" value="critMyDog,stunned,bite" />
+			<property name="Buff_chance" value=".2,.6,.1" />
 			<property name="DamageBonus.earth" value="4" />
 		</property>
 	</item>
@@ -14317,7 +14329,7 @@
 			<property name="Gain_wellness" value="0" />
 			<property name="Sound_start" value="UseActions/player_firstAidKit" />
 			<property name="Buff" value="radSyringeBuff" />
-			<property name="Debuff" value="infection,infection2,infection3,foodPoisoning,dysentery,dysentery2,flu,flu2,snakePoisoning,severeSnakePoisoning,spiderPoisoning,scorpionPoisoning" />
+			<property name="Debuff" value="infection,infection2,infection3,foodPoisoning,dysentery,dysentery2,flu,flu2,snakePoisoning,severeSnakePoisoning,spiderPoisoning,scorpionPoisoning,infectedBite,rabies" />
 		</property>
 		<property name="Group" value="Medicine" />
 		<property class="Preview">
