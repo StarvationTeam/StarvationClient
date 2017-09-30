@@ -15487,13 +15487,14 @@
 	</block>
 	<!-- FISHING -->
 	<block id="90" name="fishWall">
+		<property name="Class" value="Morte, Mods" />
+		<property name="ModelOffset" value="0,0.1,0" />
 		<property name="Material" value="organicF" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#fishes?fish" />
 		<property name="Weight" value="10" />
 		<property name="CanPickup" value="false" />
-		<property name="ModelOffset" value="0,0.1,0" />
 		<property name="Place" value="TowardsPlacer" />
 		<property name="Stacknumber" value="5" />
 		<drop event="Destroy" count="0" />
@@ -15604,6 +15605,8 @@
 		<property name="IsTerrainDecoration" value="true" />
 	</block>
 	<block id="102" name="skull1Wall">
+		<property name="Class" value="Morte, Mods" />
+		<property name="ModelOffset" value="0,-0.02,0" />
 		<property name="Material" value="organic" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="ModelEntity" />
@@ -15615,12 +15618,14 @@
 	</block>
 	<block id="103" name="skull2Wall">
 		<property name="Extends" value="skull1Wall" />
+		<property name="ModelOffset" value="0,-0.02,0" />
 		<property name="Model" value="#skulls?skull2" />
 		<property name="CanPickup" value="true" param1="skull2" />
 		<property name="CreativeMode" value="Dev" />
 	</block>
 	<block id="104" name="skull3Wall">
 		<property name="Extends" value="skull1Wall" />
+		<property name="ModelOffset" value="0,-0.02,0" />
 		<property name="Model" value="#skulls?skull3" />
 		<property name="CanPickup" value="true" param1="head" />
 		<property name="CreativeMode" value="Dev" />
@@ -16119,7 +16124,7 @@
 		<property name="HandleFace" value="Bottom" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="DescriptionKey" value="powerSourceDesc" />
-		<property name="MaxFuel" value="1000" />
+		<property name="MaxFuel" value="1500" />
 		<property name="OutputPerFuel" value="11250" />
 		<property name="MaxPower" value="12250" />
 		<property name="OutputPerStack" value="100" />
@@ -16135,6 +16140,37 @@
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="smallGenerator" count="1" tool_category="Disassemble" />
+		<property name="Stacknumber" value="1" />
+		<property name="TakeDelay" value="15" />
+		<property name="EconomicValue" value="500" />
+	</block>
+	<block id="1496" name="dieselGen">
+		<property name="Class" value="DieselGen, Mods" />
+		<property name="Material" value="Mmetal_medium" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Stacknumber" value="1" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#biggenerator?Generator1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="ModelOffset" value="0,-0.04,0" />
+		<property name="ImposterDontBlock" value="true" />
+		<property name="DescriptionKey" value="powerSourceDesc" />
+		<property name="MaxFuel" value="2000" />
+		<property name="OutputPerFuel" value="11250" />
+		<property name="MaxPower" value="20000" />
+		<property name="OutputPerStack" value="100" />
+		<property name="SlotItem" value="smallEngine" />
+		<property name="Group" value="Science" />
+		<property class="RepairItems">
+			<property name="forgedIron" value="8" />
+			<property name="mechanicalParts" value="8" />
+			<property name="electricParts" value="8" />
+			<property name="electronicParts" value="3" />
+		</property>
+		<property name="debug" value="false" />
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="dieselGen" count="1" tool_category="Disassemble" />
 		<property name="Stacknumber" value="1" />
 		<property name="TakeDelay" value="15" />
 		<property name="EconomicValue" value="500" />
@@ -16312,7 +16348,7 @@
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<property name="ImposterDontBlock" value="true" />
-		<property name="RequiredPower" value="5" />
+		<property name="RequiredPower" value="10" />
 		<property name="Group" value="Science" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="1" />
@@ -16336,7 +16372,7 @@
 			<property name="electronicParts" value="1" />
 			<property name="scrapIron" value="1" />
 		</property>
-		<property name="RequiredPower" value="2" />
+		<property name="RequiredPower" value="5" />
 		<property name="ImposterDontBlock" value="true" />
 		<!-- <property name="ModelOffset" value="0,-0.02,0" /> -->
 		<drop event="Destroy" name="cloth" count="5" />
@@ -17662,7 +17698,7 @@
 	<block id="1491" name="cntFridgeBottomE">
 		<property name="Class" value="ElectricDevice, Mods" />
 		<property name="ImposterDontBlock" value="true" />
-		<property name="RequiredPower" value="5" />
+		<property name="RequiredPower" value="10" />
 		<property name="soundOn" value="solarpanel_idle" />
 		<property name="CustomIcon" value="cntFridgeBottom" />
 		<property name="Material" value="Mmetal_weak" />
@@ -18353,6 +18389,7 @@
 	<block id="984" name="workingTv">
 		<property name="Class" value="TV, mods" />
 		<property name="WireOffset" value="0,0,0.5" />
+		<property name="RequiredPower" value="5" />
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="CustomIcon" value="tv" />
@@ -18430,13 +18467,17 @@
 		<property name="debug" value="false" />
 	</block>
 	<block id="1012" name="Goldfish">
+		<property name="Class" value="Aquarium, Mods" />
 		<property name="Material" value="glass" />
 		<property name="Stacknumber" value="1" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Mesh" value="models" />
-		<property name="Model" value="#goldfish?GoldfishGlassPrefab" />
+		<property name="Model" value="#Aquarium?AquariumPrefab" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<property name="funFactor" value="0.5" />
+		<property name="MultiBlockDim" value="3,2,1" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="WireOffset" value="0,0,0" />
+		<property name="RequiredPower" value="3" />
+		<property name="funFactor" value="0.8" />
 		<property name="MaxDamage" value="5" />
 		<drop event="Destroy" name="brokenGlass" count="5" prob="1" />
 	</block>
@@ -18739,6 +18780,29 @@
 		<property name="CanPickup" value="true" param1="warZdItem" />
 		<property name="DescriptionKey" value="" />
 		<drop event="Destroy" name="wood" count="1,3" prob="1" />
+	</block>
+	<block id="1497" name="steelBars">
+		<property name="Material" value="Msteel" />
+		<property name="StabilitySupport" value="true" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#SteelBars?SteelBarsPrefab" />
+		<!-- All models are free assets from Unity store by KrazyFX -->
+		<property name="Collide" value="melee,movement" />
+		<property name="CustomIcon" value="ui_game_symbol_steelBars" />
+		<drop event="Harvest" name="scrapSteel" count="3,5" tool_category="Disassemble" />
+		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="scrapSteel" count="2,5" />
+	</block>
+	<block id="1498" name="steelBarsCentered">
+		<property name="Material" value="Msteel" />
+		<property name="StabilitySupport" value="true" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#SteelBars?SteelBarsCenteredPrefab" />
+		<property name="Collide" value="melee,movement" />
+		<property name="CustomIcon" value="ui_game_symbol_steelBarsCentered" />
+		<drop event="Harvest" name="scrapSteel" count="3,5" tool_category="Disassemble" />
+		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="scrapSteel" count="2,5" />
 	</block>
 	<block id="1342" name="zombiePinup01">
 		<property name="Class" value="Morte, Mods" />

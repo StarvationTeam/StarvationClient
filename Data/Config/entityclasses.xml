@@ -2168,7 +2168,7 @@
 		<property name="AttackTimeoutNight" value="1.1" />
 		<property name="Prefab" value="Dog" />
 		<property name="WalkType" value="0" />
-		<property name="HandItem" value="handAnimalZombieDog" />
+		<property name="HandItem" value="handMyDog" />
 		<property name="WanderSpeed" value="0.5" />
 		<property name="ApproachSpeed" value="1.6" />
 		<property name="NightWanderSpeed" value="0.3" />

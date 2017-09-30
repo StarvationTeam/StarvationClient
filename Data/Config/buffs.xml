@@ -433,6 +433,15 @@
 	<buff id="resetsanity" name_key="resetsanity" buffif="sanity less 0" debuffif="sanity gequal 0" duration="0" actions="min(sanity, 0)" />
 	<buff id="maxsanity" name_key="maxsanity" buffif="sanity gequal 150" debuffif="sanity less 150" duration="0" actions="max(sanity, 150)" />
 	<!-- STARVATION -->
+	<buff id="bite" mutex="infectedBite,rabies" duration="9000" onexpired="infectedBite" type="sickness" icon="ui_game_symbol_bite" name_key="bite" description_key="biteDesc" tooltip_key="biteTooltip" cures="firstAid" />
+	<buff id="infectedBite" duration="9000" actions="debuff(bite)" onexpired="rabies" type="sickness" icon="ui_game_symbol_rabies1" name_key="infectedBite" description_key="infectedBiteDesc" tooltip_key="infectedBiteTooltip" cures="foodHoney,antibiotics,herbalAntibiotics">
+		<modify id="0" stat="stamina" amount="-0.5" rate="1" />
+	</buff>
+	<buff id="rabies" duration="6000" actions="damage(25,800t,0,3);increment(@wellness, -0.25, 100t, 0, 0);debuff(infectedBite);debuff(bite)" onexpired="rabiesDie" type="sickness" icon="ui_game_symbol_rabies" name_key="rabies" description_key="rabiesDesc" tooltip_key="rabiesTooltip" cures="radSyringeBuff">
+		<modify id="0" stat="stamina" amount="-2" rate="1" />
+		<modify id="1" stat="health" amount="-1" rate="3" />
+	</buff>
+	<buff id="rabiesDie" actions="kill" icon="ui_game_symbol_rabies" name_key="rabiesDie" description_key="rabiesDieDesc" tooltip_key="rabiesDieTooltip" />
 	<!-- RAD MOD -->
 	<buff id="fullBuff" mutex="bleeding" buffif="food &gt; 0.5" debuffif="food lequal 0.5" name_key="fullBuff" description_key="fullBuffDesc" tooltip_key="" icon="ui_game_symbol_natural_healing">
 		<modify id="0" stat="health" amount="1" rate="60" />
