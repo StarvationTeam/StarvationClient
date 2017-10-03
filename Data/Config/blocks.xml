@@ -29,7 +29,7 @@
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
 	</block>
-	<block id="2" name="grass">
+	<block id="2" name="grass"> 
 		<property name="Material" value="dirt" />
 		<property name="Shape" value="Terrain" />
 		<property name="Mesh" value="terrain" />
