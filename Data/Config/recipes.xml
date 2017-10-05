@@ -3109,8 +3109,8 @@
 		<ingredient name="clayLump" count="1" />
 	</recipe>
 	<recipe name="forgedSteel" count="1" craft_area="smith">
-		<ingredient name="clayLump" count="2" />
-		<ingredient name="forgedIron" count="2" />
+		<ingredient name="clayLump" count="5" />
+		<ingredient name="scrapSteel" count="10" />
 	</recipe>
 	<recipe name="wrench" count="1" craft_area="smith">
 		<ingredient name="forgedSteel" count="12" />
@@ -3982,14 +3982,14 @@
 		<ingredient name="sheave" count="2" />
 		<ingredient name="shortMetalPipe" count="6" />
 		<ingredient name="ductTape" count="6" />
-		<ingredient name="forgedIron" count="15" />
+		<ingredient name="forgedSteel" count="15" />
 	</recipe>
 	<recipe name="ShutterDoorV" count="1" craft_area="workbench">
 		<ingredient name="spring" count="3" />
 		<ingredient name="sheave" count="2" />
 		<ingredient name="shortMetalPipe" count="6" />
 		<ingredient name="ductTape" count="6" />
-		<ingredient name="forgedIron" count="15" />
+		<ingredient name="forgedSteel" count="15" />
 	</recipe>
 	<recipe name="workingTv" count="1" craft_area="workbench">
 		<ingredient name="electricParts" count="4" />

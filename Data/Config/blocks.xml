@@ -29,7 +29,7 @@
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
 	</block>
-	<block id="2" name="grass"> 
+	<block id="2" name="grass">
 		<property name="Material" value="dirt" />
 		<property name="Shape" value="Terrain" />
 		<property name="Mesh" value="terrain" />
@@ -948,13 +948,14 @@
 			<property name="forgedSteel" value="12" />
 			<property name="steelPolish" value="3" />
 		</property>
-		<drop event="Harvest" name="scrapIron" count="15" />
+		<drop event="Harvest" name="scrapSteel" count="15" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
 		<property name="DescriptionKey" value="steelBlockGroupDesc" />
+		<property name="Weight" value="60" />
 	</block>
 	<block id="122" name="scrapIronNoUpgradeMaster">
 		<property name="Group" value="Building" />
@@ -1124,11 +1125,12 @@
 			<property name="UpgradeHitCount" value="4" />
 		</property>
 		<property name="CustomUpgradeSound" value="place_block_metal" />
-		<drop event="Harvest" name="scrapIron" count="15" prob="1" />
+		<drop event="Harvest" name="scrapSteel" count="15" prob="1" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="EconomicValue" value="160" />
 		<property name="DescriptionKey" value="steelBlockGroupDesc" />
+		<property name="Weight" value="40" />
 	</block>
 	<block id="134" name="rConcreteMaster">
 		<property name="Group" value="Building" />
@@ -3021,6 +3023,7 @@
 		<property name="TakeDelay" value="-1" />
 		<property name="Group" value="Science" />
 		<property name="EconomicValue" value="76" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="317" name="porchLight04">
 		<property name="Extends" value="porchLight01" />
@@ -3479,6 +3482,7 @@
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="TakeDelay" value="-1" />
 		<property name="Group" value="Science" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="365" name="airConditioner">
 		<property name="Material" value="metal" />
@@ -4885,9 +4889,10 @@
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="spring" count="0,2" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="mechanicalParts" count="0,2" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="20,60" />
+		<drop event="Harvest" name="scrapSteel" count="20,60" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="Group" value="Building" />
+		<property name="Weight" value="60" />
 	</block>
 	<block id="536" name="corrugatedMetalWedgeIncline">
 		<property name="Extends" value="corrugatedMetalMaster" />
@@ -8240,11 +8245,12 @@
 		<property class="RepairItems">
 			<property name="forgedSteel" value="10" />
 		</property>
-		<drop event="Harvest" name="scrapIron" count="60" />
+		<drop event="Harvest" name="scrapSteel" count="20" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="EconomicValue" value="284" />
 		<property name="DescriptionKey" value="decorationBlockGroupDesc" />
+		<property name="Weight" value="50" />
 	</block>
 	<block id="879" name="furnaceDrawer">
 		<property name="Material" value="Mmetal_hard" />
@@ -8969,12 +8975,13 @@
 		</property>
 		<property name="CustomUpgradeSound" value="place_block_metal" />
 		<property name="DowngradeBlock" value="ladderMetal" />
-		<drop event="Harvest" name="scrapIron" count="15" prob="1" />
+		<drop event="Harvest" name="scrapSteel" count="15" prob="1" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="EconomicValue" value="80" />
 		<property name="DescriptionKey" value="ladderMetalDesc" />
 		<property name="Group" value="Building" />
+		<property name="Weight" value="20" />
 	</block>
 	<block id="985" name="steelArrowSlitHalf">
 		<property name="Extends" value="steelMaster" />
@@ -12672,11 +12679,12 @@
 		</property>
 		<property name="CustomUpgradeSound" value="place_block_metal" />
 		<property name="DowngradeBlock" value="rScrapIronLogSpike5" />
-		<drop event="Destroy" name="scrapIron" count="10,20" prob="1" />
+		<drop event="Destroy" name="scrapSteel" count="10,20" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="EconomicValue" value="160" />
 		<property name="Group" value="Tools/Traps,Science" />
 		<property name="DescriptionKey" value="woodLogSpike1Desc" />
+		<property name="Weight" value="50" />
 	</block>
 	<block id="1448" name="spotlightNailedDownPOI">
 		<property name="Class" value="Light" />
@@ -12699,6 +12707,7 @@
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="TakeDelay" value="-1" />
 		<property name="Group" value="Science" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="1449" name="vaultDoor01">
 		<property name="Class" value="DoorSecure" />
@@ -12730,11 +12739,12 @@
 			<property name="UpgradeHitCount" value="6" />
 		</property>
 		<property name="CustomUpgradeSound" value="place_block_metal" />
-		<drop event="Harvest" name="scrapIron" count="96" prob="1" />
+		<drop event="Harvest" name="scrapSteel" count="96" prob="1" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="Group" value="Building" />
 		<property name="EconomicValue" value="432" />
+		<property name="Weight" value="60" />
 	</block>
 	<block id="1450" name="vaultDoor02">
 		<property name="Extends" value="vaultDoor01" />
@@ -13491,6 +13501,7 @@
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="TakeDelay" value="-1" />
 		<property name="EconomicValue" value="175" />
+		<drop event="Harvest" name="lightBulb" count="1" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="1552" name="metalPipeValve">
 		<property name="Extends" value="corrugatedMetalNoUpgradeMaster" />
@@ -15760,7 +15771,8 @@
 	<block id="1172" name="BrowningBlock">
 		<property name="Class" value="MannedTurret, Mods" />
 		<property name="Stacknumber" value="1" />
-		<property name="Material" value="metal" />
+		<property name="Material" value="Msteel" />
+		<property name="Weight" value="100" />
 		<property name="weaponItem" value="Browning" />
 		<property name="defaultQuality" value="600" />
 		<property name="StabilitySupport" value="false" />
@@ -15774,7 +15786,8 @@
 		<drop event="Destroy" name="BrowningItem" count="1" prob="1" tool_category="Military" />
 	</block>
 	<block id="1223" name="BrowningTripodBlock">
-		<property name="Material" value="metal" />
+		<property name="Material" value="Msteel" />
+		<property name="Weight" value="100" />
 		<property name="Stacknumber" value="1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
@@ -15796,7 +15809,8 @@
 	<block id="1224" name="OldMGBlock">
 		<property name="Class" value="MannedTurret, Mods" />
 		<property name="Stacknumber" value="1" />
-		<property name="Material" value="metal" />
+		<property name="Material" value="Msteel" />
+		<property name="Weight" value="100" />
 		<property name="weaponItem" value="OldMG" />
 		<property name="defaultQuality" value="100" />
 		<property name="StabilitySupport" value="false" />
@@ -15810,7 +15824,8 @@
 		<drop event="Destroy" name="OldMGItem" count="1" prob="1" tool_category="Military" />
 	</block>
 	<block id="1225" name="OldMGTripodBlock">
-		<property name="Material" value="metal" />
+		<property name="Material" value="Msteel" />
+		<property name="Weight" value="100" />
 		<property name="Stacknumber" value="1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
@@ -16411,7 +16426,8 @@
 		<property name="Class" value="MorteWaterStore, Mods" />
 		<property name="Material" value="metal" />
 		<property name="Stacknumber" value="5" />
-		<property name="Texture" value="435" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#WaterStore?WaterStorePrefab" />
 		<property name="CanPickup" value="false" />
 		<property name="FallDamage" value="false" />
 		<property name="debug" value="false" />
@@ -16804,7 +16820,7 @@
 	<!-- TREES Harvestable, Final stage -->
 	<block id="702" name="fruitTreeMaster">
 		<property name="Model" value="#AppleTree1?AppleTree1Prefab" />
-		<!-- <property name="Class" value="MorteTreeGrown, Mods" /> -->
+		<property name="Class" value="FruitTree, Mods" />
 		<property name="Material" value="treeWoodFruit" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Tag" value="TreeTrunk" />
@@ -17665,14 +17681,15 @@
 	<block id="1078" name="garageDoorRolling">
 		<property name="Class" value="GarageDoorNew1, Mods" />
 		<property name="Material" value="Msteel" />
+		<property name="Weight" value="25" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Tag" value="Door" />
 		<property name="Model" value="#GarageDoorNew1?GarageDoorNew1Prefab" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<property name="OpenSound" value="open_garagedoor" />
 		<property name="CloseSound" value="open_garagedoor" />
-		<drop event="Harvest" name="scrapIron" count="25" />
-		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
+		<drop event="Harvest" name="scrapSteel" count="25" />
+		<drop event="Destroy" name="scrapSteel" count="10" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Building,Basics" />
 		<property name="Place" value="Door" />
@@ -17681,6 +17698,7 @@
 	<block id="1079" name="garageDoorNew">
 		<property name="Class" value="DoorSecure" />
 		<property name="Material" value="Msteel" />
+		<property name="Weight" value="30" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#newgarage?GarageDoor" />
 		<property name="Collide" value="movement,melee,rocket,bullet" />
@@ -17694,8 +17712,8 @@
 		<property class="RepairItems">
 			<property name="forgedSteel" value="10" />
 		</property>
-		<drop event="Harvest" name="scrapIron" count="30" />
-		<drop event="Destroy" name="scrapIron" count="30" />
+		<drop event="Harvest" name="scrapSteel" count="30" />
+		<drop event="Destroy" name="scrapSteel" count="30" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 	</block>
@@ -18342,6 +18360,7 @@
 		<property name="Extends" value="TanksM" />
 		<property name="Model" value="#tanksm?TanksT-90" />
 	</block>
+	<!-- End of Steel block conversion  -->
 	<block id="980" name="forge1">
 		<property name="Class" value="ForgeM, Mods" />
 		<property name="Material" value="Mbrick" />
@@ -18601,6 +18620,7 @@
 	<block id="1019" name="ShutterDoor">
 		<property name="Class" value="DoorSecure" />
 		<property name="Material" value="Msteel" />
+		<property name="Weight" value="15" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#shutter?ShutterDoor" />
 		<property name="Collide" value="movement,melee,rocket,bullet" />
@@ -18614,14 +18634,15 @@
 		<property class="RepairItems">
 			<property name="forgedSteel" value="10" />
 		</property>
-		<drop event="Harvest" name="scrapIron" count="30" />
-		<drop event="Destroy" name="scrapIron" count="30" />
+		<drop event="Harvest" name="scrapSteel" count="5,10" />
+		<drop event="Destroy" name="scrapSteel" count="3,5" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 	</block>
 	<block id="1020" name="ShutterDoorV">
 		<property name="Class" value="DoorSecure" />
 		<property name="Material" value="Msteel" />
+		<property name="Weight" value="15" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#shutter?ShutterDoorV" />
 		<property name="Collide" value="movement,melee,rocket,bullet" />
@@ -18635,8 +18656,8 @@
 		<property class="RepairItems">
 			<property name="forgedSteel" value="10" />
 		</property>
-		<drop event="Harvest" name="scrapIron" count="30" />
-		<drop event="Destroy" name="scrapIron" count="30" />
+		<drop event="Harvest" name="scrapSteel" count="5,10" />
+		<drop event="Destroy" name="scrapSteel" count="3,5" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 	</block>
@@ -18812,6 +18833,7 @@
 	</block>
 	<block id="1497" name="steelBars">
 		<property name="Material" value="Msteel" />
+		<property name="Weight" value="100" />
 		<property name="StabilitySupport" value="true" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#SteelBars?SteelBarsPrefab" />
@@ -18824,6 +18846,7 @@
 	</block>
 	<block id="1498" name="steelBarsCentered">
 		<property name="Material" value="Msteel" />
+		<property name="Weight" value="100" />
 		<property name="StabilitySupport" value="true" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#SteelBars?SteelBarsCenteredPrefab" />
