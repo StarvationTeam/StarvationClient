@@ -8202,6 +8202,11 @@
 		<property name="DescriptionKey" value="glassWaterBongDesc" />
 		<property name="Weight" value="5" />
 	</item>
+	<item id="973" name="salvagedSawBat">
+		<property name="Extends" value="clubSpiked" />
+		<property name="Meshfile" value="#SawBat?SawBatPrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_sawBat" />
+	</item>
 	<!-- FISHING -->
 	<item id="2" name="cane">
 		<property name="Class" value="ItemClassFishing, Mods" />
@@ -10264,8 +10269,151 @@
 		<property name="CraftingSkillGroup" value="Tool Smithing" />
 		<property name="RepairExpMultiplier" value="5.5" />
 	</item>
+	<item id="965" name="MP7">
+		<property name="Class" value="ItemClassAttachments, Mods" />
+		<property name="Meshfile" value="#morteWeapons?Mp7Prefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="HoldType" value="6" />
+		<property name="Weight" value="0" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property name="Attachments" value="flashlight02,SilencerMP7" />
+		<property class="Parts">
+			<property name="Stock" value="MP7_Stock" />
+			<property name="Receiver" value="MP7_UpperReceiver" />
+			<property name="Pump" value="MP7_LowerReceiver" />
+			<property name="Barrel" value="MP7_Barrel" />
+		</property>
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Class" value="RangedAt, Mods" />
+			<property name="Delay" value="0.125" />
+			<property name="Auto_fire" value="true" />
+			<property name="Crosshair_min_distance" value="5" />
+			<property name="Crosshair_max_distance" value="30" />
+			<property name="Magazine_size" value="30" />
+			<property name="Magazine_items" value="44MagBullet" />
+			<property name="Magazine_item_ray_counts" value="1" />
+			<property name="Magazine_item_ray_spreads" value="0" />
+			<property name="Reload_time" value="3.1" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="Weapons/Ranged/MP5/mp5_fire_start" />
+			<property name="Sound_repeat" value="Weapons/Ranged/MP5/mp5_fire_lp" />
+			<property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/MP5/mp5_reload" />
+			<property name="Horde_meter_rate" value="2.5" />
+			<property name="Horde_meter_distance" value="20" />
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<property name="DamageBonus.head" value="4" />
+			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.plants" value="5" />
+			<property name="DamageBonus.earth" value=".2" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="Buff" value="critGunMP5" />
+			<property name="Buff_chance" value=".1" />
+		</property>
+		<property class="Action1">
+			<!-- UseAction -->
+			<property name="Class" value="ZoomAt, Mods" />
+			<property name="Zoom_max_out" value="35" />
+			<property name="Zoom_max_in" value="35" />
+		</property>
+		<property name="LightSource" value="lightSource" />
+		<!-- Start: Needed for the attachment flashlight -->
+		<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
+		<property name="AttachmentFlashlight" value="flashlight02" />
+		<!-- End: Needed for the attachment flashlight -->
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="ActionSkillGroup" value="Rifles" />
+		<property name="CraftingSkillGroup" value="Gun Smithing" />
+		<property name="RepairExpMultiplier" value="10.8" />
+		<property name="PickupJournalEntry" value="gunAssemblyTip,augmentGunsTip" />
+	</item>
+	<item id="966" name="MP7_Stock">
+		<property name="Extends" value="partsMaster" />
+		<property name="CustomIcon" value="partsMP5_stock" />
+		<property name="DescriptionKey" value="partsUMPGroupDesc" />
+		<property name="PartType" value="Stock" />
+		<property name="Weight" value="25" />
+		<property class="Attributes">
+			<property name="DegradationRate" value="13,18" />
+			<property name="DegradationMax" value="2000,9750" />
+		</property>
+	</item>
+	<item id="967" name="MP7_UpperReceiver">
+		<property name="Extends" value="partsMaster" />
+		<property name="CustomIcon" value="partsMP5_receiver" />
+		<property name="DescriptionKey" value="partsUMPGroupDesc" />
+		<property name="PartType" value="Receiver" />
+		<property name="Weight" value="25" />
+		<property class="Attributes">
+			<property name="FalloffRange" value="45,90" />
+			<property name="DegradationMax" value="2000,9750" />
+		</property>
+	</item>
+	<item id="968" name="MP7_LowerReceiver">
+		<property name="Extends" value="partsMaster" />
+		<property name="CustomIcon" value="parts44Magnum_parts" />
+		<!-- xxx -->
+		<property name="DescriptionKey" value="partsUMPGroupDesc" />
+		<property name="PartType" value="Pump" />
+		<property name="Weight" value="15" />
+		<property class="Attributes">
+			<property name="EntityDamage" value="16.0,39" />
+			<property name="BlockDamage" value="7,12" />
+			<property name="Accuracy" value="0.9,.05" />
+			<property name="DegradationMax" value="1800,9600" />
+		</property>
+	</item>
+	<item id="969" name="MP7_Barrel">
+		<property name="Extends" value="partsMaster" />
+		<property name="CustomIcon" value="partsMP5_barrel" />
+		<property name="DescriptionKey" value="partsUMPGroupDesc" />
+		<property name="PartType" value="Barrel" />
+		<property name="Weight" value="25" />
+		<property class="Attributes">
+			<property name="DismembermentBaseChance" value="0.0,0.15" />
+			<property name="DismembermentBonus" value="0,0" />
+			<property name="DegradationMax" value="2000,9750" />
+		</property>
+	</item>
 	<!-- STARVATION GUNFIRE WEAPONS END-->
 	<!-- STARVATION WEAPON ATTACHMENTS START -->
+	<item id="972" name="SilencerMP7">
+		<property name="Meshfile" value="#weaponAttach?SilencerPrefab" />
+		<property name="DropMeshfile" value="#weaponAttach?SilencerPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="repairKit" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Incompatible" value="Barrel_Advanced" />
+		<property name="Weight" value="20" />
+		<property name="HoldType" value="36" />
+		<property name="Stacknumber" value="1" />
+		<property class="AttachAction0">
+			<!-- AttackAction -->
+			<property name="Sound_start" value="mp7_fire_start" />
+			<property name="Sound_repeat" value="#morteWeapons?silencedMP_lp" />
+			<property name="Sound_end" value="#morteWeapons?silencedMP_end" />
+			<!-- Base Modifier is 1, so this would reduce the base modifier by 0.1 -->
+			<!-- IF no more attachments are present the entity damage modifier would be 0.9, this reducing entity damage by 10% -->
+			<property name="Entity_Damage_Modifier" value="0.1" param1="Sub" />
+			<!-- Base Modifier is 1 -->
+			<property name="Block_Damage_Modifier" value="0.1" param1="Sub" />
+			<!-- Base Modifier is 1 -->
+			<property name="FallOff_Range_Modifier" value="0.1" param1="Sub" />
+			<!-- reduces aditional kickback while aiming -->
+			<property name="kickbackAim" value="1" param1="Sub" />
+			<!-- reduces aditional kickback on hip shot -->
+			<property name="kickbackHip" value="1" param1="Sub" />
+		</property>
+		<property name="Group" value="Ammo/Weapons" />
+		<property name="CraftingSkillGroup" value="Gun Smithing" />
+		<property name="ActionSkillGroup" value="" />
+		<property name="EconomicValue" value="650" />
+	</item>
 	<item id="199" name="SilencerMG">
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />

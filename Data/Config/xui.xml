@@ -210,22 +210,43 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- PowerSources START -->
-		<window_group name="workstation_heatGenerator" controller="XUiC_WorkstationWindowGroup">
+		<!-- KITCHEN WORKBENCH -->
+		<window_group name="workstation_kitchenWorkbench" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
-			<window name="windowFuel" />
+			<window name="windowToolsKitchenWorkbench" />
+			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<window_group name="workstation_boiler" controller="XUiC_WorkstationWindowGroup">
+		<!-- BIG OVEN -->
+		<window_group name="workstation_bigOven" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowToolsBigOven" />
 			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- PowerSources END -->
+		<!-- AMMO WORKBENCH -->
+		<window_group name="workstation_ammoWorkbench" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		<!-- RAD MOD -->
+		<window_group name="workstation_scienceStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="windowToolsAlchemy" />
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
 		<!-- STEAM&GAS START -->
 		<window_group name="workstation_mill" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
@@ -258,24 +279,22 @@
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		<!-- STEAM&GAS END -->
-		<!-- RAD MOD -->
-		<window_group name="workstation_scienceStation" controller="XUiC_WorkstationWindowGroup">
+		<!-- PowerSources START -->
+		<window_group name="workstation_heatGenerator" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
-			<window name="windowToolsAlchemy" />
 			<window name="windowFuel" />
-			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-		<!-- RAD MOD -->
-		<window_group name="workstation_ammoWorkbench" controller="XUiC_WorkstationWindowGroup">
+		<window_group name="workstation_boiler" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
-			<window name="windowOutput" />
+			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
+		<!-- PowerSources END -->
 		<!-- MACHINES -->
 		<window_group name="workstation_electronicWorkbench" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
@@ -291,23 +310,6 @@
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
 			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
-		<window_group name="workstation_kitchenWorkbench" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList" />
-			<window name="craftingInfoPanel" />
-			<window name="windowCraftingQueue" />
-			<window name="windowToolsKitchenWorkbench" />
-			<window name="windowOutput" />
-			<window name="windowNonPagingHeader" />
-		</window_group>
-		<window_group name="workstation_bigOven" controller="XUiC_WorkstationWindowGroup">
-			<window name="windowCraftingList" />
-			<window name="craftingInfoPanel" />
-			<window name="windowCraftingQueue" />
-			<window name="windowOutput" />
-			<window name="windowToolsBigOven" />
-			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		<!-- Mortelentus Server -->

@@ -574,6 +574,7 @@
 			<label depth="4" name="Name" pos="4,${Round(-height/2,0)|-15}" width="${width-8|242}" height="${height-4|26}" text="{name}" font_size="${height-4|26}" justify="center" pivot="left" />
 		</rect>
 	</spawners_entry>
+	<!-- BIG FORGE START -->
 	<forge_materialForge1>
 		<table depth="1" columns="2">
 			<label depth="2" name="material" width="80" height="24" />

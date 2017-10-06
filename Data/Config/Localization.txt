@@ -4908,6 +4908,8 @@ ttBedrollGone,UI,Tooltip,New,Your bedroll is gone,,Dein Schlafsack ist verschwun
 extinguishFireBuffName,buffs,Buff,New,Extinguish Fire,,Lösche Feuer,,
 extinguishFireBuffDesc,buffs,Buff,New,If you happen to be on fire then this will put out the fire and prevent another while the buff remains active.,,Solltest Du in Flammen stehen dann löscht dies das Feuer und verhindert ein neues solange der Effekt aktiv ist.,,
 DroppedLootContainer,entityclasses,Entity Info,New,Dropped Loot,,,,
+salvagedSawBat,items,Melee,KgNone,salvagedSawBat,,,,
+salvagedSawBatDesc,items,Melee,New,The sawbat is a mashup of a baseball bat and a rotating sawblade.  Very effective at carving up the zombies,,,,
 powerBookSteam,,,,Steam Power Book,,,,
 powerBookSteamDesc,,,,Performance-based Fire Systems Engineering Handbook,,,,
 powerBookGas,,,,Natural Gas Energy Book,,,,
