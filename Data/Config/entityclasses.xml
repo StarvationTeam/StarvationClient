@@ -181,6 +181,9 @@
 		<property name="ArmsExplosionDamageMultiplier" value="1" />
 		<property name="HeadExplosionDamageMultiplier" value="1" />
 		<property name="ChestExplosionDamageMultiplier" value="1" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="50.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="zombieWightFeral" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll" />
@@ -2613,9 +2616,15 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="1500" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="Fireman" extends="FirefighterZd">
 		<property name="Mesh" value="#Fireman?fireman" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="PoliceZd">
 		<!-- This one decides for scoring -->
@@ -2683,6 +2692,9 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="1600" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="MilitaryZd">
 		<!-- This one decides for scoring -->
@@ -2750,6 +2762,9 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="2000" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="BikiniZd">
 		<!-- This one decides for scoring -->
@@ -2817,15 +2832,27 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="2600" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="RadBoss" extends="zombieWightFeralRadiated">
 		<property name="ExperienceGain" value="500" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="RadBossOld" extends="zombieWightFeralRadiated">
 		<property name="ExperienceGain" value="500" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="Bubbles" extends="PoliceZd">
 		<property name="Mesh" value="#bubbles?bubblesFBX" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="Mortelentus" extends="PoliceZd">
 		<property name="Mesh" value="#pacco?MortelentusZD" />
@@ -2846,6 +2873,9 @@
 		<property name="SoundDeath" value="morteHurt" />
 		<property name="SoundAttack" value="morteAttack" />
 		<property name="LootListOnDeath" value="120" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 		<!--property name="AITask-7" value="ApproachAndAt3tackTarget" param1="EntityPacco" /-->
 	</entity_class>
 	<!--
@@ -2968,6 +2998,9 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="5000" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="GirlZd">
 		<!-- This one decides for scoring -->
@@ -3035,6 +3068,9 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="3000" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="radSpider" extends="spider">
 		<property name="MaxHealth" value="2600" />
@@ -3120,6 +3156,9 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="10000" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="ParasiteMinion" extends="WallCrusher">
 		<property name="HandItem" value="handAxeZombie" />
@@ -3147,7 +3186,7 @@
 	<entity_class name="Parasite" extends="WallCrusher">
 		<property name="HandItem" value="handAxeZombie" />
 		<property name="Hability" value="Spawn" />
-		<property name="HabilityChance" value="35" />
+		<property name="HabilityChance" value="40" />
 		<property name="HabilityBuff" value="BossSpawn" />
 		<property name="HabilitySound" value="spawningSound" />
 		<property name="Area" value="5" />
@@ -3169,6 +3208,9 @@
 		<property name="SoundHurt" value="Parasitehurt" />
 		<property name="SoundDeath" value="Parasitedeath" />
 		<property name="SoundAttack" value="Parasiteattack" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="RezBoss" extends="WallCrusher">
 		<property name="HandItem" value="handDocZombie" />
@@ -3197,16 +3239,25 @@
 	<entity_class name="TruckSoldier" extends="zombieSoldier">
 		<property name="LootListOnDeath" value="10" />
 		<property name="MaxHealth" value="500" />
-		<property name="ExperienceGain" value="100" />
+		<property name="ExperienceGain" value="0" />
 		<property name="WalkType" value="7" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="TruckMaleHazmat" extends="zombieMaleHazmat">
-		<property name="ExperienceGain" value="100" />
+		<property name="ExperienceGain" value="0" />
 		<property name="LootListOnDeath" value="10" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="TruckFemaleHazmat" extends="zombieMaleHazmat">
-		<property name="ExperienceGain" value="100" />
+		<property name="ExperienceGain" value="0" />
 		<property name="LootListOnDeath" value="10" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="Beastmaster">
 		<!-- This one decides for scoring -->
@@ -3283,6 +3334,9 @@
 		<property name="RootMotion" value="false" />
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="10000" />
+		<!-- percentual -->
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="survivorParent">
 		<!-- Mesh and class properties -->
@@ -3333,9 +3387,9 @@
 		<property name="TimeStayAfterDeath" value="300" />
 		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
-		<property name="ExperienceGain" value="150" />
-		<property name="CorpseBlock" value="GoreBlock1Prefab" />
-		<property name="CorpseBlockChance" value="1" />
+		<property name="ExperienceGain" value="0" />
+		<!-- <property name="CorpseBlock" value="GoreBlock1Prefab" />
+		<property name="CorpseBlockChance" value="1" /> -->
 		<property name="DeadBodyHitPoints" value="150" />
 		<property name="IsMale" value="false" />
 		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
@@ -3658,9 +3712,9 @@
 		<property name="TimeStayAfterDeath" value="300" />
 		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
 		<property name="IsEnemyEntity" value="false" />
-		<property name="ExperienceGain" value="150" />
-		<property name="CorpseBlock" value="animalGore" />
-		<property name="CorpseBlockChance" value="1" />
+		<property name="ExperienceGain" value="0" />
+		<!-- <property name="CorpseBlock" value="GoreBlock1Prefab" />
+		<property name="CorpseBlockChance" value="1" /> -->
 		<property name="DeadBodyHitPoints" value="150" />
 		<property name="IsMale" value="false" />
 		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->

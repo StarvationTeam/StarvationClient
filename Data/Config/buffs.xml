@@ -303,14 +303,14 @@
 		<modify id="0" stat="stamina" amount="-5" rate="1" />
 		<modify id="1" stat="health" amount="-1" rate="30" />
 	</buff>
-	<buff id="BossRegen" duration="15" type="healthup" ffcheck="true" actions="attach(#effects?Fog, Hips)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc">
+	<buff id="BossRegen" duration="15" type="healthup" ffcheck="true" actions="attach(#effects?Fog, Body)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc">
 		<modify id="1" stat="health" amount="30" rate="1" />
 	</buff>
 	<buff id="ZedRez" duration="10" type="healthup" icon="ui_game_symbol_fire" name_key="ZedRez" description_key="electricalShockDesc">
 		<modify id="1" stat="health" amount="2" rate="1" />
 	</buff>
-	<buff id="BossSpawn" duration="5" ffcheck="true" actions="attach(#effects?BloodSplatter, Hips)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
-	<buff id="BossRez" duration="5" ffcheck="true" actions="attach(#effects?LightningField, Hips, 5)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
+	<buff id="BossSpawn" duration="5" ffcheck="true" actions="attach(#effects?BloodSplatter, Body)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
+	<buff id="BossRez" duration="5" ffcheck="true" actions="attach(#effects?LightningField, Body, 5)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
 	<!-- SCURVY DISEASE -->
 	<!-- You get 1 scurvy level every hour -->
 	<buff id="MetabolizeScurvy" mutex="fruity" buffif="+full &gt; 0" duration="0" actions="increment(scurvyLevel, 1, 100t, 0, 0)" name_key="MetabolizeScurvy" />

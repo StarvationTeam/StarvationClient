@@ -7657,6 +7657,7 @@
 	</item>
 	<item id="275" name="scrapSteel">
 		<property name="Extends" value="itemMaster" />
+		<property name="Stacknumber" value="1200" />
 		<property name="CustomIcon" value="ui_game_symbol_scrapSteel" />
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="1" />
@@ -8205,7 +8206,18 @@
 	<item id="973" name="salvagedSawBat">
 		<property name="Extends" value="clubSpiked" />
 		<property name="Meshfile" value="#SawBat?SawBatPrefab" />
-		<property name="CustomIcon" value="ui_game_symbol_sawBat" />
+		<property name="CustomIcon" value="ui_game_symbol_bladeBat" />
+	</item>
+	<item id="974" name="sawBlade">
+		<property name="Material" value="Msteel" />
+		<property name="HoldType" value="31" />
+		<property name="Stacknumber" value="50" />
+		<!-- STK resource -->
+		<property name="Weight" value="20" />
+		<property name="EconomicValue" value="50" />
+		<property name="Group" value="Resources" />
+		<property name="Meshfile" value="#SawBlade?SawBladePrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_sawBlade" />
 	</item>
 	<!-- FISHING -->
 	<item id="2" name="cane">
@@ -13705,6 +13717,8 @@
 		<property name="Meshfile" value="#flamethrower?Fire_01" />
 		<property name="Stacknumber" value="500" />
 		<property name="Material" value="organic" />
+		<property name="EconomicValue" value="83" />
+		<property name="EconomicBundleSize" value="50" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="Projectile" />
