@@ -7544,7 +7544,7 @@
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="10" />
 		<property name="Weight" value="15" />
-		<property name="EconomicValue" value="750" />
+		<property name="EconomicValue" value="20" />
 		<property name="Group" value="Chemicals" />
 	</item>
 	<item id="1444" name="bellows">

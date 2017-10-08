@@ -2579,7 +2579,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="500" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handAxeZombie" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -2655,7 +2655,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="800" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handPoliceZombie" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -2725,7 +2725,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="1000" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handAxeZombie" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -2795,7 +2795,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="1300" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handZombieStrong" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -2857,7 +2857,7 @@
 	<entity_class name="Mortelentus" extends="PoliceZd">
 		<property name="Mesh" value="#pacco?MortelentusZD" />
 		<property name="MaxHealth" value="3000" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handDocZombie" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -2961,7 +2961,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="2500" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handDocZombie" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -3031,7 +3031,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="1500" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handZombieStrong" />
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -3094,7 +3094,7 @@
 		<property name="Class" value="EntityZedBoss, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
 		<property name="Hability" value="Regen" />
-		<property name="HabilityChance" value="45" />
+		<property name="HabilityChance" value="70" />
 		<property name="HabilityBuff" value="BossRegen" />
 		<property name="HabilitySound" value="regenSound" />
 		<property name="ModelType" value="Standard" />
@@ -3105,7 +3105,7 @@
 		<!-- AI properties -->
 		<property name="AITask-1" value="ApproachSpot" />
 		<property name="AITask-2" value="BreakBlock" />
-		<property name="AITask-3" value="Territorial" param1="10" />
+		<property name="AITask-3" value="Territorial" />
 		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<!--property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalBear" /-->
 		<!--property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityAnimalStag" /-->
@@ -3119,7 +3119,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="3500" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handWallCrusher" />
 		<property name="Weight" value="7000" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
@@ -3166,7 +3166,7 @@
 		<property name="MeshScale" value="0.5,0.6" />
 		<property name="MaxHealth" value="250" />
 		<property name="Mesh" value="#ParasiteZd?ParasiteZd" />
-		<property name="WanderSpeed" value="0.03" />
+		<property name="WanderSpeed" value="0.3" />
 		<property name="ApproachSpeed" value="1.1" />
 		<property name="NightWanderSpeed" value="0.1" />
 		<property name="NightApproachSpeed" value="1.1" />
@@ -3193,7 +3193,7 @@
 		<property name="Group" value="ParasiteMinions" />
 		<property name="Number" value="2" />
 		<property name="MaxHealth" value="3000" />
-		<property name="WanderSpeed" value="0.03" />
+		<property name="WanderSpeed" value="0.3" />
 		<property name="ApproachSpeed" value="0.9" />
 		<property name="NightWanderSpeed" value="0.1" />
 		<property name="NightApproachSpeed" value="1.0" />
@@ -3268,7 +3268,7 @@
 		<property name="Class" value="EntityZedBoss, Mods" />
 		<property name="AvatarController" value="BipedAnimations, Mods" />
 		<property name="Hability" value="Spawn" />
-		<property name="HabilityChance" value="25" />
+		<property name="HabilityChance" value="35" />
 		<property name="HabilityBuff" value="BossSpawn" />
 		<property name="HabilitySound" value="spawningSound" />
 		<property name="Area" value="2" />
@@ -3282,7 +3282,7 @@
 		<!-- AI properties -->
 		<property name="AITask-1" value="ApproachSpot" />
 		<property name="AITask-2" value="BreakBlock" />
-		<property name="AITask-3" value="Territorial" param1="10" />
+		<property name="AITask-3" value="Territorial" />
 		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" />
 		<!--property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalBear" /-->
 		<!--property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityAnimalStag" /-->
@@ -3296,7 +3296,7 @@
 		<!--property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" /-->
 		<!-- General entity properties -->
 		<property name="MaxHealth" value="3500" />
-		<property name="MaxViewAngle" value="180" />
+		<property name="MaxViewAngle" value="260" />
 		<property name="HandItem" value="handAxeZombie" />
 		<property name="Weight" value="7000" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
