@@ -14317,4 +14317,47 @@
 		<entity name="zombieBoe" />
 		<entity name="zombieJoe" />
 	</entitygroup>
+	<entitygroup name="BanditPossy">
+		<entity name="npcBanditMelee" />
+		<entity name="npcBanditFemaleMelee" />
+		<entity name="banditFemaleDreadFireAxe" />
+		<entity name="banditMaleDreadKnife" />
+		<entity name="npcBanditRanged" />
+		<entity name="banditFemaleDreadMagnum" />
+		<entity name="banditFemaleDreadSniper" />
+		<entity name="banditMaleDreadRifle" />
+		<entity name="banditMaleDreadMp5" />
+		<entity name="npcBanditLeader" prob="0.1" />
+		<entity name="banditLeaderMP7" prob="0.1" />
+		<entity name="banditLeaderMP5" prob="0.1" />
+	</entitygroup>
+	<entitygroup name="BanditSoldier">
+		<entity name="npcBanditMelee" />
+		<entity name="npcBanditFemaleMelee" />
+		<entity name="banditFemaleDreadFireAxe" />
+		<entity name="banditMaleDreadKnife" />
+		<entity name="npcBanditRanged" />
+		<entity name="banditFemaleDreadMagnum" />
+		<entity name="banditFemaleDreadSniper" />
+		<entity name="banditMaleDreadRifle" />
+		<entity name="banditMaleDreadMp5" />
+	</entitygroup>
+	<entitygroup name="BanditMelee">
+		<entity name="npcBanditMelee" />
+		<entity name="npcBanditFemaleMelee" />
+		<entity name="banditFemaleDreadFireAxe" />
+		<entity name="banditMaleDreadKnife" />
+	</entitygroup>
+	<entitygroup name="BanditRanged">
+		<entity name="npcBanditRanged" />
+		<entity name="banditFemaleDreadMagnum" />
+		<entity name="banditFemaleDreadSniper" />
+		<entity name="banditMaleDreadRifle" />
+		<entity name="banditMaleDreadMp5" />
+	</entitygroup>
+	<entitygroup name="BanditBoss">
+		<entity name="npcBanditLeader" />
+		<entity name="banditLeaderMP7" />
+		<entity name="banditLeaderMP5" />
+	</entitygroup>
 </entitygroups>

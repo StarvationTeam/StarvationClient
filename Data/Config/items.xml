@@ -16560,7 +16560,7 @@
 		</property>
 		<property name="EconomicValue" value="300" />
 	</item>
-	<item id="856" name="findRadHouse1">
+	<item id="856" name="findOil">
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="compass" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
@@ -16569,7 +16569,7 @@
 		<property name="Stacknumber" value="1" />
 		<property class="Action1">
 			<property name="Class" value="FindPlace, Mods" />
-			<property name="location" value="HouseBurntRadiated1" />
+			<property name="location" value="bandit_refinery" />
 		</property>
 		<property class="Preview">
 			<property name="Zoom" value="28" />
@@ -16686,6 +16686,542 @@
 	</config>
 	<!-- End BigForge conversion Materials -->
 	<!-- STARVATION -->
+	<item id="975" name="npcPistol">
+		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="weaponRepairKit" />
+		<property name="HoldType" value="1" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="0.3" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_size" value="15" />
+			<property name="Magazine_items" value="npc9mmBullet" />
+			<property name="Magazine_item_ray_counts" value="1" />
+			<property name="Magazine_item_ray_spreads" value="0" />
+			<property name="Reload_time" value="2" />
+			<property name="Bullet_icon" value="pistol" />
+			<property name="Sound_start" value="Weapons/Ranged/Pistol/pistol_fire" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/Pistol/pistol_reload" />
+			<property name="Particles_muzzle_fire" value="nozzleflash" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmoke" />
+			<property name="DamageBonus.head" value="0.5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="6,12" />
+			<property name="BlockDamage" value="2,6" />
+			<property name="Accuracy" value="1,1" />
+			<property name="FalloffRange" value="39,40" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="976" name="npcMagnum">
+		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="weaponRepairKit" />
+		<property name="HoldType" value="44" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="0.34" />
+			<property name="Magazine_size" value="6" />
+			<property name="Magazine_items" value="npc44MagBullet" />
+			<property name="Magazine_item_ray_counts" value="1" />
+			<property name="Magazine_item_ray_spreads" value="0" />
+			<property name="Reload_time" value="4" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="pistol" />
+			<property name="Sound_start" value="Weapons/Ranged/44Magnum/44magnum_fire" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/44Magnum/44magnum_reload" />
+			<property name="Particles_muzzle_fire" value="nozzleflash" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmoke" />
+			<property name="DamageBonus.head" value="0.5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="6,12" />
+			<property name="BlockDamage" value="2,6" />
+			<property name="Accuracy" value="1,1" />
+			<property name="FalloffRange" value="54,55" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="977" name="npcSawedOffPumpShotgun">
+		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="weaponRepairKit" />
+		<property name="HoldType" value="5" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="1.2" />
+			<property name="Crosshair_min_distance" value="30" />
+			<property name="Crosshair_max_distance" value="50" />
+			<property name="Magazine_size" value="8" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Magazine_items" value="npcShotgunShell" />
+			<property name="Magazine_item_ray_counts" value="9" />
+			<property name="Magazine_item_ray_spreads" value="0.999" />
+			<property name="Reload_time" value="2.6" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
+			<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<property name="DamageBonus.head" value="0.1" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="5,10" />
+			<property name="BlockDamage" value="2,6" />
+			<property name="Accuracy" value="0.5,0.5" />
+			<property name="FalloffRange" value="39,40" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="978" name="npcAK47">
+		<property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="weaponRepairKit" />
+		<property name="HoldType" value="48" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="0.15" />
+			<property name="Auto_fire" value="true" />
+			<property name="Crosshair_min_distance" value="5" />
+			<property name="Crosshair_max_distance" value="30" />
+			<property name="Magazine_size" value="30" />
+			<property name="Magazine_items" value="npc762mmBullet" />
+			<property name="Magazine_item_ray_counts" value="1" />
+			<property name="Magazine_item_ray_spreads" value="0" />
+			<property name="Reload_time" value="3.9" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="Weapons/Ranged/AK47/ak47_fire_start" />
+			<property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp" />
+			<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
+			<property name="Horde_meter_rate" value="2.5" />
+			<property name="Horde_meter_distance" value="20" />
+			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<property name="DamageBonus.head" value="0.5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="6,12" />
+			<property name="BlockDamage" value="2,6" />
+			<property name="Accuracy" value="1,1" />
+			<property name="FalloffRange" value="90,95" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="979" name="npc9mmBullet">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab" />
+		<property name="Material" value="brass" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="500" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+	</item>
+	<item id="983" name="npc44MagBullet">
+		<property name="Extends" value="npc9mmBullet" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
+		</property>
+	</item>
+	<item id="984" name="npc762mmBullet">
+		<property name="Extends" value="npc9mmBullet" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab" />
+	</item>
+	<item id="985" name="npcShotgunShell">
+		<property name="Extends" value="npc9mmBullet" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+	</item>
+	<item id="986" name="npcSledgeHammer">
+		<property name="Extends" value="sledgehammer" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property class="Action0">
+			<property name="Buff" value="criticalBlunt,stunned,sprainedLeg,banditBonus" />
+			<property name="Buff_chance" value="0.5,0.3,0.3,1" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="987" name="npcClubSpiked">
+		<property name="Extends" value="clubSpiked" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="988" name="npcClubWood">
+		<property name="Extends" value="clubWood" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="989" name="npcFireaxeSteel">
+		<property name="Extends" value="fireaxeSteel" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="993" name="npcMachete">
+		<property name="Extends" value="machete" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property name="SellableToTrader" value="false" />
+		<property name="Candrop" value="false" />
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="994" name="npcHuntingKnife">
+		<property name="Extends" value="huntingKnife" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="SellableToTrader" value="false" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Candrop" value="false" />
+		<property name="CreativeMode" value="Dev" />
+		<property class="Action0">
+			<property name="Delay" value="1" />
+			<property name="Buff" value="banditBonus" />
+		</property>
+		<property class="Attributes">
+			<property name="DegradationMax" value="100000,100000" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+		<property name="SellableToTrader" value="false" />
+		<property name="Candrop" value="false" />
+	</item>
+	<item id="995" name="gunBanditHuntingRifle">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="gunHuntingRifle" />
+		<property name="CustomIconTint" value="ff0000" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="30" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="0.5" />
+			<property name="Auto_fire" value="false" />
+			<property name="Range" value="150" />
+			<property name="Rays_per_shot" value="1" />
+			<property name="Rays_spread" value="0" />
+			<property name="Crosshair_min_distance" value="30" />
+			<property name="Crosshair_max_distance" value="100" />
+			<property name="Magazine_size" value="1" />
+			<property name="Magazine_items" value="762mmRifleBanditBullet" />
+			<property name="Reload_time" value="2.66" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_fire" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/Hunting_Rifle/hunting_rifle_reload" />
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<property name="DamageBonus.head" value="6" />
+			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.plants" value="5" />
+			<property name="DamageBonus.earth" value=".2" />
+			<property name="DamageBonus.glass" value="25" />
+			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT-->
+			<property name="kickbackAim" value="6" />
+			<!-- Aditional kickback on top of vanilla kickback for weapon DEFAULT -->
+			<property name="kickbackHip" value="12" />
+		</property>
+		<property class="Attributes">
+			<property name="DismembermentBaseChance" value="0.25,0.25" />
+			<property name="DismembermentBonus" value="0.00045,0.00045" />
+			<property name="FalloffRange" value="160,160" />
+			<property name="Accuracy" value="0.03,0.03" />
+			<property name="EntityDamage" value="25,25" />
+			<property name="BlockDamage" value="5,5" />
+		</property>
+	</item>
+	<item id="996" name="gunBanditSniperRifle">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="gunSniperRifle" />
+		<property name="CustomIconTint" value="ff0000" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/SniperRifle/sniperRiflePrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="11" />
+		<property name="DegradationBreaksAfter" value="true" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="1.5" />
+			<property name="Auto_fire" value="false" />
+			<property name="Range" value="250" />
+			<property name="Rays_per_shot" value="1" />
+			<property name="Rays_spread" value="0" />
+			<property name="Crosshair_min_distance" value="30" />
+			<property name="Crosshair_max_distance" value="100" />
+			<property name="Magazine_size" value="5" />
+			<property name="Magazine_items" value="762mmRifleBanditBullet" />
+			<property name="Reload_time" value="2.5" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="PSG_fire" />
+			<property name="Sound_repeat" value="" />
+			<property name="Sound_end" value="" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/SniperRifle/sniperrifle_reload" />
+			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<property name="DamageBonus.head" value="9" />
+			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.earth" value=".2" />
+			<property name="DamageBonus.glass" value="25" />
+		</property>
+		<property class="Attributes">
+			<property name="DismembermentBaseChance" value="0.3,0.3" />
+			<property name="DismembermentBonus" value="0.00050,0.00050" />
+			<property name="FalloffRange" value="160,160" />
+			<property name="Accuracy" value="0.03,0.03" />
+			<property name="EntityDamage" value="25,25" />
+			<property name="BlockDamage" value="5,5" />
+		</property>
+	</item>
+	<item id="997" name="gunBanditMP5">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="gunMP5" />
+		<property name="CustomIconTint" value="ff0000" />
+		<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="weaponRepairKit" />
+		<property name="HoldType" value="48" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="0.15" />
+			<property name="Auto_fire" value="true" />
+			<property name="Crosshair_min_distance" value="5" />
+			<property name="Crosshair_max_distance" value="30" />
+			<property name="Magazine_size" value="30" />
+			<property name="Magazine_items" value="10mmBanditBullet" />
+			<property name="Magazine_item_ray_counts" value="1" />
+			<property name="Magazine_item_ray_spreads" value="0" />
+			<property name="Reload_time" value="3.9" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="Weapons/Ranged/MP5/mp5_fire_start" />
+			<property name="Sound_repeat" value="Weapons/Ranged/MP5/mp5_fire_lp" />
+			<property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/MP5/mp5_reload" />
+			<property name="Horde_meter_rate" value="2.5" />
+			<property name="Horde_meter_distance" value="20" />
+			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<property name="DamageBonus.head" value="0.5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="4,9" />
+			<property name="BlockDamage" value="2,6" />
+			<property name="Accuracy" value="1,1" />
+			<property name="FalloffRange" value="80,85" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
+	<item id="998" name="10mmBanditBullet">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="Meshfile" value="Items/Tools/torchPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="500" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="15,15" />
+			<property name="BlockDamage" value="5,5" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="0" />
+			<property name="Velocity" value="250" />
+			<property name="FlyTime" value="3" />
+			<property name="LifeTime" value="3" />
+		</property>
+	</item>
+	<item id="999" name="762mmRifleBanditBullet">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="Meshfile" value="Items/Tools/torchPrefab" />
+		<property name="Material" value="metal" />
+		<property name="HoldType" value="21" />
+		<property name="Stacknumber" value="500" />
+		<property class="Attributes">
+			<property name="GetQualityFromWeapon" value="true" />
+			<property name="EntityDamage" value="20,20" />
+			<property name="BlockDamage" value="5,5" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="Projectile" />
+			<property name="Explosion.ParticleIndex" value="0" />
+			<property name="Velocity" value="250" />
+			<property name="FlyTime" value="3" />
+			<property name="LifeTime" value="3" />
+		</property>
+	</item>
+	<item id="1000" name="npcMP7">
+		<property name="Meshfile" value="#morteWeapons?Mp7Prefab" />
+		<property name="Material" value="metal" />
+		<property name="RepairTools" value="weaponRepairKit" />
+		<property name="HoldType" value="48" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Candrop" value="false" />
+		<property name="CustomIcon" value="ui_game_symbol_unused" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
+		<property name="SoundJammed" value="Weapons/weapon_jam" />
+		<property class="Action0">
+			<property name="Class" value="Ranged" />
+			<property name="Delay" value="0.15" />
+			<property name="Auto_fire" value="true" />
+			<property name="Crosshair_min_distance" value="5" />
+			<property name="Crosshair_max_distance" value="30" />
+			<property name="Magazine_size" value="30" />
+			<property name="Magazine_items" value="10mmBanditBullet" />
+			<property name="Magazine_item_ray_counts" value="1" />
+			<property name="Magazine_item_ray_spreads" value="0" />
+			<property name="Reload_time" value="3.9" />
+			<property name="Infinite_ammo" value="true" />
+			<property name="Bullet_icon" value="uzi" />
+			<property name="Sound_start" value="Weapons/Ranged/MP5/mp5_fire_start" />
+			<property name="Sound_repeat" value="Weapons/Ranged/MP5/mp5_fire_lp" />
+			<property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end" />
+			<property name="Sound_empty" value="Weapons/weapon_empty" />
+			<property name="Sound_reload" value="Weapons/Ranged/MP5/mp5_reload" />
+			<property name="Horde_meter_rate" value="2.5" />
+			<property name="Horde_meter_distance" value="20" />
+			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
+			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+			<property name="DamageBonus.head" value="0.5" />
+		</property>
+		<property class="Attributes">
+			<property name="EntityDamage" value="6,12" />
+			<property name="BlockDamage" value="2,6" />
+			<property name="Accuracy" value="1,1" />
+			<property name="FalloffRange" value="90,95" />
+			<property name="DegradationMax" value="9998,9999" />
+			<property name="DegradationRate" value="1,1" />
+		</property>
+	</item>
 	<!-- toys -->
 	<item id="291" name="kennyItem">
 		<property name="DescriptionKey" value="toysDesc" />

@@ -540,4 +540,7 @@
 	<buff id="iceFoodCooling" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_tea" name_key="Ice Cream" description_key="iceFoodCoolingDesc" tooltip_key="iceFoodCoolingDesc" causes="redTea">
 		<modify id="1" stat="coretemp" modifyValue="-30" />
 	</buff>
+	<buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend">
+		<modify id="0" stat="health" amount="-150" rate="1" />
+	</buff>
 </buffs>

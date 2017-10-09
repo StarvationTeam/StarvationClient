@@ -13,6 +13,7 @@
 			<relationship name="*" value="hate" />
 		</faction>
 		<faction name="bandits">
+			<relationship name="bandits" value="neutral" />
 			<relationship name="*" value="hate" />
 		</faction>
 		<faction name="whiteriver">
@@ -26,4 +27,5 @@
 			<relationship name="*" value="neutral" />
 		</faction>
 	</factions>
+	<npc_info id="bandithoge" name="Traitor Joel" name_key="npc_traderRekt" faction="bandit" greeting_type="nearby" />
 </npc>
