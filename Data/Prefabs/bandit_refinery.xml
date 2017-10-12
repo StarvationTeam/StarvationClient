@@ -8,6 +8,6 @@
     <property name="RotationToFaceNorth" value="2"/>
     <property name="YOffset" value="-1"/>
     <property name="DistantPOIYOffset" value="0"/>
+    <property name="AllowedBiomes" value="desert"/>
     <property name="AllowedTownships" value="city,rural,town,wilderness"/>
-	<property name="AllowedBiomes" value="desert" />
 </prefab>

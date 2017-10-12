@@ -73,6 +73,7 @@
 		<property name="PhysicsBody" value="zombieStandard" />
 		<property name="Faction" value="undead" />
 		<property name="MaxTurnSpeed" value="360" />
+		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" />
 		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityEnemyAnimal" />
@@ -2561,8 +2562,8 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="1500" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="50.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="Fireman" extends="FirefighterZd">
 		<property name="Mesh" value="#Fireman?fireman" />
@@ -2637,8 +2638,8 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="1600" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="50.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="MilitaryZd">
 		<!-- This one decides for scoring -->
@@ -2707,8 +2708,8 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="2000" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="20.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="BikiniZd">
 		<!-- This one decides for scoring -->
@@ -2777,26 +2778,26 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="2600" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="40.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="RadBoss" extends="zombieWightFeralRadiated">
 		<property name="ExperienceGain" value="500" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="40.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="RadBossOld" extends="zombieWightFeralRadiated">
 		<property name="ExperienceGain" value="500" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="40.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="Bubbles" extends="PoliceZd">
 		<property name="Mesh" value="#bubbles?bubblesFBX" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="40.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="Mortelentus" extends="PoliceZd">
 		<property name="Mesh" value="#pacco?MortelentusZD" />
@@ -2818,8 +2819,8 @@
 		<property name="SoundAttack" value="morteAttack" />
 		<property name="LootListOnDeath" value="120" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="40.0" />
+		<property name="BodyNerf" value="90.0" />
 		<!--property name="AITask-7" value="ApproachAndAt3tackTarget" param1="EntityPacco" /-->
 	</entity_class>
 	<!--
@@ -2943,8 +2944,8 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="5000" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="30.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="GirlZd">
 		<!-- This one decides for scoring -->
@@ -3013,8 +3014,8 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="3000" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="50.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="radSpider" extends="spider">
 		<property name="MaxHealth" value="2600" />
@@ -3101,8 +3102,8 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="10000" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="20.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="ParasiteMinion" extends="WallCrusher">
 		<property name="HandItem" value="handAxeZombie" />
@@ -3126,6 +3127,8 @@
 		<property name="SoundDeath" value="Parasitedeath" />
 		<property name="SoundAttack" value="Parasiteattack" />
 		<property name="ExperienceGain" value="500" />
+		<property name="HeadBoost" value="0.0" />
+		<property name="BodyNerf" value="0.0" />
 	</entity_class>
 	<entity_class name="Parasite" extends="WallCrusher">
 		<property name="HandItem" value="handAxeZombie" />
@@ -3153,8 +3156,8 @@
 		<property name="SoundDeath" value="Parasitedeath" />
 		<property name="SoundAttack" value="Parasiteattack" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="20.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="RezBoss" extends="WallCrusher">
 		<property name="HandItem" value="handDocZombie" />
@@ -3186,22 +3189,22 @@
 		<property name="ExperienceGain" value="0" />
 		<property name="WalkType" value="7" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="20.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="TruckMaleHazmat" extends="zombieMaleHazmat">
 		<property name="ExperienceGain" value="0" />
 		<property name="LootListOnDeath" value="10" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="50.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="TruckFemaleHazmat" extends="zombieMaleHazmat">
 		<property name="ExperienceGain" value="0" />
 		<property name="LootListOnDeath" value="10" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="50.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="Beastmaster">
 		<!-- This one decides for scoring -->
@@ -3279,8 +3282,8 @@
 		<property name="HasDeathAnim" value="true" />
 		<property name="ExperienceGain" value="10000" />
 		<!-- percentual -->
-		<property name="HeadBoost" value="0.0" />
-		<property name="BodyNerf" value="0.0" />
+		<property name="HeadBoost" value="15.0" />
+		<property name="BodyNerf" value="90.0" />
 	</entity_class>
 	<entity_class name="survivorParent">
 		<!-- Mesh and class properties -->
@@ -3292,7 +3295,7 @@
 		<property name="AvatarController" value="GameObjectSurvivorAnimationSDX, Mods" />
 		<property name="Weight" value="70" />
 		<property name="RotateToGround" value="true" />
-		<property name="IsEntityAnimal" value="true" />
+		<property name="IsEntityAnimal" value="false" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="handGirl" />
 		<!-- AI properties -->
@@ -3405,6 +3408,7 @@
 		<property name="Mesh" value="#teenboy?TeenBoy" />
 		<property name="MaxHealth" value="150" />
 		<property name="HandItem" value="handFemale" />
+		<property name="IsMale" value="true" />
 	</entity_class>
 	<entity_class name="MaleSurvivor" extends="Girl">
 		<property name="Mesh" value="#survivorsa16?MaleSurvivor" />

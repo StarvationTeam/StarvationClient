@@ -15897,6 +15897,40 @@
 		<drop event="Destroy" name="trapNail" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="trapBear" count="1" tool_category="Disassemble" />
 	</block>
+	<block id="1534" name="trapSpike">
+		<!-- this is a powwered trap -->
+		<!-- it will only work if it has enough power -->
+		<property name="Class" value="PowerTrap, Mods" />
+		<property name="Material" value="metal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#poweredtraps?TrapSpike1" />
+		<property name="Collide" value="movement,bullet,rocket,melee" />
+		<property name="FuelValue" value="36" />
+		<property name="powerType" value="Boiler" />
+		<!-- Boiler (heat), Gaz -->
+		<property name="DamageDone" value="20" />
+		<property name="HitLegs" value="true" />
+		<property name="Buffs" value="trapDamage1Trigger" />
+		<!-- until better solution this is just to allow interaction -->
+		<property name="CanPickup" value="false" />
+		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<property name="Group" value="Tools/Traps" />
+		<property name="debug" value="false" />
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="trapSpike" count="1" tool_category="Disassemble" />
+		<property name="ModelOffset" value="0,-0.04,0" />
+	</block>
+	<block id="1535" name="trapFire">
+		<property name="Extends" value="trapSpike" />
+		<property name="Model" value="#poweredtraps?Trapfire1" />
+		<property name="powerType" value="Gaz" />
+		<property name="DamageDone" value="10" />
+		<property name="HitLegs" value="false" />
+		<property name="Buffs" value="burningSmall" />
+		<drop event="Destroy" name="trapSpike" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" name="trapFire" count="1" tool_category="Disassemble" />
+	</block>
 	<!-- TRAPS END -->
 	<!-- TRANSFORMERS -->
 	<block id="83" name="gasTankEmpty">
@@ -17958,7 +17992,7 @@
 		<!-- Higher type of food - survivor looks for this if he is badly hurt -->
 		<property name="FoodHigh" value="5,meatStew,vegetableStew" />
 		<!-- Food containers where survivors look for something to eat - NEEDS to be secureLoot -->
-		<property name="FoodContainer" value="cntFridgeSecure" />
+		<property name="FoodContainer" value="cntFridgeTopE" />
 		<!-- Food Check interval in seconds -->
 		<property name="CheckInterval" value="600" />
 		<!-- Food check area in blocks -->

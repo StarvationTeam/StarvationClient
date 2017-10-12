@@ -1073,7 +1073,7 @@
 	</quest>
 	<quest id="Q_Farm_A4" group_name="Newbie Farmer" name="Newbie Farmer 4/6" subtitle="Find Seeds" description="Now you need to make your first seeds.\n\nBetter to start looking for the Sunflower and Goldenrod plants, as the base materials for the farming expendables.\nMake the seeds out of the Goldenrod plant, once you find one." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
 		<objective type="FetchKeep" id="sunflowerSeed" value="1" />
-		<objective type="FetchKeep" id="goldenrodSeed" value="1" />
+		<objective type="FetchKeep" id="plantedGoldenrod1" value="1" />
 		<reward type="Quest" id="Q_Farm_A5" />
 	</quest>
 	<quest id="Q_Farm_A5" group_name="Newbie Farmer" name="Newbie Farmer 5/6" subtitle="Plant Seeds" description="Find a spot where you want to start your farm, it should be ordinary soil.\nMake a hole nearby using a shovel and fill it with water using your bucket.\nThen you should hoe the dirt near the water source and plant your seeds on the hoed dirt." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
