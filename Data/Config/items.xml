@@ -13796,7 +13796,7 @@
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="Material" value="copper" />
 		<property name="HoldType" value="45" />
-		<property name="Stacknumber" value="1000" />
+		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
 		<property name="Weight" value="5" />
 		<property name="Group" value="Resources" />
@@ -13814,7 +13814,7 @@
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="Material" value="zinc" />
 		<property name="HoldType" value="45" />
-		<property name="Stacknumber" value="1000" />
+		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
 		<property name="Weight" value="5" />
 		<property name="Group" value="Resources" />
