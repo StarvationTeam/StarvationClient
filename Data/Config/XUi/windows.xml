@@ -38,23 +38,56 @@
 		</grid>
 	</window>
 	<window name="HUDLeftStatBars">
-		<grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left">
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+		<grid name="hud" pos="9,135" rows="3" cols="1" width="188" cell_width="188" cell_height="46" repeat_content="false" side="left">
+			<rect width="188" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3" name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
+				<sprite depth="2" pos="3,-3" name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="182" fill="0" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true" />
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" />
 			</rect>
-			<rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+			<rect width="188" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-				<sprite depth="2" pos="3,-3" name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
+				<sprite depth="2" pos="3,-3" name="background" height="37" width="182" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="182" fill="0" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true" />
 				<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" />
 			</rect>
 		</grid>
-		<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft">
+		<grid name="hud" pos="9,45" rows="1" cols="2" width="188" cell_width="94" cell_height="46" repeat_content="false" side="left">
+			<rect width="93" height="43" controller="HUDStatBar" stat_type="Sanity" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="2" pos="3,-3" name="background" height="37" width="90" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3" name="BarContent" atlas="ItemIconAtlas" sprite="{statimage|once}" type="filled" height="37" width="87" fill="0" />
+				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{staticon|once}" size="32,32" pos="4,-6" foregroundlayer="true" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}%" height="30" />
+			</rect>
+			<rect width="93" height="43" controller="HUDStatBar" stat_type="Radiation" visible="{statvisible}">
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="2" pos="3,-3" name="background" height="37" width="90" color="64,64,64,100" type="sliced" />
+				<sprite depth="3" pos="3,-3" name="BarContent" atlas="ItemIconAtlas" sprite="{statimage|once}" type="filled" height="37" width="87" fill="0" />
+				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" sprite="{staticon|once}" size="32,32" pos="4,-6" foregroundlayer="true" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrent}%" height="30" />
+			</rect>
+		</grid>
+		<!-- <grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left">
+				<rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+					<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+					<sprite depth="2" pos="3,-3" name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
+					<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
+					<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true" />
+					<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" />
+				</rect>
+				<rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+					<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+					<sprite depth="2" pos="3,-3" name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
+					<sprite depth="3" pos="3,-3" name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
+					<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true" />
+					<label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30" />
+				</rect>
+			</grid>
+			<rect name="hud" pos="93,124" side="left" controller="BuffPopoutList" pivot="BottomLeft"> -->
+		<rect name="hud" pos="93,180" side="left" controller="BuffPopoutList" pivot="BottomLeft">
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
 				<sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="43" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
 				<sprite depth="4" name="Icon" atlas="ItemIconAtlas" size="36,32" pos="-58,0" pivot="center" color="[transparent]" />
@@ -62,6 +95,7 @@
 			</panel>
 		</rect>
 	</window>
+	<!-- TEMPORARY BARS UNTIL DUST UI -->
 	<window name="windowPagingHeader" controller="WindowSelector" style="paging.window" cursor_area="true">
 		<sprite style="paging.window.background.border" />
 		<sprite style="paging.window.background" />

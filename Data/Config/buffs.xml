@@ -273,6 +273,10 @@
 	<buff id="coolByAirCon" duration="0" stack="discard" buffif="-heatSource gequal 1" debuffif="-heatSource less 1" type="coretemp" icon="ui_game_symbol_cool" name_key="coolByAirCon" description_key="coolByAirConDesc" tooltip_key="coolByAirConTooltip">
 		<modify id="0" stat="coretemp" modifyValue="-30" />
 	</buff>
+	<buff id="flies" duration="30" stack="discard" actions="attach(#FliesParticle?FliesParticle, Origin/CameraNode, 0, firstperson);increment(sanity, -1, 1, 30, 0)" icon="ui_game_symbol_fly" description_key="" />
+	<buff id="bees" duration="30" stack="discard" actions="attach(#BeesParticle?BeesParticle, Origin/CameraNode, 0, firstperson);increment(sanity, -1.5, 1, 30, 0)" icon="ui_game_symbol_bees" description_key="">
+		<modify id="1" stat="health" amount="-0.5" rate="2" />
+	</buff>
 	<!-- FISHING -->
 	<buff id="lure1" duration="300" name_key="lure1" smell="smallSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_lure1" />
 	<buff id="lure2" duration="300" name_key="lure2" smell="mediumSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_lure2" />
@@ -376,9 +380,9 @@
 	<!-- Fatigue mitigation drinks -->
 	<buff id="FatigueDrink" duration="1" actions="increment(fatiguelevel, -6, 0, 0, 1)" name_key="FatigueDrink" />
 	<!-- Fatigue mitigation soft drugs - lasts 3h during which it stops your addiction, if existing -->
-	<buff id="Cigar" duration="60" actions="increment(fatiguelevel, -12, 0, 0, 1);increment(addiction, 10, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 0.5, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_smoking" name_key="Cigar" description_key="Ahh, nice cigar..." tooltip_key="Smoking a Cigar" />
+	<buff id="Cigar" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -12, 0, 0, 1);increment(addiction, 10, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 0.5, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_smoking" name_key="Cigar" description_key="Ahh, nice cigar..." tooltip_key="Smoking a Cigar" />
 	<!-- Fatigue mitigation strong drugs - lasts 6h during which it stops your addiction, if existing -->
-	<buff id="Blunt" duration="60" actions="increment(fatiguelevel, -24, 0, 0, 1);increment(addiction, 20, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 1, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_joint" name_key="Blunt" description_key="Dude... Man... Dude.." tooltip_key="Smoking a Blunt" />
+	<buff id="Blunt" duration="60" actions="attach(#SmokingParticle?SmokingParticle, Origin/CameraNode, 0, firstperson);increment(fatiguelevel, -24, 0, 0, 1);increment(addiction, 20, 0, 0, 1);debuff(addicted);debuff(drugged);increment(sanity, 1, 10, 0, 0)" onexpired="drugged" icon="ui_game_symbol_joint" name_key="Blunt" description_key="Dude... Man... Dude.." tooltip_key="Smoking a Blunt" />
 	<!-- You recently took drugs, should feel gooood. This actually increses addiction by 0.5 every hour-->
 	<buff id="drugged" duration="200t" actions="debuff(addicted);increment(addiction, 1.5, 100t, 0, 0)" icon="ui_game_symbol_high" name_key="drugged" description_key="Dude... I feel goooood..." tooltip_key="Drugged" />
 	<!-- Ohoh, you got addicted -->

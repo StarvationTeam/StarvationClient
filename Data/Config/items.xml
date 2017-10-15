@@ -7657,6 +7657,7 @@
 	</item>
 	<item id="275" name="scrapSteel">
 		<property name="Extends" value="itemMaster" />
+		<property name="Stacknumber" value="1500" />
 		<property name="CustomIcon" value="ui_game_symbol_scrapSteel" />
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="1" />
@@ -7665,6 +7666,7 @@
 	</item>
 	<item id="284" name="scrapRubber">
 		<property name="Extends" value="itemMaster" />
+		<property name="Stacknumber" value="1200" />
 		<property name="DescriptionKey" value="scrapRubberDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_scrapRubber" />
 		<property name="CustomIconTint" value="232323" />
@@ -11742,7 +11744,7 @@
 	<item id="267" name="trapsBookPowered">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<!-- <property name="Recipes_to_learn" value="trapFire, trapSpike" /> -->
+			<property name="Recipes_to_learn" value="trapFire, trapSpike" />
 			<property name="Skills_to_gain" value="Science" />
 		</property>
 		<property name="EconomicValue" value="500" />
@@ -13716,8 +13718,7 @@
 		<property name="Meshfile" value="#flamethrower?Fire_01" />
 		<property name="Stacknumber" value="500" />
 		<property name="Material" value="organic" />
-		<property name="EconomicValue" value="83" />
-		<property name="EconomicBundleSize" value="50" />
+		<property name="EconomicValue" value="1500" />
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="Projectile" />

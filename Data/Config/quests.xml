@@ -341,6 +341,9 @@
 		<objective type="Goto" id="garageburnt1" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
+	<quest id="quest_MeetPacco" group_name="Meet Pacco" name="Master Armorsmith" subtitle="Master Armorsmith" description="Hello there.\nI am Pacco, and you wont find a better armorsmith anywhere!\n\nMaybe you can make me some errands and who knows...\nI may have a nice present for you..\n\nCheck your log for more information, please.\n\n\nNOTE FROM THE TEAM\n\nThis quest line was made in loving memory of our good friend René,\naka Pacco.\n\nMay he rest in peace" icon="ui_game_symbol_map_trader" category_key="Quest">
+		<reward type="SkillPoints" value="1" />
+	</quest>
 	<!-- <quest id="quest_Refinery" group_name="The Refinery" name="The Refinery" subtitle="The Refinery" description="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." offer="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." icon="ui_game_symbol_map_trader" category_key="Quest"  difficulty="hard">
 		<objective type="Goto" id="utility_refinery_01" value="10" />
 		<reward type="SkillPoints" value="1" />
@@ -1073,7 +1076,7 @@
 	</quest>
 	<quest id="Q_Farm_A4" group_name="Newbie Farmer" name="Newbie Farmer 4/6" subtitle="Find Seeds" description="Now you need to make your first seeds.\n\nBetter to start looking for the Sunflower and Goldenrod plants, as the base materials for the farming expendables.\nMake the seeds out of the Goldenrod plant, once you find one." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
 		<objective type="FetchKeep" id="sunflowerSeed" value="1" />
-		<objective type="FetchKeep" id="plantedGoldenrod1" value="1" />
+		<objective type="Craft" id="plantedGoldenrod1" value="1" />
 		<reward type="Quest" id="Q_Farm_A5" />
 	</quest>
 	<quest id="Q_Farm_A5" group_name="Newbie Farmer" name="Newbie Farmer 5/6" subtitle="Plant Seeds" description="Find a spot where you want to start your farm, it should be ordinary soil.\nMake a hole nearby using a shovel and fill it with water using your bucket.\nThen you should hoe the dirt near the water source and plant your seeds on the hoed dirt." icon="ui_game_symbol_q_farm1" repeatable="false" category_key="Quest" offer="First steps into farming." difficulty="easy">
@@ -1124,7 +1127,7 @@
 		<reward type="Quest" id="Q_Farm_C4" />
 	</quest>
 	<quest id="Q_Farm_C4" group_name="Fight the Plague!" name="Fight the Plague! 4/7" subtitle="Chemistry Station" description="Hmm... It seems you cannot mix components without a chemistry station.\nYou can craft one after learning the skill and collecting all required components, or... Just find it somewhere, if you are lucky enough ;) " icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
-		<objective type="FetchKeep" id="chemistryStation" value="1" />
+		<objective type="Craft" id="chemistryStation" value="1" />
 		<objective type="BlockPlace" id="chemistryStation" value="1" />
 		<reward type="Quest" id="Q_Farm_C5" />
 	</quest>
@@ -1146,42 +1149,35 @@
 	<quest id="Q_Farm_C7" group_name="Fight the Plague!" name="Fight the Plague! 7/7" subtitle="Use it!" description="It is time to release the dogs!\nLoad you spraying pump and use it on your crops.\nIt grants very high resistance to insect plague through the whole lifecycle of the crop." icon="ui_game_symbol_q_farm3" repeatable="false" category_key="Quest" offer="Those flies are so... annoying...." difficulty="medium">
 		<objective type="FetchKeep" id="pesticide" value="1" />
 		<objective type="FetchKeep" id="SprayItem" value="1" />
-		<requirement type="Holding" id="SprayItem" />
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="Q_Farm_D1" />
 	</quest>
-	<quest id="Q_Farm_D1" group_name="Powered Farm" name="Powered Farm 1/5" subtitle="Diesel Power" description="You can use electric power to help against insects and rodents.\nBetter to create your own generator now.\nDiesel Generator can be created in the Mill, after reading appropriate books." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
-		<objective type="FetchKeep" id="forgedIron" value="50" />
-		<objective type="FetchKeep" id="electricParts" value="20" />
-		<objective type="FetchKeep" id="spring" value="20" />
-		<objective type="FetchKeep" id="smallEngine" value="2" />
-		<objective type="FetchKeep" id="gauge" value="3" />
-		<objective type="BlockPlace" id="dieselGen" value="1" />
+	<quest id="Q_Farm_D1" group_name="Powered Farm" name="Powered Farm 1/4" subtitle="Diesel Power" description="You can use electric power to help against insects and rodents.\nBetter to create your own generator now.\nDiesel Generator can be created in the Mill, after reading appropriate books." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+		<objective type="FetchKeep" id="metalFrame" value="1" />
+		<objective type="FetchKeep" id="smallDeposit" value="1" />
+		<objective type="FetchKeep" id="mechanicalParts" value="15" />
+		<objective type="FetchKeep" id="scrapCopper" value="10" />
+		<objective type="FetchKeep" id="smallConsole" value="1" />
+		<objective type="BlockPlace" id="smallGenerator" value="1" />
 		<reward type="Quest" id="Q_Farm_D2" />
 	</quest>
-	<quest id="Q_Farm_D2" group_name="Powered Farm" name="Powered Farm 2/5" subtitle="Power Cables" description="Craft Cables to connect your Diesel Generator to the repellent devices.\nYou can also craft a knife switch or a powerbox to turn on/off electrical line." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
-		<objective type="FetchKeep" id="scrapCopper" value="10" />
-		<objective type="FetchKeep" id="ductTape" value="2" />
-		<objective type="Craft" id="cableTest" value="2" />
-		<reward type="Quest" id="Q_Farm_D3" />
-	</quest>
-	<quest id="Q_Farm_D3" group_name="Powered Farm" name="Powered Farm 3/5" subtitle="Insect Repellent Light" description="Craft Insect repellent device.\nIt should be connected to the powerline, i.e. near cable or generator itself.\nYou can craft it at the workbench." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+	<quest id="Q_Farm_D2" group_name="Powered Farm" name="Powered Farm 2/4" subtitle="Insect Repellent Light" description="Craft Insect repellent device.\nIt should be wired to a power source.\nYou can craft it at the workbench." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
 		<objective type="FetchKeep" id="forgedIron" value="2" />
 		<objective type="FetchKeep" id="shortMetalPipe" value="1" />
 		<objective type="FetchKeep" id="electricParts" value="1" />
 		<objective type="FetchKeep" id="electronicParts" value="1" />
-		<objective type="FetchKeep" id="InsectLamp" value="1" />
-		<reward type="Quest" id="Q_Farm_D4" />
+		<objective type="Craft" id="InsectLamp" value="1" />
+		<reward type="Quest" id="Q_Farm_D3" />
 	</quest>
-	<quest id="Q_Farm_D4" group_name="Powered Farm" name="Powered Farm 4/5" subtitle="Ultrasonic Rodent Repeller" description="Craft Ultrasonic Rodent Repeller device.\nIt should be connected to the powerline, i.e. near cable or generator itself.\nYou can craft it at the workbench." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+	<quest id="Q_Farm_D3" group_name="Powered Farm" name="Powered Farm 3/4" subtitle="Ultrasonic Rodent Repeller" description="Craft Ultrasonic Rodent Repeller device.\nIt should be wired to a power souce.\nYou can craft it at the workbench." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
 		<objective type="FetchKeep" id="forgedIron" value="1" />
 		<objective type="FetchKeep" id="shortMetalPipe" value="2" />
 		<objective type="FetchKeep" id="electricParts" value="1" />
 		<objective type="FetchKeep" id="electronicParts" value="2" />
 		<objective type="Craft" id="UltraSound" value="1" />
-		<reward type="Quest" id="Q_Farm_D5" />
+		<reward type="Quest" id="Q_Farm_D4" />
 	</quest>
-	<quest id="Q_Farm_D5" group_name="Powered Farm" name="Powered Farm 5/5" subtitle="Turn it on!" description="It is time to place devices you just crafted.\nEvery device should be connected to your diesel generator using cables and has an area of effect, protecting plants in a decent area.\nMake sure the generator has gas cans inside and powered on." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
+	<quest id="Q_Farm_D4" group_name="Powered Farm" name="Powered Farm 4/4" subtitle="Turn it on!" description="It is time to place devices you just crafted.\nEvery device should be wired to a power source and has an area of effect, protecting plants in a decent area.\nMake sure the generator has gas cans inside and powered on." icon="ui_game_symbol_q_farm4" repeatable="false" category_key="Quest" offer="Electrify your farm now." difficulty="medium">
 		<objective type="BlockPlace" id="InsectLamp" value="1" />
 		<objective type="BlockPlace" id="UltraSound" value="1" />
 		<reward type="SkillPoints" value="4" />

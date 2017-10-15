@@ -2131,6 +2131,12 @@
 	<!--		<recipe name="scrapPlastics" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0"> - used if plastic can be smelted in your mod
 				<ingredient name="unit_plastic" count="1" />
 			</recipe>	-->
+	<recipe name="pendulum" count="1" craft_area="workbench" craft_time="250">
+		<ingredient name="mechanicalParts" count="5" />
+		<ingredient name="electricParts" count="5" />
+		<ingredient name="forgedIron" count="10" />
+		<ingredient name="forgedSteel" count="15" />
+	</recipe>
 	<recipe name="sawBlade" count="1" craft_area="mill">
 		<ingredient name="forgedSteel" count="4" />
 	</recipe>
@@ -2481,13 +2487,13 @@
 		<ingredient name="scrapCopper" count="10" />
 		<ingredient name="smallConsole" count="1" />
 	</recipe>
-	<recipe name="dieselGen" count="1" craft_area="mill">
-		<ingredient name="forgedIron" count="50" />
+	<!-- <recipe name="dieselGen" count="1" craft_area="mill">
+		<ingredient name="forgedSteel" count="50" />
 		<ingredient name="electricParts" count="20" />
 		<ingredient name="spring" count="20" />
 		<ingredient name="mechanicalParts" count="30" />
 		<ingredient name="gauge" count="3" />
-	</recipe>
+	</recipe>  -->
 	<recipe name="garageDoorRolling" count="1" craft_area="lathe">
 		<ingredient name="spring" count="5" />
 		<ingredient name="sheave" count="3" />
@@ -2497,11 +2503,11 @@
 	</recipe>
 	<!-- CRAFTER RECIPES -->
 	<recipe name="metalFrame" count="1" craft_area="smith">
-		<ingredient name="forgedIron" count="25" />
+		<ingredient name="forgedIron" count="20" />
 	</recipe>
 	<recipe name="smallDeposit" count="1" craft_area="smith">
 		<ingredient name="gasCan" count="1" />
-		<ingredient name="leather" count="5" />
+		<ingredient name="leather" count="2" />
 		<ingredient name="rubber" count="2" />
 	</recipe>
 	<recipe name="smallGenerator" count="1" craft_area="crafter">
@@ -2530,11 +2536,11 @@
 		<ingredient name="gauge" count="2" />
 	</recipe>
 	<recipe name="garageDoorRolling" count="1" craft_area="smith">
-		<ingredient name="spring" count="5" />
+		<ingredient name="spring" count="3" />
 		<ingredient name="sheave" count="2" />
-		<ingredient name="shortMetalPipe" count="10" />
-		<ingredient name="ductTape" count="10" />
-		<ingredient name="forgedSteel" count="10" />
+		<ingredient name="shortMetalPipe" count="5" />
+		<ingredient name="ductTape" count="5" />
+		<ingredient name="forgedSteel" count="5" />
 	</recipe>
 	<!-- PowerSources END -->
 	<!-- POWER WORKSTATIONS START -->
@@ -3886,6 +3892,11 @@
 		<ingredient name="unit_steel" count="10" />
 		<ingredient name="unit_clay" count="5" />
 		<ingredient name="unit_coal" count="1" />
+	</recipe>
+	<recipe name="forgedSteel" count="1" craft_area="forge1" craft_tool="forgeCrucible" material_based="true">
+		<ingredient name="unit_iron" count="75" />
+		<ingredient name="unit_clay" count="8" />
+		<ingredient name="unit_coal" count="16" />
 	</recipe>
 	<recipe name="scrapSteel" count="1" craft_area="forge1" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_steel" count="1" />

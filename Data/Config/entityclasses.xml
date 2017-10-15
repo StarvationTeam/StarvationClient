@@ -188,7 +188,7 @@
 		<property name="ChestExplosionDamageMultiplier" value="1" />
 		<!-- percentual -->
 		<property name="HeadBoost" value="50.0" />
-		<property name="BodyNerf" value="90.0" />
+		<property name="BodyNerf" value="95.0" />
 	</entity_class>
 	<entity_class name="zombieWightFeral" extends="zombieTemplateMale">
 		<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll" />
@@ -3355,6 +3355,8 @@
 		<!-- Cannot stack because it can be picked up -->
 		<property name="Stacknumber" value="1" />
 		<property name="debug" value="false" />
+		<property name="PatrolArea" value="15" />
+		<property name="StayArea" value="5" />
 		<!-- to allow interaction and/or put stuff on its inv? -->
 		<property name="LootListAlive" value="110" />
 		<property name="LootListAliveMP" value="110" />
@@ -3434,8 +3436,33 @@
 	<entity_class name="Bobby" extends="MaleSurvivor">
 		<property name="Mesh" value="#survivorsa16?Bobby" />
 	</entity_class>
-	<entity_class name="Pacco" extends="MaleSurvivor">
+	<entity_class name="Pacco" extends="survivorParent">
 		<property name="Mesh" value="#pacco?PaccoNew" />
+		<property name="MaxHealth" value="1500" />
+		<property name="MaxViewAngle" value="240" />
+		<property name="HandItem" value="handMaleElite" />
+		<property name="IsMale" value="true" />
+		<property name="SoundHurt" value="Player_Male/player1painlg" />
+		<property name="SoundHurtSmall" value="Player_Male/player1painsm" />
+		<property name="SoundDeath" value="Player_Male/player1death" />
+		<property name="SoundStamina" value="Player_Male/player1stamina" />
+		<property name="SoundDrownPain" value="Player_Male/player1drownpain" />
+		<property name="SoundWaterSurface" value="Player_Male/player1drownsurface" />
+		<property name="SoundDrownDeath" value="Player_Male/player1drowndeath" />
+		<property name="SoundJump" value="Player_Male/player1Jump" />
+		<property name="SoundLandSoft" value="Player_Male/player1LandSoft" />
+		<property name="SoundLandHard" value="Player_Male/player1LandHard" />
+		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
+		<!-- For dialogs -->
+		<!-- (<xxx>) means optional -->
+		<!-- param1="<skillName>,<skillLevel>" -->
+		<!-- param2="<Command>,(<questName>),(<previousQuestName>)" -->
+		<property name="Dialog1" value="Hello? Who are you?" param1="Barter,0" param2="Quest,quest_MeetPacco" />
+		<!-- <property name="Dialog2" value="Ok, i got it!"  param1="Barter,0" param2 = "Quest,quest_theCure1,quest_theCure"/>
+		<property name="Dialog3" value="I'm sorry to inform..."  param1="Barter,0" param2 = "Quest,quest_theCure2,quest_theCure1"/> -->
+		<!-- Blocking properties -->
+		<!-- If the dialog fails, it will block all the referenced dialogs FOREVER -->
+		<!-- param1 can be Attack (player) or Flee (from player) or leave it blank -->
 	</entity_class>
 	<entity_class name="ScientistMale" extends="survivorParent">
 		<property name="Mesh" value="#survivorsa16?Scientist2" />
@@ -3682,8 +3709,10 @@
 		<property name="Stacknumber" value="1" />
 		<!-- if you define this value, the survivor will stay within that area -->
 		<!-- this value defaults to 10 -->
+		<property name="PatrolArea" value="15" />
 		<property name="StayArea" value="5" />
 		<property name="debug" value="false" />
+		<property name="MapIcon" value="ui_game_symbol_minibike" />
 		<!-- to allow interaction and/or put stuff on its inv? -->
 		<property name="LootListAlive" value="10" />
 		<property name="LootListAliveMP" value="10" />

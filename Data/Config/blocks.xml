@@ -3181,7 +3181,7 @@
 		<property name="UpgradeRated.ToBlock" value="concreteCTRPlate" />
 	</block>
 	<block id="335" name="cntTrash_can01">
-		<property name="Class" value="Loot" />
+		<property name="Class" value="Disease, Mods" />
 		<property name="Material" value="Mmetal_thin" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
@@ -3193,6 +3193,8 @@
 		<property name="LootList" value="16" />
 		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 		<property name="EconomicValue" value="40" />
+		<property name="BuffsWhenActivate" value="flies" />
+		<property name="BuffsChance" value="0.15" />
 	</block>
 	<block id="336" name="cntBin">
 		<property name="Class" value="Loot" />
@@ -3261,7 +3263,7 @@
 		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
 	<block id="340" name="cntTrashPile01">
-		<property name="Class" value="Loot" />
+		<property name="Class" value="Disease, Mods" />
 		<property name="Material" value="trash" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Texture" value="293" />
@@ -3273,6 +3275,8 @@
 		<property name="LootList" value="2" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapPlastics" count="0,2" prob="0.2" tool_category="Disassemble" />
+		<property name="BuffsWhenActivate" value="flies" />
+		<property name="BuffsChance" value="0.15" />
 	</block>
 	<block id="341" name="cntTrashPile02">
 		<property name="Extends" value="cntTrashPile01" />
@@ -3303,11 +3307,6 @@
 		<property name="Extends" value="cntTrashPile01" />
 		<property name="Model" value="LootContainers/trash_pile08" param1="main_mesh" />
 		<property name="ImposterExchange" value="imposterPlate" param1="116" />
-	</block>
-	<block id="348" name="cntTrashPile09">
-		<property name="Extends" value="cntTrashPile01" />
-		<property name="Model" value="LootContainers/trash_pile09" param1="main_mesh" />
-		<property name="ImposterExchange" value="imposterCTREighth" param1="116" />
 	</block>
 	<block id="349" name="cntFridge">
 		<property name="Class" value="Loot" />
@@ -5422,7 +5421,7 @@
 		<property name="ParticleOnDeath" value="treeGib_winter01" />
 	</block>
 	<block id="588" name="cntTreeStump">
-		<property name="Class" value="Loot" />
+		<property name="Class" value="Disease, Mods" />
 		<property name="Material" value="treeWoodSmall" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="Entities/Trees/Prefabs/Stump" />
@@ -5435,6 +5434,8 @@
 		<property name="LootList" value="35" />
 		<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools" />
 		<drop event="Destroy" count="0" />
+		<property name="BuffsWhenActivate" value="bees" />
+		<property name="BuffsChance" value="0.35" />
 	</block>
 	<block id="589" name="treeWinterPine02">
 		<property name="Extends" value="treeMaster" />
@@ -8921,7 +8922,7 @@
 	</block>
 	<block id="946" name="cntTrashCompactor">
 		<property name="CustomIcon" value="cntFridgeBottom" />
-		<property name="Class" value="Loot" />
+		<property name="Class" value="Disease, Mods" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="counter" />
 		<property name="Place" value="TowardsPlacerInverted" />
@@ -8940,6 +8941,8 @@
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="EconomicValue" value="60" />
 		<property name="ImposterExchange" value="imposterBlock" param1="77" />
+		<property name="BuffsWhenActivate" value="flies" />
+		<property name="BuffsChance" value="0.25" />
 	</block>
 	<block id="947" name="rScrapIronWedgeStairs">
 		<property name="Extends" value="rScrapIronMaster" />
@@ -15522,6 +15525,149 @@
 		<property name="MultiBlockDim" value="2,3,7" />
 		<property name="BigDecorationRadius" value="7" />
 	</block>
+	<block id="1543" name="pendulum">
+		<property name="Class" value="ElectricDevice, Mods" />
+		<property name="Material" value="Mmetal_hard" />
+		<property name="DamageDone" value="50" />
+		<property name="DamageReceived" value="4" />
+		<property name="BrokenPercentage" value="0.25" />
+		<!-- it simply stops doing damage at this moment, maybe should stop animating -->
+		<property name="HitLegs" value="false" />
+		<property name="Buffs" value="trapDamage1Trigger" />
+		<property name="StabilitySupport" value="true" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Pendulum?PendulumPrefab" />
+		<!-- the blade is a free model by Dwayne Mayberry, the rest origional -->
+		<property name="CustomIcon" value="ui_game_symbol_pendulum" />
+		<property name="MultiBlockDim" value="1,4,1" />
+		<property name="isPowered" value="true" />
+		<property name="WireOffset" value="0,0,0" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="RequiredPower" value="20" />
+		<property name="Group" value="Tools/Traps,Science" />
+		<property name="ActivationDistance" value="6" />
+		<property class="RepairItems">
+			<property name="forgedSteel" value="20" />
+			<property name="mechanicalParts" value="5" />
+			<property name="electricParts" value="5" />
+		</property>
+		<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapSteel" count="10,50" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="Stacknumber" value="10" />
+		<property name="TakeDelay" value="10" />
+		<property name="EconomicValue" value="100" />
+	</block>
+	<!-- SLOT MACHINE -->
+	<block id="1544" name="SlotMachine">
+		<property name="Class" value="MorteSlotMachine, Mods" />
+		<property name="LootList" value="10" />
+		<property name="debug" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#SlotMachine?SlotMachinePrefab" />
+		<property name="Material" value="metal" />
+		<property name="looseTrigger1" value="Lose" />
+		<property name="looseTrigger2" value="Lose1" />
+		<property name="winTrigger1" value="Win,10,123" />
+		<property name="winTrigger2" value="Win,5.5,124" />
+		<property name="winTrigger3" value="Win,20,122" />
+		<property name="currencyItem" value="casinoCoin,10" />
+		<property name="delayBetweenUses" value="12" />
+		<property name="ModelOffset" value="0,-0.04,0" />
+		<drop event="Destroy" count="0" />
+		<property name="CanMobsSpawnOn" value="false" />
+		<property name="Group" value="Building" />
+		<property class="RepairItems">
+			<property name="scrapIron" value="2" />
+		</property>
+	</block>
+	<block id="1572" name="SlotMachine1">
+		<property name="Class" value="MorteSlotMachine, Mods" />
+		<property name="LootList" value="10" />
+		<property name="debug" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#SlotMachine?SlotMachinePrefab1" />
+		<property name="Material" value="metal" />
+		<property name="looseTrigger1" value="looseTrigger1" />
+		<property name="looseTrigger2" value="looseTrigger2" />
+		<property name="winTrigger1" value="winTrigger1,10,123" />
+		<property name="winTrigger2" value="winTrigger2,5.5,124" />
+		<property name="winTrigger3" value="winTrigger3,20,122" />
+		<property name="currencyItem" value="casinoCoin,10" />
+		<property name="delayBetweenUses" value="8" />
+		<property name="ModelOffset" value="0,-0.04,0" />
+		<drop event="Destroy" count="0" />
+		<property name="CanMobsSpawnOn" value="false" />
+		<property name="Group" value="Building" />
+		<property class="RepairItems">
+			<property name="scrapIron" value="2" />
+		</property>
+	</block>
+	<block id="1573" name="SlotMachine2">
+		<property name="Class" value="MorteSlotMachine, Mods" />
+		<property name="LootList" value="10" />
+		<property name="debug" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#SlotMachine?SlotMachinePrefab2" />
+		<property name="Material" value="metal" />
+		<property name="looseTrigger1" value="looseTrigger1" />
+		<property name="looseTrigger2" value="looseTrigger2" />
+		<property name="winTrigger1" value="winTrigger1,10,123" />
+		<property name="winTrigger2" value="winTrigger2,20,122" />
+		<property name="winTrigger3" value="winTrigger3,5.5,124" />
+		<property name="currencyItem" value="casinoCoin,75" />
+		<property name="delayBetweenUses" value="8" />
+		<property name="ModelOffset" value="0,-0.04,0" />
+		<drop event="Destroy" count="0" />
+		<property name="CanMobsSpawnOn" value="false" />
+		<property name="Group" value="Building" />
+		<property class="RepairItems">
+			<property name="scrapIron" value="2" />
+		</property>
+	</block>
+	<block id="1574" name="DiceTable">
+		<property name="Class" value="MorteSlotMachine, Mods" />
+		<property name="LootList" value="10" />
+		<property name="debug" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#SlotMachine?CasinoTablePrefab" />
+		<property name="Material" value="metal" />
+		<property name="looseTrigger1" value="looseTrigger1" />
+		<property name="winTrigger1" value="winTrigger1,20,124" />
+		<property name="currencyItem" value="casinoCoin,100" />
+		<property name="delayBetweenUses" value="8" />
+		<property name="ModelOffset" value="0,-0.04,0" />
+		<drop event="Destroy" count="0" />
+		<property name="CanMobsSpawnOn" value="false" />
+		<property name="Group" value="Building" />
+		<property class="RepairItems">
+			<property name="scrapIron" value="2" />
+		</property>
+	</block>
+	<block id="1588" name="BasketBallGame">
+		<property name="Class" value="MorteSlotMachine, Mods" />
+		<property name="LootList" value="10" />
+		<property name="debug" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#SlotMachine?BasketBallGamePrefab" />
+		<property name="Material" value="metal" />
+		<property name="looseTrigger1" value="loose" />
+		<property name="looseTrigger2" value="loose1" />
+		<property name="winTrigger1" value="win,25,123" />
+		<property name="winTrigger2" value="win1,25,124" />
+		<property name="currencyItem" value="casinoCoin,100" />
+		<property name="delayBetweenUses" value="8" />
+		<property name="ModelOffset" value="0,-0.04,0" />
+		<drop event="Destroy" count="0" />
+		<property name="CanMobsSpawnOn" value="false" />
+		<property name="Group" value="Building" />
+		<property class="RepairItems">
+			<property name="scrapIron" value="2" />
+		</property>
+	</block>
+	<!-- SLOT MACHINE -->
 	<!-- FISHING -->
 	<block id="90" name="fishWall">
 		<property name="Class" value="Morte, Mods" />
@@ -15739,7 +15885,7 @@
 		<property name="Class" value="TrapMorte, Mods" />
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
-		<property name="Model" value="#animalCoops?BoxTrapPrefab" />
+		<property name="Model" value="#BoxTrap?BoxTrapPrefab" />
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property class="RepairItems">
 			<property name="wood" value="5" />
@@ -16230,7 +16376,7 @@
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="DescriptionKey" value="powerSourceDesc" />
-		<property name="MaxFuel" value="2000" />
+		<property name="MaxFuel" value="5000" />
 		<property name="OutputPerFuel" value="11250" />
 		<property name="MaxPower" value="20000" />
 		<property name="OutputPerStack" value="100" />
@@ -18959,6 +19105,61 @@
 		<property name="DescriptionKey" value="" />
 		<drop event="Destroy" name="wood" count="1,3" prob="1" />
 	</block>
+	<block id="1547" name="tableOffice">
+		<property name="Material" value="wood+metal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#paccoOffice?tableOffice" />
+		<property name="MultiBlockDim" value="4,3,2" />
+		<property name="CanPickup" value="false" />
+		<drop event="Destroy" name="scrapIron" count="50,100" prob="1" />
+		<drop event="Fall" name="scrapMetalPile" count="100" prob="1.0" stick_chance=".75" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1555" name="bulletingBoard1">
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#paccoOffice?bulletingBoard1" />
+		<property name="CanPickup" value="false" />
+		<drop event="Destroy" name="wood" count="2,6" prob="1" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1566" name="bulletinBoard2">
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#paccoOffice?bulletingBoard2" />
+		<property name="CanPickup" value="false" />
+		<drop event="Destroy" name="wood" count="2,6" prob="1" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1570" name="copier">
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#paccoOffice?copier" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="CanPickup" value="false" />
+		<drop event="Destroy" name="wood" count="2,6" prob="1" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1571" name="WaterCooler">
+		<property name="Class" value="Loot" />
+		<property name="Material" value="Mmetal_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#paccoOffice?cooler" />
+		<property name="LootList" value="52" />
+		<property class="RepairItems">
+			<property name="forgedIron" value="4" />
+			<property name="shortMetalPipe" value="3" />
+			<property name="electricParts" value="5" />
+			<property name="electronicParts" value="1" />
+		</property>
+		<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="0,1" tool_category="Disassemble" />
+		<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="1,15" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="Group" value="Decor/Miscellaneous" />
+		<property name="DescriptionKey" value="furnitureGroupDesc" />
+	</block>
 	<block id="1497" name="steelBars">
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="100" />
@@ -18983,6 +19184,21 @@
 		<drop event="Harvest" name="scrapSteel" count="3,5" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapSteel" count="2,5" />
+	</block>
+	<block id="348" name="cntTrashPile09">
+		<property name="Class" value="Loot" />
+		<property name="Material" value="trash" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#TrashBags?TrashBagsPrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_trashBags" />
+		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+		<property name="LootList" value="2" />
+		<property name="CanPickup" value="false" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="ImposterExchange" value="imposterCTREighth" param1="29" />
+		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="scrapPlastics" count="0,2" prob="0.2" tool_category="Disassemble" />
+		<property name="BuffsWhenWalkedOn" value="flies" />
 	</block>
 	<block id="1342" name="zombiePinup01">
 		<property name="Class" value="Morte, Mods" />
