@@ -2396,6 +2396,13 @@
 		<ingredient name="partsBrowning_receiver" count="1" />
 		<ingredient name="partsBrowning_parts" count="1" />
 	</recipe>
+	<recipe name="KSR" count="1" craft_area="assembly" scrapable="False">
+		<ingredient name="KSR_stock" count="1" />
+		<ingredient name="KSR_receiver" count="1" />
+		<ingredient name="KSR_parts" count="1" />
+		<ingredient name="KSR_barrel" count="1" />
+		<ingredient name="flashlight02" count="0" />
+	</recipe>
 	<!-- TRAPS START -->
 	<recipe name="trapBear" count="1" craft_area="lathe">
 		<ingredient name="shortMetalPipe" count="5" />
@@ -3893,7 +3900,7 @@
 		<ingredient name="unit_clay" count="5" />
 		<ingredient name="unit_coal" count="1" />
 	</recipe>
-	<recipe name="forgedSteel" count="1" craft_area="forge1" craft_tool="forgeCrucible" material_based="true">
+	<recipe name="forgedSteel" count="1" craft_area="forge1" craft_tool="forgeCrucible" material_based="true" craft_time="10">
 		<ingredient name="unit_iron" count="75" />
 		<ingredient name="unit_clay" count="8" />
 		<ingredient name="unit_coal" count="16" />

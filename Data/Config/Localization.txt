@@ -6013,3 +6013,8 @@ coolByAirConTooltip,,,,Cool Air,,,,
 airCon,,,,Air Conditioner,,,,
 airConDesc,,,,This electrical air conditioner can keep you cool. [e62020]Needs to be under a ceilling to fully work[ffffff].,,,,
 xuiMeters,UI,XUI,KgNone,Meters,Mètres,Meter,,Metros
+ksrDesc,,,,"KSR-29 is a 50 caliber semi auto sniper rifle. Its high damage and quick reload, makes it one of the deadliest weapons ever made.\nSupported Attachments (PRESS [66ff00]INSERT[ffffff] KEY):\n[e62020]1.[ffffff] [87cefa]Bipod (PSG-1)[ffffff] 2.[ffffff] [87cefa]Flashlight[ffffff]",,,,
+mp7Desc,,,,The Heckler & Koch MP7 is a German Personal Defence Weapon (PDW) designed and manufactured by Heckler & Koch.\nSupported Attachments (PRESS [66ff00]INSERT[ffffff] KEY):\n[e62020]1.[ffffff] [87cefa]Silencer (MP7)[ffffff] 2.[ffffff] [87cefa]Flashlight[ffffff],,,,
+stung,,,,Bee Sting,,,,
+stungDesc,,,,You've been stung by bees. Take care of it [e62020]using any painkillers or insect bite antidote[ffffff],,,,
+stungToolTip,,,,Bee Sting,,,,
