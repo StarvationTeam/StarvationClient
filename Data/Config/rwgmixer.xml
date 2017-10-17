@@ -412,7 +412,8 @@
 			<prefab name="cave_04" />
 			<prefab name="ScientistShelter" max_count="1" />
 			<prefab name="PowerPlant" max_count="1" />
-			<!-- <prefab name="bandit_refinery" max_count="1" /> -->
+			<prefab name="pacco_settlement" max_count="1" />
+			<prefab name="bandit_refinery" max_count="1" />
 			<prefab name="MpWasteRadiated" />
 			<prefab name="HouseBurntRadiated" />
 			<prefab name="HouseBurntRadiated1" />

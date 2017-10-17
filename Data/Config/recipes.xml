@@ -3456,12 +3456,6 @@
 		<ingredient name="egg" count="1" />
 		<ingredient name="rawSugar" count="1" />
 	</recipe>
-	<recipe name="vegetableStew" count="2" craft_area="bigOven" craft_tool="cookingWare">
-		<ingredient name="bottledWater" count="2" />
-		<ingredient name="potato" count="1" />
-		<ingredient name="corn" count="1" />
-		<ingredient name="mushrooms" count="1" />
-	</recipe>
 	<recipe name="pastaBolognese" count="1" craft_area="bigOven" craft_tool="cookingWare">
 		<ingredient name="boiledPasta" count="1" />
 		<ingredient name="bologneseSauce" count="1" />
@@ -3749,7 +3743,93 @@
 		<ingredient name="DryGrillItem1" count="1" />
 		<ingredient name="SlicedFruits" count="2" />
 	</recipe>
+	<!-- PAM receipts -->
+	<recipe name="bakedPotato" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="potato" count="1" /></recipe>
+	<recipe name="blueberryPie" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="blueberries" count="1" />
+	  <ingredient name="egg" count="1" />
+	  <ingredient name="cornMeal" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="bottledWater" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="snowBall" count="1" />
+	  <ingredient name="emptyJar" count="1" /></recipe>
+	<recipe name="bottledWater" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="bottledRiverWater" count="1" /></recipe>
+	<recipe name="bottledRiverWater" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="snowBall" count="1" />
+	  <ingredient name="emptyJar" count="1" /></recipe>
+	<recipe name="coffee" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="coffeeBeans" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="cornBread" count="1" craft_area="bigOven" craft_tool="breadLoafPan">
+	  <ingredient name="cornMeal" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="cornOnTheCob" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="corn" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="eggboiled" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="egg" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="goldenRodTea" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="goldenrodPlant" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="grainAlcohol" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="cornMeal" count="3" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="boiledMeat" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="rawMeat" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="grilledMeat" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="rawMeat" count="2" /></recipe>
+	<recipe name="meatStew" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="rawMeat" count="5" />
+	  <ingredient name="potato" count="5" />
+	  <ingredient name="corn" count="5" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="redTea" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="chrysanthemumPlant" count="1" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="snowberryJuice" count="1" craft_area="bigOven" craft_tool="kettle">
+	  <ingredient name="snowberryExtract" count="1" />
+	  <ingredient name="blueberries" count="2" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="tallow" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="animalFat" count="1" /></recipe>
+	<recipe name="grilledBass" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="bassMeat" count="1" /></recipe>
+	<recipe name="grilledSalmon" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="salmonMeat" count="1" /></recipe>
+	<recipe name="grilledFish" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="fishFillet" count="1" /></recipe>
+	<recipe name="applePie" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="foodHoney" count="4" />
+	  <ingredient name="apple" count="6" />
+	  <ingredient name="dough" count="3" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="bananaPie" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="animalFat" count="4" />
+	  <ingredient name="banana" count="6" />
+	  <ingredient name="doughSweet" count="3" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<recipe name="vegetableStew" count="1" craft_area="bigOven" craft_tool="cookingWare">
+	  <ingredient name="potato" count="5" />
+	  <ingredient name="corn" count="5" />
+	  <ingredient name="mushrooms" count="5" />
+	  <ingredient name="bottledWater" count="1" /></recipe>
+	<!-- PAM receipts -->
 	<!-- STARVATION STUFF  -->
+	<recipe name="toyBoxAction" count="1">
+		<ingredient name="ironManItem" count="1" />
+		<ingredient name="wolverineItem" count="1" />
+		<ingredient name="alienItem" count="1" />
+		<ingredient name="warZdItem" count="1" />
+	</recipe>
+	<recipe name="toyBoxFun" count="1">
+		<ingredient name="kennyItem" count="1" />
+		<ingredient name="aatItem" count="1" />
+		<ingredient name="chessItem" count="1" />
+	</recipe>
 	<recipe name="garlicSap" count="1">
 		<ingredient name="garlic" count="5" />
 	</recipe>

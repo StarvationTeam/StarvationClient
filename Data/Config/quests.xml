@@ -341,7 +341,23 @@
 		<objective type="Goto" id="garageburnt1" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="quest_MeetPacco" group_name="Meet Pacco" name="Master Armorsmith" subtitle="Master Armorsmith" description="Hello there.\nI am Pacco, and you wont find a better armorsmith anywhere!\n\nMaybe you can make me some errands and who knows...\nI may have a nice present for you..\n\nCheck your log for more information, please.\n\n\nNOTE FROM THE TEAM\n\nThis quest line was made in loving memory of our good friend René,\naka Pacco.\n\nMay he rest in peace" icon="ui_game_symbol_map_trader" category_key="Quest">
+	<quest id="quest_MeetPacco" group_name="Meet Pacco" name="Master Armorsmith 1/2" subtitle="Master Armorsmith" description="Hello there.\nI am Pacco, and you wont find a better armorsmith anywhere!\n\nMaybe you can make me some errands and who knows...\nI may have a nice present for you..\n\nCheck your log for more information, please.\n\n\nNOTE FROM THE TEAM\n\nThis quest line was made in loving memory of our good friend René,\naka Pacco.\n\nMay he rest in peace" icon="ui_game_symbol_map_trader" category_key="Quest">
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="quest_getReward" group_name="Meet Pacco" name="Master Armorsmith 2/2" subtitle="Master Armorsmith" description="Perfect.\nAs promissed, here's your reward!\n\n\nNOTE FROM THE TEAM\n\nPacco was one of the first SDX modders\nand the first person to inject weapons\nand custom entities in the game." icon="ui_game_symbol_map_trader" category_key="Quest">
+		<reward type="Item" id="desertEagle" value="700" />
+	</quest>
+	<quest id="pacco_game_room0" group_name="Game Room" name="Game Room 1/2" subtitle="My Game Room" description="Actually, there's something else\nthat might interest you.\n\nI have a game room downstairs, with some nice prizes\nI'm a big collector.\nLet me unlock some receipts for you, check your log for the next step.\n\n\nNOTE FROM THE TEAM\n\nPacco was the creator of the mod HeadBanger's For Life\nand one of the creators of Starvation" icon="ui_game_symbol_map_trader" category_key="Quest">
+		<reward type="Recipe" id="toyBoxAction" />
+		<reward type="Recipe" id="toyBoxFun" />
+		<reward type="Quest" id="pacco_game_room1" />
+	</quest>
+	<quest id="pacco_game_room1" group_name="Game Room" name="Game Room 2/3" subtitle="My Game Room" description="I want you to make me a these two toy packages\nand i'll let you get in there.\nCome and see me when you're done." icon="ui_game_symbol_map_trader" category_key="Quest">
+		<objective type="Craft" id="toyBoxAction" value="1" />
+		<objective type="Craft" id="toyBoxFun" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="pacco_game_room" group_name="Game Room" name="Game Room 3/3" subtitle="My Game Room" description="Perfect, I see you finally got it.\n\nYou can now enter my game room at any time\nGood luck!\n\n\nI hope this helped you to know a little bit\nabout Pacco.\nHe was a great modder\n\nAnd a great man!" icon="ui_game_symbol_map_trader" category_key="Quest">
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!-- <quest id="quest_Refinery" group_name="The Refinery" name="The Refinery" subtitle="The Refinery" description="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." offer="Despair! I despair! My familly, my friends... They need me!\nWe thought we were safe. We hoped... We thought we could survive through this...\nBut then they came. Worst then monsters! Those bandits came for our fuel!\nI wonder if there's still someone alive, but I'm too weak..I'm out of power for my exoskeleton and I'm too weak to try..." icon="ui_game_symbol_map_trader" category_key="Quest"  difficulty="hard">
@@ -485,7 +501,7 @@
 		<reward type="Quest" id="EOS" />
 	</quest>
 	<quest id="EOS" group_name="Wildlife Trial" name="Spider Infestation 3/3" subtitle="Emperor of the Spiders" description="It is time to finish off those mutants.\nGo out and raze 3 spider nests. Gather web cobs collected as an evidence.\n\nBe careful, there are many of them..." offer="Just click accept...if you are hard enough." icon="ui_game_symbol_q_spider" repeatable="false" category_key="challenge" difficulty="hard">
-		<objective type="Fetch" id="cobweb" value="3" />
+		<objective type="BlockPickup" id="cobweb" value="3" />
 		<reward type="SkillPoints" value="3" />
 		<reward type="Quest" id="GW1" />
 	</quest>
@@ -1240,8 +1256,8 @@
 	<quest id="Q_Animals_A5" group_name="Coops and Hutches" name="Coops and Hutches 5/10" subtitle="Rabbit Hutch" description="Craft a hutch for your rabbits.\nSome parts can be crafted only at the workbench." icon="ui_game_symbol_q_animals_1" repeatable="false" category_key="Quest" offer="Lets build a rabbit hutch." difficulty="medium">
 		<objective type="FetchKeep" id="nail" value="20" />
 		<objective type="FetchKeep" id="wood" value="50" />
-		<objective type="FetchKeep" id="barbedWireSheet" value="2" />
 		<objective type="FetchKeep" id="bucket" value="2" />
+		<objective type="Craft" id="barbedWireSheet" value="2" />
 		<objective type="Craft" id="RabbitHutch" value="1" />
 		<reward type="Quest" id="Q_Animals_A6" />
 	</quest>

@@ -15239,6 +15239,34 @@
 		</property>
 		<property name="DescriptionKey" value="Q_FinalExamDesc" />
 	</item>
+	<item id="1007" name="toyBoxAction">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Msteel" />
+		<property name="HoldType" value="45" />
+		<property name="Stacknumber" value="500" />
+		<property name="Weight" value="10" />
+		<property name="EconomicValue" value="22" />
+		<property name="Group" value="Resources" />
+	</item>
+	<item id="1008" name="toyBoxFun">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="Msteel" />
+		<property name="HoldType" value="45" />
+		<property name="Stacknumber" value="500" />
+		<property name="Weight" value="10" />
+		<property name="EconomicValue" value="22" />
+		<property name="Group" value="Resources" />
+	</item>
+	<item id="1009" name="toyboxes">
+		<property name="Extends" value="schematicMaster" />
+		<property class="Action1">
+			<property name="Recipes_to_learn" value="toyBoxFun, toyBoxAction" />
+			<property name="Skills_to_gain" value="Tool Smithing" />
+		</property>
+		<property name="EconomicValue" value="500" />
+	</item>
 	<item id="22" name="machete">
 		<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
 		<property name="RepairTools" value="forgedSteel" />
@@ -16682,7 +16710,7 @@
 		</property>
 		<property name="EconomicValue" value="300" />
 	</item>
-	<item id="855" name="findRadHouse">
+	<item id="855" name="findPacco">
 		<property name="CreativeMode" value="Dev" />
 		<property name="CustomIcon" value="compass" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
@@ -16691,7 +16719,7 @@
 		<property name="Stacknumber" value="1" />
 		<property class="Action1">
 			<property name="Class" value="FindPlace, Mods" />
-			<property name="location" value="HouseBurntRadiated" />
+			<property name="location" value="pacco_settlement" />
 		</property>
 		<property class="Preview">
 			<property name="Zoom" value="28" />

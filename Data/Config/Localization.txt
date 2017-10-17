@@ -6018,3 +6018,7 @@ mp7Desc,,,,The Heckler & Koch MP7 is a German Personal Defence Weapon (PDW) desi
 stung,,,,Bee Sting,,,,
 stungDesc,,,,You've been stung by bees. Take care of it [e62020]using any painkillers or insect bite antidote[ffffff],,,,
 stungToolTip,,,,Bee Sting,,,,
+toyBoxAction,,,,Action Toys Box,,,,  
+toyBoxActionDesc,,,,A box filled with action toys!,,,,
+toyBoxFun,,,,Fun Toys Box,,,,  
+toyBoxFunDesc,,,,A box filled with fun toys!,,,,

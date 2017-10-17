@@ -12071,6 +12071,7 @@
 		<property name="Shape" value="ModelEntity" />
 		<property name="ImposterDontBlock" value="true" />
 		<property name="Collide" value="melee" />
+		<property name="CanPickup" value="true" />
 		<property name="Model" value="Entities/Decor/cobwebPrefab" />
 		<drop event="Destroy" count="0" />
 	</block>
@@ -17475,7 +17476,7 @@
 		<property name="PauseTime" value="60" />
 		<property name="NumberToPause" value="9" />
 		<property name="EntityGroup" value="spiders" />
-		<drop event="Destroy" name="cobweb" count="1" />
+		<property name="DowngradeBlock" value="cobweb" />
 	</block>
 	<!-- New Ores -->
 	<block id="1024" name="saltOre">
@@ -17561,7 +17562,7 @@
 		<property name="Class" value="CampfireM, Mods" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<property name="ParticleName" value="campfire" />
-		<property name="ParticleOffset" value="1,0,1" />
+		<property name="ParticleOffset" value="1.3,1,0.6" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
@@ -17953,7 +17954,8 @@
 		<property name="Stacknumber" value="1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#Survivors?radioTowerPrefab" />
-		<drop event="Destroy" count="0" prob="1" />
+		<property name="RequiredPower" value="10" />
+		<property name="WireOffset" value="0,0.5,0" />
 		<property name="CanMobsSpawnOn" value="false" />
 		<property name="CanPickup" value="true" />
 		<!-- If you set this value to true, you WILL NEED TO USE POWER MOD -->
@@ -17970,8 +17972,7 @@
 		<!-- Max number of survivors allowed inside the spawn area -->
 		<!-- Will include advanced survivors like cooks or traders -->
 		<property name="MaxSpawn" value="5" />
-		<property name="RequiredPower" value="100" />
-		<property name="WireOffset" value="0,0.5,0" />
+		<drop event="Destroy" count="0" prob="1" />
 		<property name="debug" value="false" />
 	</block>
 	<block id="1023" name="weaponSmithBlock">
@@ -19106,6 +19107,7 @@
 		<drop event="Destroy" name="wood" count="1,3" prob="1" />
 	</block>
 	<block id="1547" name="tableOffice">
+		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="wood+metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#paccoOffice?tableOffice" />
@@ -19116,6 +19118,7 @@
 		<property name="Group" value="Building" />
 	</block>
 	<block id="1555" name="bulletingBoard1">
+		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#paccoOffice?bulletingBoard1" />
@@ -19124,6 +19127,7 @@
 		<property name="Group" value="Building" />
 	</block>
 	<block id="1566" name="bulletinBoard2">
+		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#paccoOffice?bulletingBoard2" />
@@ -19132,6 +19136,7 @@
 		<property name="Group" value="Building" />
 	</block>
 	<block id="1570" name="copier">
+		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="wood_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#paccoOffice?copier" />
@@ -19142,6 +19147,7 @@
 	</block>
 	<block id="1571" name="WaterCooler">
 		<property name="Class" value="Loot" />
+		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="Mmetal_weak" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#paccoOffice?cooler" />
@@ -19159,6 +19165,72 @@
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
 		<property name="Group" value="Decor/Miscellaneous" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
+	</block>
+	<block id="1589" name="SpawnerPacco">
+		<property name="Class" value="PrefabSpawner, Mods" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="Mmetal_hard" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Texture" value="116" />
+		<property name="Model" value="Entities/Trees/Prefabs/Stump" />
+		<property name="entity" value="Pacco" />
+		<property name="NumberToSpawn" value="1" />
+	</block>
+	<block id="1590" name="paccoSign">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="wood_weak" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Paccos?PaccoSignPrefab" />
+		<property name="CanPickup" value="false" />
+		<drop event="Destroy" name="wood" count="2,6" prob="1" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1591" name="gameDoor">
+		<property name="DescriptionKey" value="doorGroupDesc" />
+		<property name="Class" value="PaccoDoor, Mods" />
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="Msteel" />
+		<property name="PassThroughDamage" value="true" />
+		<property name="LightOpacity" value="1" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Tag" value="Door" />
+		<property name="Place" value="Door" />
+		<property name="PlaceEverywhere" value="true" />
+		<property name="Model" value="Entities/Doors/steel_door_2_v3Prefab" />
+		<property name="ModelOffset" value="0,0,0" />
+		<property name="ImposterExchange" value="imposterCTRPlate" param1="77" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="Mesh-Damage-1" value="Door/Door_DMG0" />
+		<property name="Mesh-Damage-2" value="Door/Door_DMG1" />
+		<property name="Mesh-Damage-3" value="Door/Door_DMG2" />
+		<property name="Mesh-Damage-4" value="Door/Door_DMG3" />
+		<property name="Mesh-Damage-5" value="Door/Door_DMG4" />
+		<property name="OpenSound" value="open_door_vault" />
+		<property name="CloseSound" value="close_door_vault" />
+		<property class="RepairItems">
+			<property name="forgedSteel" value="12" />
+		</property>
+		<property name="DowngradeBlock" value="vaultDoor02" />
+		<drop event="Harvest" name="scrapIron" count="96" prob="1" />
+		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1594" name="butterfly">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="organic" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Butterfly?ButterflyPrefab" />
+		<property name="CanPickup" value="false" />
+	</block>
+	<block id="1595" name="cattails">
+		<property name="CreativeMode" value="Dev" />
+		<property name="Material" value="organic" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Cattails?CattailsPrefab" />
+		<property name="CanPickup" value="true" />
+		<property name="CustomIcon" value="ui_game_symbol_butterfly" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
 	</block>
 	<block id="1497" name="steelBars">
 		<property name="Material" value="Msteel" />
