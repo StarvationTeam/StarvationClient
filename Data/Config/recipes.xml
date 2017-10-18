@@ -4020,26 +4020,26 @@
 		<ingredient name="cornMeal" count="1" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-	<recipe name="gasCan" count="50" craft_area="chemistryStation">
+	<recipe name="gasCan" count="40" craft_area="chemistryStation" craft_time="60">
 		<ingredient name="oilShale" count="12" />
 	</recipe>
-	<recipe name="gasCan" count="50" craft_area="campfire" craft_tool="beaker">
+	<recipe name="gasCan" count="40" craft_area="campfire" craft_tool="beaker">
 		<ingredient name="animalFat" count="3" />
 		<ingredient name="grainAlcohol" count="1" />
 	</recipe>
-	<recipe name="gasCan" count="50" craft_area="chemistryStation">
+	<recipe name="gasCan" count="40" craft_area="chemistryStation">
 		<ingredient name="animalFat" count="2" />
 		<ingredient name="cornMeal" count="1" />
 		<ingredient name="bottledRiverWater" count="1" />
 	</recipe>
-	<recipe name="gasCan" count="100" craft_area="moonshine">
+	<recipe name="gasCan" count="65" craft_area="moonshine" craft_time="45">
 		<ingredient name="oilShale" count="12" />
 	</recipe>
-	<recipe name="gasCan" count="100" craft_area="moonshine">
+	<recipe name="gasCan" count="65" craft_area="moonshine">
 		<ingredient name="animalFat" count="3" />
 		<ingredient name="grainAlcohol" count="1" />
 	</recipe>
-	<recipe name="gasCan" count="500" craft_area="moonshine">
+	<recipe name="gasCan" count="250" craft_area="moonshine" craft_time="250">
 		<ingredient name="oilBarrel" count="1" />
 	</recipe>
 	<recipe name="Radio" count="1" scrapable="False">

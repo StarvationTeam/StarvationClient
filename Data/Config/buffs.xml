@@ -320,6 +320,12 @@
 	</buff>
 	<buff id="BossSpawn" duration="5" ffcheck="true" actions="attach(#effects?BloodSplatter, Graphics, 5)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
 	<buff id="BossRez" duration="5" ffcheck="true" actions="attach(#effects?LightningField, Graphics, 5)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
+	<buff id="BossVomit" duration="3" ffcheck="true" actions="attach(#RadSpider?SpiderVomit, Graphics, 3)" icon="ui_game_symbol_fire" name_key="BossRegen" description_key="electricalShockDesc" />
+	<buff id="Vomit" mutex="VomitCoolDown" onexpired="VomitCoolDown" type="sickness" actions="attach(#RadSpider?SpiderVomit, Origin/CameraNode, 0, firstperson);increment(@wellness, -0.02, 4, 0, 0)" duration="10" icon="ui_game_symbol_vomit" castsound="vomit" name_key="Vomit" description_key="VomitDesc" tooltip_key="vomitTooltip">
+		<modify id="0" stat="stamina" amount="-1" rate="1" />
+		<modify id="1" stat="speedmodifier" mulValue="0.3" />
+	</buff>
+	<buff id="VomitCoolDown" duration="20" stack="discard" />
 	<!-- SCURVY DISEASE -->
 	<!-- You get 1 scurvy level every hour -->
 	<buff id="MetabolizeScurvy" mutex="fruity" buffif="+full &gt; 0" duration="0" actions="increment(scurvyLevel, 1, 100t, 0, 0)" name_key="MetabolizeScurvy" />

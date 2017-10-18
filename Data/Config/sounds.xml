@@ -8836,6 +8836,12 @@
 		<MaxEntities name="10" />
 		<MaxRepeatRate name="4" />
 	</SoundDataNode>
+	<SoundDataNode name="vomit">
+		<AudioSource name="Sounds/AudioSource_Player" />
+		<AudioClip ClipName="#zedSounds?vomit" />
+		<MaxVoices name="10" />
+		<MaxRepeatRate name="0.01" />
+	</SoundDataNode>
 	<!-- STARVATION ZEDS -->
 	<SoundDataNode name="DonkeyHurt">
 		<AudioSource name="Sounds/AudioSource_Creatures" />
