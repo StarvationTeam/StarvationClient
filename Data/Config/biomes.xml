@@ -1477,6 +1477,7 @@
 				<Precipitation min="70" max="80" prob="1" />
 				<Wind min="10" max="20" prob="0.9" />
 				<Wind min="20" max="100" prob="0.1" />
+				<ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7" />
 			</weather>
 			<!-- Burnt Forest Sub Biome Coal and Corpses -->
 			<subbiome prob="0.02">

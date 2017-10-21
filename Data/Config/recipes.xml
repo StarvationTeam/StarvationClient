@@ -2142,8 +2142,9 @@
 	</recipe>
 	<recipe name="salvagedSawBat" count="1" craft_area="workbench">
 		<ingredient name="sawBlade" count="1" />
-		<ingredient name="wood" count="4" />
+		<ingredient name="bat" count="1" />
 		<ingredient name="leather" count="4" />
+		<ingredient name="nail" count="8" />
 	</recipe>
 	<!-- FISHING -->
 	<recipe name="hook" count="1">
@@ -2357,9 +2358,10 @@
 		<ingredient name="yuccaFibers" count="10" />
 		<ingredient name="huntingKnife" count="1" />
 	</recipe>
-	<recipe name="bat" count="1">
+	<recipe name="bat" count="1" craft_area="lathe">
 		<ingredient name="wood" count="6" />
 		<ingredient name="glue" count="2" />
+		<ingredient name="leather" count="4" />
 	</recipe>
 	<recipe name="nailedBat" count="1">
 		<ingredient name="bat" count="1" />
@@ -2420,6 +2422,18 @@
 		<ingredient name="shortMetalPipe" count="2" />
 		<ingredient name="forgedIron" count="10" />
 		<ingredient name="spring" count="8" />
+	</recipe>
+	<recipe name="trapFire" count="1" craft_area="lathe">
+		<ingredient name="shortMetalPipe" count="2" />
+		<ingredient name="forgedIron" count="5" />
+		<ingredient name="wood" count="10" />
+		<ingredient name="radiator" count="1" />
+	</recipe>
+	<recipe name="trapSpike" count="1" craft_area="lathe">
+		<ingredient name="shortMetalPipe" count="2" />
+		<ingredient name="forgedIron" count="5" />
+		<ingredient name="wood" count="10" />
+		<ingredient name="spring" count="2" />
 	</recipe>
 	<!-- TRAP END -->
 	<!-- TRANSFORMERS -->
@@ -2801,15 +2815,16 @@
 	</recipe>
 	<recipe name="AnimalFeed" count="10" scrapable="False">
 		<ingredient name="hayBaleBlock" count="1" />
+		<ingredient name="sunflowerOil" count="1" />
 	</recipe>
-	<!-- <recipe name="AnimalFeed" count="5" scrapable="False">
+	<recipe name="AnimalFeed" count="5" scrapable="False">
 		<ingredient name="wheat" count="1" />
 		<ingredient name="sunflowerOil" count="1" />
 	</recipe>
 	<recipe name="AnimalFeed" count="15" scrapable="False">
 		<ingredient name="yuccaFibers" count="10" />
 		<ingredient name="sunflowerOil" count="1" />
-	</recipe> -->
+	</recipe>
 	<!-- HUSBANDRY -->
 	<recipe name="DogStaff" count="1">
 		<ingredient name="leather" count="2" />
@@ -2825,11 +2840,11 @@
 		<ingredient name="leather" count="5" />
 		<ingredient name="ductTape" count="1" />
 	</recipe>
-	<!-- <recipe name="canDogfood" count="2" scrapable="False">
-			<ingredient name="canEmpty" count="2" />
-			<ingredient name="rawMeat" count="1" />
-			<ingredient name="salt" count="2" />
-		</recipe> -->
+	<recipe name="canDogfood" count="2" scrapable="False">
+		<ingredient name="canEmpty" count="2" />
+		<ingredient name="rawMeat" count="1" />
+		<ingredient name="salt" count="2" />
+	</recipe>
 	<recipe name="DogCookie" count="5">
 		<ingredient name="canDogfood" count="1" />
 		<ingredient name="cornMeal" count="3" />
@@ -3358,6 +3373,17 @@
 		<ingredient name="forgedIron" count="10" />
 		<ingredient name="bucket" count="2" />
 	</recipe>
+	<recipe name="glassPane" count="1" craft_area="smith" craft_time="180">
+		<ingredient name="scrapPlastics" count="20" />
+		<ingredient name="glassCTRSheet" count="4" />
+		<ingredient name="forgedSteel" count="8" />
+	</recipe>
+	<recipe name="solarCell" count="1" craft_area="crafter" craft_time="360">
+		<ingredient name="electricParts" count="10" />
+		<ingredient name="electronicParts" count="10" />
+		<ingredient name="scrapCopper" count="5" />
+		<ingredient name="glassPane" count="1" />
+	</recipe>
 	<!-- MyColony -->
 	<recipe name="rum" count="1" craft_area="moonshine">
 		<ingredient name="rawSugar" count="3" />
@@ -3851,12 +3877,12 @@
 		<ingredient name="pigMaleItem" count="1" />
 		<ingredient name="grainAlcohol" count="2" />
 	</recipe>
-	<recipe name="snakeBiteAntidote" count="15" craft_area="scienceStation">
+	<recipe name="snakeBiteAntidote" count="20" craft_area="scienceStation">
 		<ingredient name="snakePoison" count="10" />
 		<ingredient name="cowItem" count="1" />
 		<ingredient name="grainAlcohol" count="2" />
 	</recipe>
-	<recipe name="snakeBiteAntidote" count="15" craft_area="scienceStation">
+	<recipe name="snakeBiteAntidote" count="20" craft_area="scienceStation">
 		<ingredient name="snakePoison" count="10" />
 		<ingredient name="bullItem" count="1" />
 		<ingredient name="grainAlcohol" count="2" />

@@ -204,6 +204,9 @@
 			<prefab name="trailer_04" />
 			<prefab name="trailer_park_01" />
 			<prefab name="abandoned_house_michone" max_count="1" />
+			<prefab name="church_madmole" max_count="1" />
+			<prefab name="wild_poi1" max_count="1" />
+			<!-- currently a bandit settlement -->
 		</prefab_rule>
 		<prefab_rule name="residentialNewGroup">
 			<prefab name="house_new_mansion_01" />
@@ -384,6 +387,10 @@
 			<prefab name="MpWasteRadiated" />
 			<prefab name="HouseBurntRadiated" />
 			<prefab name="HouseBurntRadiated1" />
+			<prefab name="rad_poi1" />
+			<!-- currently a boss factory with lootRad -->
+			<prefab name="pacco_poi" min_count="1" max_count="1" />
+			<!-- currently a boss settlement with lootRad -->
 		</prefab_rule>
 		<prefab_rule name="wildernessGroup">
 			<prefab rule="traderGroup" min_count="1" max_count="1" />
@@ -414,9 +421,15 @@
 			<prefab name="PowerPlant" max_count="1" />
 			<prefab name="pacco_settlement" max_count="1" />
 			<prefab name="bandit_refinery" max_count="1" />
+			<prefab name="wild_poi1" max_count="1" />
+			<!-- currently a bandit settlement -->
 			<prefab name="MpWasteRadiated" />
 			<prefab name="HouseBurntRadiated" />
 			<prefab name="HouseBurntRadiated1" />
+			<prefab name="rad_poi1" />
+			<!-- currently a boss factory with lootRad -->
+			<prefab name="pacco_poi" min_count="1" max_count="1" />
+			<!-- currently a boss settlement with lootRad -->
 		</prefab_rule>
 		<prefab_rule name="detailFillerGroup">
 			<prefab name="mailbox1" prob="0.25" />

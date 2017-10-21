@@ -7572,6 +7572,46 @@
 		<MaxVoices name="6" />
 		<MaxRepeatRate name="0.001" />
 	</SoundDataNode>
+	<SoundDataNode name="donkeyJackpot">
+		<AudioSource name="Sounds/AudioSource_UseAction" />
+		<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5" />
+		<AudioClip ClipName="#jackpotSounds?donkeyjackpot" />
+		<LocalCrouchVolumeScale name="0.5" />
+		<CrouchNoiseScale name="0.5" />
+		<NoiseScale name="1" />
+		<MaxVoices name="10" />
+		<MaxRepeatRate name="0.01" />
+	</SoundDataNode>
+	<SoundDataNode name="moneyJackpot">
+		<AudioSource name="Sounds/AudioSource_UseAction" />
+		<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5" />
+		<AudioClip ClipName="#jackpotSounds?moneyJackpot" />
+		<LocalCrouchVolumeScale name="0.5" />
+		<CrouchNoiseScale name="0.5" />
+		<NoiseScale name="1" />
+		<MaxVoices name="10" />
+		<MaxRepeatRate name="0.01" />
+	</SoundDataNode>
+	<SoundDataNode name="weaponJackpot">
+		<AudioSource name="Sounds/AudioSource_UseAction" />
+		<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5" />
+		<AudioClip ClipName="#jackpotSounds?electronicjackpot1" />
+		<LocalCrouchVolumeScale name="0.5" />
+		<CrouchNoiseScale name="0.5" />
+		<NoiseScale name="1" />
+		<MaxVoices name="10" />
+		<MaxRepeatRate name="0.01" />
+	</SoundDataNode>
+	<SoundDataNode name="ksrJackpot">
+		<AudioSource name="Sounds/AudioSource_UseAction" />
+		<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5" />
+		<AudioClip ClipName="#jackpotSounds?electronicjackpot2" />
+		<LocalCrouchVolumeScale name="0.5" />
+		<CrouchNoiseScale name="0.5" />
+		<NoiseScale name="1" />
+		<MaxVoices name="10" />
+		<MaxRepeatRate name="0.01" />
+	</SoundDataNode>
 	<!-- ANIMAL COOPS -->
 	<SoundDataNode name="chickenSound">
 		<AudioSource name="Sounds/AudioSource_UseAction" />

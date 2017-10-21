@@ -8,7 +8,8 @@
     <property name="RotationToFaceNorth" value="2"/>
     <property name="YOffset" value="-8"/>
     <property name="DistantPOIYOffset" value="0"/>
-    <property name="AllowedBiomes" value="pine_forest"/>
+	<property name="AllowedTownships" value="wilderness" />
+    <property name="AllowedBiomes" value="pine_forest,forest"/>
     <property name="TraderAreaProtect" value="20, 0, 20"/>
     <property name="TraderAreaTeleportSize" value="44, 30, 48"/>
     <property name="TraderAreaTeleportCenter" value="1, 0, 0"/>

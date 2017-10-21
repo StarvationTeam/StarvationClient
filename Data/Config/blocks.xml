@@ -15572,9 +15572,9 @@
 		<property name="looseTrigger1" value="Lose" />
 		<property name="looseTrigger2" value="Lose1" />
 		<property name="winTrigger1" value="Win,10,123" />
-		<property name="winTrigger2" value="Win,5.5,124" />
+		<property name="winTrigger2" value="Win,5.5,125" />
 		<property name="winTrigger3" value="Win,20,122" />
-		<property name="currencyItem" value="casinoCoin,10" />
+		<property name="currencyItem" value="casinoCoin,2000" />
 		<property name="delayBetweenUses" value="12" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<drop event="Destroy" count="0" />
@@ -15596,7 +15596,7 @@
 		<property name="winTrigger1" value="winTrigger1,10,123" />
 		<property name="winTrigger2" value="winTrigger2,5.5,124" />
 		<property name="winTrigger3" value="winTrigger3,20,122" />
-		<property name="currencyItem" value="casinoCoin,10" />
+		<property name="currencyItem" value="casinoCoin,5000" />
 		<property name="delayBetweenUses" value="8" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<drop event="Destroy" count="0" />
@@ -15618,7 +15618,7 @@
 		<property name="winTrigger1" value="winTrigger1,10,123" />
 		<property name="winTrigger2" value="winTrigger2,20,122" />
 		<property name="winTrigger3" value="winTrigger3,5.5,124" />
-		<property name="currencyItem" value="casinoCoin,75" />
+		<property name="currencyItem" value="casinoCoin,10000" />
 		<property name="delayBetweenUses" value="8" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<drop event="Destroy" count="0" />
@@ -15636,8 +15636,8 @@
 		<property name="Model" value="#SlotMachine?CasinoTablePrefab" />
 		<property name="Material" value="metal" />
 		<property name="looseTrigger1" value="looseTrigger1" />
-		<property name="winTrigger1" value="winTrigger1,20,124" />
-		<property name="currencyItem" value="casinoCoin,100" />
+		<property name="winTrigger1" value="winTrigger1,10,125" />
+		<property name="currencyItem" value="casinoCoin,2000" />
 		<property name="delayBetweenUses" value="8" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<drop event="Destroy" count="0" />
@@ -15656,9 +15656,9 @@
 		<property name="Material" value="metal" />
 		<property name="looseTrigger1" value="loose" />
 		<property name="looseTrigger2" value="loose1" />
-		<property name="winTrigger1" value="win,25,123" />
-		<property name="winTrigger2" value="win1,25,124" />
-		<property name="currencyItem" value="casinoCoin,100" />
+		<property name="winTrigger1" value="win,25,122" />
+		<property name="winTrigger2" value="win1,25,123" />
+		<property name="currencyItem" value="casinoCoin,1000" />
 		<property name="delayBetweenUses" value="8" />
 		<property name="ModelOffset" value="0,-0.04,0" />
 		<drop event="Destroy" count="0" />
@@ -17995,9 +17995,9 @@
 		<!-- High tier of product - highly skilled (12 or higher)-->
 		<property name="HighTier" value="machete,garageDoorRolling,steelPlate,armorPlate,partsAK47_stock,partsAK47_barrel,partsMP5_stock,partsMP5_barrel,metalFrame,smallDeposit" />
 		<!-- Expert product - Crafter needs to be maxed out (15) -->
-		<property name="ExpertTier" value="ceilingLight01_player,industrialLight01_player,fireaxeSteel,assaultRifleStock,assaultRifleBarrel,partsSniperRifle_stock,partsSniperRifle_barrel,genCasing,fuelDeposit" />
+		<property name="ExpertTier" value="glassPane,ceilingLight01_player,industrialLight01_player,fireaxeSteel,assaultRifleStock,assaultRifleBarrel,partsSniperRifle_stock,partsSniperRifle_barrel,genCasing,fuelDeposit" />
 		<!-- Receipts to autolearn -->
-		<property name="AutoLearn" value="industrialLight01_player,ceilingLight07_player,ironArrowHeadPack,steelArrowHeadPack,metalFrame,smallDeposit,genCasing,fuelDeposit" />
+		<property name="AutoLearn" value="industrialLight01_player,ceilingLight07_player,ironArrowHeadPack,steelArrowHeadPack,metalFrame,smallDeposit,genCasing,fuelDeposit,glassPane" />
 		<!-- Maximum of tier Default recipes the crafter can automatically know -->
 		<property name="LowTierDF" value="4" />
 		<property name="MedTierDF" value="4" />
@@ -18130,7 +18130,7 @@
 		<!-- Final product Container - NEEDS to be secureLoot -->
 		<property name="ItemContainer" value="cntStorageFarmIcy" />
 		<!-- Containers check area in blocks - default configuration require a very close container -->
-		<property name="CraftCheckArea" value="2" />
+		<property name="CraftCheckArea" value="5" />
 		<!-- FOOD CONFIGURATION - <amount of "hp" to restore>,foodItem1,foodItem2,...,foodItemn -->
 		<!-- Lower type of food - survivor looks for this if he is not hurt -->
 		<property name="FoodLow" value="1,cornBread,eggboiled" />
@@ -18296,7 +18296,7 @@
 		<!-- High tier of product - highly skilled (12 or higher)-->
 		<property name="HighTier" value="gunMP5,gunPistol,steelBoots,steelGloves,steelLegArmor,partsAK47_receiver,partsAK47_parts,partsMP5_receiver,partsMP5_parts,steampunkRevolver,airCon" />
 		<!-- Expert product - Crafter needs to be maxed out (15) -->
-		<property name="ExpertTier" value="gunAK47,ACW,MTAR,gun44Magnum,gunSniperRifle,steelChestArmor,steelHelmet,drawBridge,assaultRifleTriggerHousing,acw-r_parts,partsSniperRifle_receiver,partsSniperRifle_parts,dieselGen,solarbank" />
+		<property name="ExpertTier" value="gunAK47,ACW,MTAR,gun44Magnum,gunSniperRifle,steelChestArmor,steelHelmet,drawBridge,assaultRifleTriggerHousing,acw-r_parts,partsSniperRifle_receiver,partsSniperRifle_parts,dieselGen,solarCell,solarbank" />
 		<!-- Receipts to autolearn -->
 		<property name="AutoLearn" value="bulletCasingPack,bulletTipPack,spring,smallGenerator,dieselGen,airCon" />
 		<!-- Maximum of tier Default recipes the crafter can automatically know -->
@@ -19168,14 +19168,8 @@
 	</block>
 	<block id="1589" name="SpawnerPacco">
 		<property name="Class" value="PrefabSpawner, Mods" />
-		<property name="CreativeMode" value="Dev" />
-		<property name="Material" value="Mmetal_hard" />
-		<property name="Shape" value="ModelEntity" />
-		<property name="Texture" value="116" />
-		<property name="Model" value="Entities/Trees/Prefabs/Stump" />
-		<property name="entity" value="Pacco" />
-		<property name="NumberToSpawn" value="1" />
-	</block>
+		<property name="CreativeMode" value="Dev" />´
+		<property name="Material" value="Mmetal_hard" /><property name="Shape" value="ModelEntity" /><property name="Texture" value="116" /><property name="Model" value="Entities/Trees/Prefabs/Stump" /><property name="entity" value="Pacco" /><property name="NumberToSpawn" value="1" /></block>
 	<block id="1590" name="paccoSign">
 		<property name="CreativeMode" value="Dev" />
 		<property name="Material" value="wood_weak" />
@@ -19231,6 +19225,14 @@
 		<property name="CanPickup" value="true" />
 		<property name="CustomIcon" value="ui_game_symbol_butterfly" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
+	</block>
+	<block id="1596" name="fog3Particle">
+		<!-- localized POI fog, like in a graveyard 20 x 20 blocks -->
+		<property name="Material" value="air" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Fog3Particle?Fog3Particle" />
+		<property name="CustomIcon" value="ui_game_symbol_fogParticle" />
+		<property name="IsTerrainDecoration" value="true" />
 	</block>
 	<block id="1497" name="steelBars">
 		<property name="Material" value="Msteel" />

@@ -14590,6 +14590,18 @@
 		<property name="Group" value="Resources,Ammo/Weapons" />
 		<property name="CraftingSkillGroup" value="Gun Smithing" />
 	</item>
+	<item id="1010" name="glassPane">
+		<property name="Meshfile" value="Items/Misc/sackPrefab" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="glass" />
+		<property name="HoldType" value="45" />
+		<property name="Stacknumber" value="50" />
+		<!-- STK resource -->
+		<property name="EconomicValue" value="50" />
+		<property name="EconomicBundleSize" value="1" />
+		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="craftSkillScience" />
+	</item>
 	<!--Juices -->
 	<item id="670" name="appleJuice">
 		<property name="Meshfile" value="Items/Food/redTeaPrefab" />
@@ -15603,7 +15615,7 @@
 	<item id="798" name="doorBook">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="drawBridge, garageDoorRolling, ShutterDoor, ShutterDoorV" />
+			<property name="Recipes_to_learn" value="garageDoorRolling, ShutterDoor, ShutterDoorV" />
 			<property name="Skills_to_gain" value="Tool Smithing" />
 		</property>
 		<property name="EconomicValue" value="500" />

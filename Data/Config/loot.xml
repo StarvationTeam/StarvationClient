@@ -1290,7 +1290,6 @@
 		<item name="minibikeWheels" />
 	</lootgroup>
 	<lootgroup name="automotive">
-		<item name="gasCan" count="50,300" />
 		<item name="radiator" />
 		<item name="headlight" />
 		<item name="hubcap" />
@@ -1305,6 +1304,7 @@
 		<item name="mechanicalParts" count="1,3" prob="0.3" />
 		<item name="partsNailgun_battery" prob="0.1" />
 		<item name="padlock" prob="0.6" />
+		<item name="gasCan" count="10,50" />
 	</lootgroup>
 	<lootgroup name="hats">
 		<item group="cowboyHatAll" />
@@ -2054,7 +2054,7 @@
 		<!-- mountain man loot -->
 		<item group="junkPersonal" prob="1" />
 	</lootcontainer>
-	<lootcontainer id="64" count="30,500" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+	<lootcontainer id="64" count="10,80" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 		<item group="gasPumps" count="1" />
 		<!-- gas pump loot -->
 	</lootcontainer>
@@ -2424,15 +2424,23 @@
 		<!-- ?????? -->
 	</lootcontainer>
 	<lootcontainer id="122" count="1" size="6,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
-		<item name="casinoCoin" count="2,4" />
+		<item name="casinoCoin" count="20,40" />
+		<item group="specialGuns" count="1" prob="0.001" />
 	</lootcontainer>
 	<lootcontainer id="123" count="1" size="6,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
-		<item name="casinoCoin" count="20,40" />
+		<item name="casinoCoin" count="800,1200" />
+		<item name="desertEagle" count="1" prob="0.001" />
+		<item name="donkeyItem" count="1" prob="0.0005" />
 	</lootcontainer>
 	<lootcontainer id="124" count="1" size="6,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
-		<item name="casinoCoin" count="200,400" />
-		<item group="specialGuns" count="1" prob="0.05" />
-		<!-- Add the 50cal gun here -->
+		<item name="casinoCoin" count="4500,8000" />
+		<item group="specialGuns" count="1" prob="0.08" />
+		<item name="desertEagle" count="1" prob="0.05" />
+		<item name="KSR" count="1" prob="0.03" />
+		<item name="donkeyItem" count="1" prob="0.02" />
+	</lootcontainer>
+	<lootcontainer id="125" count="1" size="6,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+		<item name="casinoCoin" count="2500,5000" />
 	</lootcontainer>
 	<!-- FISHING -->
 	<lootcontainer id="100" count="0,2" size="4,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
