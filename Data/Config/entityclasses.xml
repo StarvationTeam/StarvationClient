@@ -5419,7 +5419,7 @@
 		<property name="ModelType" value="NpcUMA" />
 		<property name="HasRagdoll" value="true" />
 		<property name="Prefab" value="NPC" />
-		<property name="Class" value="EntityBandit" />
+		<property name="Class" value="EntityBanditSDX, Mods" />
 		<property name="Parent" value="Players" />
 		<property name="PhysicsBody" value="Player" />
 		<property name="Archetype" value="BanditMelee" />
