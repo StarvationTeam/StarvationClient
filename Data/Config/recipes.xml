@@ -4133,7 +4133,7 @@
 		<ingredient name="animalFat" count="3" />
 		<ingredient name="grainAlcohol" count="1" />
 	</recipe>
-	<recipe name="gasCan" count="250" craft_area="moonshine" craft_time="250">
+	<recipe name="gasCan" count="250" craft_area="moonshine" craft_time="55">
 		<ingredient name="oilBarrel" count="1" />
 	</recipe>
 	<recipe name="Radio" count="1" scrapable="False">
