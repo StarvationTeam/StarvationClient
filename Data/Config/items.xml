@@ -7840,7 +7840,7 @@
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="50" />
 		<property name="foodSpoilImmune" value="100" />
-		<property class="Action0">
+		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -7859,7 +7859,7 @@
 		<property name="HoldType" value="3" />
 		<property name="foodSpoilImmune" value="90" />
 		<property name="Stacknumber" value="50" />
-		<property class="Action0">
+		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -7879,7 +7879,7 @@
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="50" />
 		<property name="foodSpoilImmune" value="90" />
-		<property class="Action0">
+		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -7910,7 +7910,7 @@
 		<property name="HoldType" value="16" />
 		<property name="Stacknumber" value="50" />
 		<property name="foodSpoilImmune" value="95" />
-		<property class="Action0">
+		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -7949,7 +7949,7 @@
 		<property name="Material" value="glass" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="10" />
-		<property class="Action0">
+		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
@@ -7971,7 +7971,7 @@
 		<property name="EconomicValue" value="80" />
 		<property name="HoldType" value="3" />
 		<property name="Stacknumber" value="10" />
-		<property class="Action0">
+		<property class="Action1">
 			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
