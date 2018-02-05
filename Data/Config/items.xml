@@ -8131,7 +8131,7 @@
 		<property name="CustomIcon" value="ui_game_symbol_brassHinge" />
 		<property name="DescriptionKey" value="brassHingeDesc" />
 		<property name="Material" value="brass" />
-		<property name="Weight" value="1" />
+		<property name="Weight" value="3" />
 	</item>
 	<item id="869" name="brassKnuckles">
 		<property name="Extends" value="itemMaster" />
@@ -8152,7 +8152,7 @@
 		<property name="CustomIcon" value="ui_game_symbol_brassCowBell" />
 		<property name="DescriptionKey" value="brassCowBellDesc" />
 		<property name="Material" value="brass" />
-		<property name="Weight" value="2" />
+		<property name="Weight" value="3" />
 	</item>
 	<!-- Stone  -->
 	<item id="872" name="stonePlate">
@@ -8224,35 +8224,35 @@
 		<property name="CustomIcon" value="ui_game_symbol_paperPlayingCards" />
 		<property name="DescriptionKey" value="paperPlayingCardsDesc" />
 		<property name="Material" value="paper" />
-		<property name="Weight" value="3" />
+		<property name="Weight" value="10" />
 	</item>
 	<item id="882" name="paperNews">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_paperNews" />
 		<property name="DescriptionKey" value="paperNewsDesc" />
 		<property name="Material" value="paper" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="100" />
 	</item>
 	<item id="883" name="paperToilet">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_paperToilet" />
 		<property name="DescriptionKey" value="paperToiletDesc" />
 		<property name="Material" value="paper" />
-		<property name="Weight" value="4" />
+		<property name="Weight" value="25" />
 	</item>
 	<item id="884" name="paperGoggles">
 		<property name="Extends" value="itemMaster" />
 		<property name="CustomIcon" value="ui_game_symbol_paperGoggles" />
 		<property name="DescriptionKey" value="paperGogglesDesc" />
 		<property name="Material" value="paper" />
-		<property name="Weight" value="3" />
+		<property name="Weight" value="10" />
 	</item>
 	<item id="885" name="paperMatches">
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="paper" />
 		<property name="CustomIcon" value="ui_game_symbol_paperMatches" />
 		<property name="DescriptionKey" value="paperMatchesDesc" />
-		<property name="Weight" value="3" />
+		<property name="Weight" value="5" />
 	</item>
 	<!-- Cloth  -->
 	<item id="886" name="clothTeddyBear">
@@ -8475,7 +8475,7 @@
 		<property name="CustomIcon" value="ui_game_symbol_rubberDoll" />
 		<property name="DescriptionKey" value="rubberDollDesc" />
 		<property name="Material" value="Mrubber" />
-		<property name="Weight" value="2" />
+		<property name="Weight" value="4" />
 	</item>
 	<item id="930" name="rubberDuck">
 		<property name="Extends" value="itemMaster" />
@@ -8489,7 +8489,7 @@
 		<property name="CustomIcon" value="ui_game_symbol_rubberChicken" />
 		<property name="DescriptionKey" value="rubberChickenDesc" />
 		<property name="Material" value="Mrubber" />
-		<property name="Weight" value="2" />
+		<property name="Weight" value="6" />
 	</item>
 	<item id="936" name="rubberBands">
 		<property name="Extends" value="itemMaster" />
@@ -8502,7 +8502,7 @@
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="Mrubber" />
 		<property name="CustomIcon" value="ui_game_symbol_rubberOldRainBoot" />
-		<property name="Weight" value="3" />
+		<property name="Weight" value="8" />
 	</item>
 	<!-- Steel  -->
 	<item id="938" name="steelHinge">

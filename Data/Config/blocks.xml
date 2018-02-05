@@ -16640,6 +16640,9 @@
 		<property name="isPowered" value="true" />
 		<property name="soundOn" value="none" />
 		<property name="CanPickup" value="true" />
+		<property name="HeatMapStrength" value="1" />
+		<property name="HeatMapTime" value="1200" />
+		<property name="HeatMapFrequency" value="15" />
 		<property class="RepairItems">
 			<property name="electronicParts" value="1" />
 			<property name="scrapIron" value="1" />

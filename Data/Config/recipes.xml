@@ -2877,14 +2877,17 @@
 	</recipe>
 	<recipe name="AnimalFeed" count="10" scrapable="False">
 		<ingredient name="hayBaleBlock" count="1" />
+		<ingredient name="cornMeal" count="2" />
 		<ingredient name="sunflowerOil" count="1" />
 	</recipe>
-	<recipe name="AnimalFeed" count="5" scrapable="False">
-		<ingredient name="wheat" count="1" />
-		<ingredient name="sunflowerOil" count="1" />
-	</recipe>
-	<recipe name="AnimalFeed" count="15" scrapable="False">
+	<recipe name="AnimalFeed" count="10" scrapable="False">
 		<ingredient name="yuccaFibers" count="10" />
+		<ingredient name="wheat" count="2" />
+		<ingredient name="sunflowerOil" count="1" />
+	</recipe>
+	<recipe name="AnimalFeed" count="10" scrapable="False">
+		<ingredient name="yuccaFibers" count="10" />
+		<ingredient name="cornMeal" count="2" />
 		<ingredient name="sunflowerOil" count="1" />
 	</recipe>
 	<!-- HUSBANDRY -->
