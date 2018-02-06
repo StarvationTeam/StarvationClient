@@ -15413,6 +15413,8 @@
 		<!-- when all parts are present it will actually slow down -->
 		<!-- but steadly produce honey (4 pices a day for 60 minutes days) -->
 		<property name="TickRateHoney" value="6000" />
+		<!-- snow value that makes the bees "hibernate" and stop producing -->
+		<property name="SnowToStop" value="0.1" />
 		<property name="debug" value="false" />
 		<property name="QueenName" value="beeQueen" />
 		<property name="SwarmName" value="bees" />
@@ -15940,6 +15942,8 @@
 		<property name="animalSound" value="chickenSound" />
 		<!-- when there are animals, this sound will be emitted at day break - optional -->
 		<property name="wakeUpSound" value="rosterSound" />
+		<!-- snow value that makes the bees "hibernate" and stop producing -->
+		<property name="SnowToStop" value="0.1" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#animalCoops?ChickenHousePrefab" />
 		<property name="LootList" value="87" />
@@ -15963,6 +15967,8 @@
 		<property name="animalSound" value="rabbitSound" />
 		<property name="wakeUpSound" value="" />
 		<property name="Model" value="#animalCoops?rabitCagePrefab" />
+		<!-- snow value that makes the bees "hibernate" and stop producing -->
+		<property name="SnowToStop" value="0.2" />
 	</block>
 	<block id="109" name="BoxTrap">
 		<!-- triggered trap -->
@@ -18377,7 +18383,7 @@
 	</block>
 	<block id="1148" name="cntStorageFarmIcy">
 		<property name="CustomIcon" value="cntStorageFarm" />
-		<property name="Class" value="SecureLootMorte, Mods" />
+		<property name="Class" value="UpgradeRatedSecureLoot, Mods" />
 		<property name="LootList" value="10" />
 		<property name="Material" value="wood+wood" />
 		<property name="Shape" value="ModelEntity" />
@@ -18388,7 +18394,7 @@
 			<property name="wood" value="20" />
 		</property>
 		<property name="UpgradeRated.ToBlock" value="cntStorageFarm" />
-		<property name="UpgradeRated.Rate" value="15" />
+		<property name="UpgradeRated.Rate" value="10" />
 		<property name="DowngradeBlock" value="cntStorageFarmInsecure" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
