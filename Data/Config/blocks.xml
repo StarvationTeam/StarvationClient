@@ -911,6 +911,12 @@
 		<property name="PlantGrowing.FertileLevel" value="1" />
 		<property name="PlantGrowing.IsRandom" value="false" />
 		<property name="HarvestOverdamage" value="false" />
+		<property name="ChanceToKillPlant" value="60" />
+		<!-- Chance to kill a plant once the threshold is reached -->
+		<property name="SnowToKillPlant" value="0.4" />
+		<!-- Snow level that can kill a plant -->
+		<property name="SnowToStopGrowth" value="0.15" />
+		<!-- Snow level to stop plant growth -->
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="plantsBlockGroupDesc" />
@@ -935,6 +941,12 @@
 		<property name="PlantGrowing.FertileLevel" value="1" />
 		<property name="CropsGrown.BonusHarvestDivisor" value="9" />
 		<property name="HarvestOverdamage" value="false" />
+		<property name="ChanceToKillPlant" value="60" />
+		<!-- Chance to kill a plant once the threshold is reached -->
+		<property name="SnowToKillPlant" value="0.4" />
+		<!-- Snow level that can kill a plant -->
+		<property name="SnowToStopGrowth" value="0.15" />
+		<!-- Snow level to stop plant growth -->
 		<drop event="Destroy" count="0" />
 		<property name="DescriptionKey" value="plantsBlockGroupDesc" />
 	</block>
@@ -16732,6 +16744,12 @@
 		<property name="PlantGrowing.IsRandom" value="false" />
 		<property name="FallOver" value="false" />
 		<property name="doDamage" value="true" />
+		<!-- Snow level to stop plant growth -->
+		<property name="SnowToStopGrowth" value="0.15" />
+		<!-- Snow level that can kill a plant -->
+		<property name="SnowToKillPlant" value="0.5" />
+		<!-- Chance to kill a plant once the threshold is reached -->
+		<property name="ChanceToKillPlant" value="60" />
 		<drop event="Destroy" name="" count="0" />
 	</block>
 	<block id="139" name="plantedBananaPalm">
