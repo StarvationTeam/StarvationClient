@@ -4670,13 +4670,36 @@
 	</entity_class>
 	<entity_class name="zombieBearPet">
 		<!-- Mesh and class properties -->
-		<property name="Mesh" value="Animals/Bear/animalBearStandardRagdoll" />
-		<property name="ModelType" value="Standard" />
-		<property name="MeshScale" value="0.8,0.8" />
 		<property name="Prefab" value="NPC" />
 		<property name="Class" value="EntityDogMorte, Mods" />
 		<property name="Parent" value="Animals" />
-		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
+		<property name="AvatarController" value="AvatarAnimalController" />
+		<property name="ModelType" value="Standard" />
+		<property name="HasRagdoll" value="true" />
+		<property name="HasDeathAnim" value="true" />
+		<property name="RootMotion" value="true" />
+		<property name="RagdollOnDeathChance" value=".5" />
+		<property name="PhysicsBody" value="bear" />
+		<property name="Mesh" value="Animals/Bear/animalBearStandardRagdoll" />
+		<property name="ReplaceMaterial0" value="Materials/UMAFur_ZombieBear" />
+		<property class="MechanimAttackTriggers">
+			<property name="state0" value="AttackTrigger" />
+		</property>
+		<property class="MechanimAttackStates">
+			<property name="state0" value="Base Layer.Attack" />
+		</property>
+		<property class="MechanimPainTriggers">
+			<property name="state0" value="PainTrigger" />
+		</property>
+		<property class="MechanimPainStates">
+			<property name="state0" value="Base Layer.Pain" />
+		</property>
+		<property class="MechanimDeathTriggers">
+			<property name="state0" value="DeathTrigger" />
+		</property>
+		<property class="MechanimDeathStates">
+			<property name="state0" value="Base Layer.Death" />
+		</property>
 		<property name="Weight" value="300" />
 		<property name="RotateToGround" value="true" />
 		<property name="IsEntityAnimal" value="true" />
