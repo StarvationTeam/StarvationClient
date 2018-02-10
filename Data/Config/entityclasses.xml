@@ -1801,8 +1801,7 @@
 		<property name="IsEnemyEntity" value="false" />
 		<property name="ExperienceGain" value="1500" />
 		<!-- For harvesting -->
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" prob=".5" />
@@ -2039,8 +2038,7 @@
 		<property name="ExperienceGain" value="2000" />
 		<property name="DeadBodyHitPoints" value="300" />
 		<!-- For harvesting -->
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
@@ -2055,8 +2053,7 @@
 		<property name="MeshScale" value="1.1,1.1" />
 		<property name="MaxHealth" value="600" />
 		<property name="ExperienceGain" value="3000" />
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
@@ -2099,8 +2096,7 @@
 		<property name="PhysicsBody" value="zombieDog" />
 		<property name="DeadBodyHitPoints" value="350" />
 		<!-- For harvesting -->
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
@@ -2186,7 +2182,6 @@
 		<!-- For harvesting -->
 		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="1" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="1" prob=".5" />
@@ -2199,7 +2194,6 @@
 		<property name="Mesh" value="#hyena?Hyena1" />
 		<!-- For harvesting -->
 		<drop event="Harvest" name="rawMeat" count="1" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="1" prob=".5" />
@@ -2218,8 +2212,7 @@
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="MaxHealth" value="1500" />
 		<property name="ExperienceGain" value="3000" />
-		<drop event="Harvest" name="rawMeat" count="3" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" />
@@ -2255,8 +2248,7 @@
 		<property name="SoundDeath" value="tigerDeath" />
 		<property name="SoundAttack" value="tigerAttack" />
 		<!-- For harvesting -->
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" prob=".5" />
@@ -2270,8 +2262,7 @@
 		<property name="Mesh" value="#tiger?TigerBrown" />
 		<drop event="Destroy" name="tigerItem" tool_category="Butcher" count="1" prob=".05" />
 		<!-- For harvesting -->
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" prob=".5" />
@@ -2285,8 +2276,7 @@
 		<property name="Mesh" value="#tiger?TigerAlbino" />
 		<property name="MaxHealth" value="1500" />
 		<property name="ExperienceGain" value="4000" />
-		<drop event="Harvest" name="rawMeat" count="3" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="rawMeat" count="1" />
 		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="1" prob=".5" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7" />
 		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
